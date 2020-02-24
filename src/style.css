@@ -44,7 +44,7 @@ a:hover {
 }
 
 .avatar {
-    background-image: url('../images/avatar.jpeg');
+    background-image: url('./avatar.jpeg');
     width: 230px;
     height: 230px;
     background-size: cover;
@@ -60,12 +60,12 @@ a:hover {
 
 @font-face {
     font-family: 'Whitney';
-    src: url('../fonts/whitney-light.otf');
+    src: url('./whitney-light.otf');
 }
 
 @font-face {
     font-family: 'Adobe';
-    src: url('../fonts/adobe.woff');
+    src: url('./adobe.woff');
 }
 
 @media (min-width: 576px) {}
