@@ -74,7 +74,7 @@ a:hover {
 
     html,
     body,
-    .next {
+    #__next {
         height: 100%;
     }
 
