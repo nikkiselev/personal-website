@@ -73,7 +73,8 @@ a:hover {
 @media (min-width: 768px) {
 
     html,
-    body {
+    body,
+    .next {
         height: 100%;
     }
 
