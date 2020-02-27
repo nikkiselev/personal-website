@@ -1,0 +1,16 @@
+{
+  "name": "nikkiselev.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "clean": "rm -rf ../index.html ../_errors ../_next ../404.html ../favicon.ico",
+    "build": "npm run clean && next build && next export && cp -a out/. ../",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "9.2.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  }
+}
