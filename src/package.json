@@ -9,8 +9,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "next": "9.2.2",
     "react": "16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "16.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.6",
+    "typescript": "^3.8.2"
   }
 }
