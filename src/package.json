@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@types/node": "^13.7.6",
+    "@types/react-bootstrap": "^0.32.20",
     "typescript": "^3.8.2"
   }
 }

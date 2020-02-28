@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+
+html body {
+    font-family: 'Ubuntu' ;
+    color: #1f2020;
+    font-size: 16px;
+}
+
+.secondary {
+    color: #4129C6;
+}
+
+.divider {
+    margin: 55px 0;
+    border-top: 3px dashed #1f2020;
+}
+
+a, a:hover {
+    color: #4129C6;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
