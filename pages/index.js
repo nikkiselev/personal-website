@@ -38,7 +38,6 @@ const Home = () => {
               <a href="mailto:nik@kiselev.dev">nik@kiselev.dev</a>
               <br/>
               <div className="links">
-                  <a href="https://www.upwork.com/fl/nikolayk" target="_blank">Upwork</a>
                   <a href="https://github.com/nikkiselev" target="_blank">GitHub</a>
                   <a href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile" target="_blank">Stack
                       Overflow</a>
