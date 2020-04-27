@@ -58,6 +58,10 @@ a:hover {
     align-items: center;
 }
 
+.links a {
+    margin-bottom: 10px;
+}
+
 @font-face {
     font-family: 'Whitney';
     src: url('../fonts/whitney-light.otf');
@@ -76,13 +80,6 @@ a:hover {
     body,
     #__next {
         height: 100%;
-    }
-
-    .links {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 40%;
     }
 }
 

@@ -35,14 +35,13 @@ const Home = () => {
               </p>
               <p style={{textAlign: "center"}}>If you need my help with something or have a cool project to work on, reach
                   out and let's have a chat!</p>
-              <a href="mailto:nik@kiselev.dev">nik@kiselev.dev</a>
-              <br/>
               <div className="links">
+                  <a href="mailto:nik@kiselev.dev">nik@kiselev.dev</a>
                   <a href="https://github.com/nikkiselev" target="_blank">GitHub</a>
                   <a href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile" target="_blank">Stack
                       Overflow</a>
               </div>
-              <p className="copyright">© 2019 Nikolai Kiselev</p>
+              <p className="copyright">© {new Date().getFullYear()} Nikolai Kiselev</p>
           </div>
       </div>
     </div>
