@@ -1,9 +1,8 @@
 import { createMuiTheme } from '@material-ui/core/styles'
+import { deepPurple } from '@material-ui/core/colors'
 
 export default createMuiTheme({
   palette: {
-    // primary: {
-    //   main: '#1f2020'
-    // }
+    primary: deepPurple,
   },
 })
