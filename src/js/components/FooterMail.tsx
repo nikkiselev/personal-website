@@ -1,15 +1,15 @@
-import { createStyles, makeStyles } from '@material-ui/core'
+import { createStyles, makeStyles, Link, Theme } from '@material-ui/core'
+import MailOutlineIcon from '@material-ui/icons/MailOutline'
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    email: {
+    root: {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
     },
-    mailIcon: {
-      width: '35px',
-      marginRight: '7px',
+    icon: {
+      marginRight: theme.spacing(1),
     },
   })
 )
@@ -18,9 +18,10 @@ const FooterMail = () => {
   const classes = useStyles()
 
   return (
-    <div className={classes.email}>
-      <img src="/images/mail_icon.png" className={classes.mailIcon} />
-      <a href="mailto:nik@kiselev.dev">nik@kiselev.dev</a>
+    <div className={classes.root}>
+      <MailOutlineIcon className={classes.icon} />
+
+      <Link href="mailto:nik@kiselev.dev">nik@kiselev.dev</Link>
     </div>
   )
 }
