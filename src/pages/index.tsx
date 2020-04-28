@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import styles from '../css/index.module.css'
+import styles from '../css/index.module.scss'
 import App from '../js/components/app'
 import Divider from '../js/components/divider'
 

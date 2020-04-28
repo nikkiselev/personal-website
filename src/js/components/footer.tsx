@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap'
-import styles from '../../css/footer.module.css'
+import styles from '../../css/footer.module.scss'
 
 const Footer: React.FC = () => (
   <Container fluid>
