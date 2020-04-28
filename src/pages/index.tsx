@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import styles from '../css/index.module.scss'
 import {
   Container,
   Grid,
@@ -12,11 +11,16 @@ import PageDivider from '../js/components/PageDivider'
 import SubHeader from '../js/components/SubHeader'
 import Avatar from '../js/components/Avatar'
 
+import Location from '../js/components/Location'
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     intro: {
       textAlign: 'center',
       marginTop: theme.spacing(5),
+    },
+    lastText: {
+      marginBottom: theme.spacing(3),
     },
   })
 )
@@ -61,16 +65,13 @@ const Home = () => {
 
             <br />
 
-            <Typography variant="body1">
+            <Typography variant="body1" className={classes.lastText}>
               As a full stack developer, I can build seamless & scalable web
               applications, websites. Whether it’s from scratch or an existing
               codebase, I’m ready to jump in.
             </Typography>
 
-            <span className="secondary">
-              <img src="/images/pin_icon.png" className={styles.pin} />
-              Kuala Lumpur, Malaysia (GMT+8)
-            </span>
+            <Location />
           </Grid>
         </Grid>
       </Container>
