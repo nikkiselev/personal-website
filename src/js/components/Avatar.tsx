@@ -1,24 +1,13 @@
-import {
-  makeStyles,
-  createStyles,
-  Avatar as MUIAvatar,
-} from '@material-ui/core'
+import { Avatar as MUIAvatar, Box } from '@material-ui/core'
 
 const size = 230
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    root: {
-      width: size,
-      height: size,
-    },
-  })
-)
-
 const Avatar = () => {
-  const classes = useStyles()
-
-  return <MUIAvatar src="/images/avatar.jpeg" className={classes.root} />
+  return (
+    <Box height={size} width={size} clone>
+      <MUIAvatar src="/images/avatar.jpeg" />
+    </Box>
+  )
 }
 
 export default Avatar
