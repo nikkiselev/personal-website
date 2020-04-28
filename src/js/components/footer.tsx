@@ -7,9 +7,9 @@ const itemSpacing = 1
 const Footer = () => {
   return (
     <>
-      <Container>
+      <Container maxWidth="md">
         <Grid container>
-          <Box textAlign="center">
+          <Box textAlign={{ xs: 'center', md: 'left' }}>
             <Grid item xs={12}>
               <Box my={itemSpacing}>
                 <Typography variant="h5">
@@ -34,17 +34,11 @@ const Footer = () => {
 
             <Grid item xs={12}>
               <Box my={itemSpacing}>
-                <Typography variant="body1">I'm also on</Typography>
+                <Typography variant="body1">I'm also on:</Typography>
               </Box>
-            </Grid>
-
-            <Grid item xs={12}>
               <Box my={itemSpacing}>
                 <Link href="https://github.com/nikkiselev">GitHub</Link>
               </Box>
-            </Grid>
-
-            <Grid item xs={12}>
               <Box my={itemSpacing}>
                 <Link href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile">
                   Stack Overflow
