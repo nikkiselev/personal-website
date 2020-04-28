@@ -5,7 +5,7 @@ import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../theme'
 import '../css/app.scss'
-import Footer from '../js/components/footer'
+import Footer from '../js/components/Footer'
 
 export default ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
