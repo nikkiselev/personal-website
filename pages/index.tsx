@@ -81,12 +81,6 @@ const Home = () => {
 
               <a
                 className={styles.profileLink}
-                href="https://www.upwork.com/fl/nikolayk"
-              >
-                Upwork
-              </a>
-              <a
-                className={styles.profileLink}
                 href="https://github.com/nikkiselev"
               >
                 GitHub
