@@ -5,4 +5,7 @@ export default createMuiTheme({
   palette: {
     primary: deepPurple,
   },
+  typography: {
+    fontFamily: '"Ubuntu", "Helvetica", "Arial", sans-serif',
+  },
 })

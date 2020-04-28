@@ -4,7 +4,7 @@ import { AppProps } from 'next/app'
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../theme'
-import '../css/app.scss'
+import '../css/app.css'
 import Footer from '../js/components/Footer'
 
 export default ({ Component, pageProps }: AppProps) => {
