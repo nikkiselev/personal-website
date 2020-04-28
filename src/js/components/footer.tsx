@@ -1,19 +1,8 @@
 import { Grid, createStyles, makeStyles, Typography } from '@material-ui/core'
 import styles from '../../css/index.module.scss'
+import FooterBar from './FooterBar'
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    content: {
-      marginTop: '65px',
-      backgroundColor: '#1f2020',
-      color: 'white',
-      height: '100px',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-  })
-)
+const useStyles = makeStyles(() => createStyles({}))
 
 const Footer = () => {
   const classes = useStyles()
@@ -51,13 +40,7 @@ const Footer = () => {
         </Grid>
       </Grid>
 
-      <Grid container>
-        <Grid item xs={12} className={classes.content}>
-          <Typography>
-            &copy; Nikolai Kiselev {new Date().getFullYear()}
-          </Typography>
-        </Grid>
-      </Grid>
+      <FooterBar />
     </>
   )
 }
