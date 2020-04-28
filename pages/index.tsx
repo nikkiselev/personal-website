@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import styles from '../src/css/index.module.css'
@@ -6,19 +5,23 @@ import App from '../src/js/components/app'
 import Divider from '../src/js/components/divider'
 
 const Home = () => {
-  // useEffect(() => {
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'production') {
+      // @ts-ignore
+      window.dataLayer = window.dataLayer || []
 
-  //   if (process.env.NODE_ENV === 'production') {
-  //     window.dataLayer = window.dataLayer || [];
+      // @ts-ignore
+      function gtag() {
+        // @ts-ignore
+        dataLayer.push(arguments)
+      }
+      // @ts-ignore
+      gtag('js', new Date())
 
-  //     function gtag() {
-  //         dataLayer.push(arguments);
-  //     }
-  //     gtag('js', new Date());
-
-  //     gtag('config', 'UA-135544092-1');
-  //   }
-  // }, []);
+      // @ts-ignore
+      gtag('config', 'UA-135544092-1')
+    }
+  }, [])
 
   return (
     <App>
