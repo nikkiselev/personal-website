@@ -8,6 +8,7 @@ import {
   makeStyles,
   createStyles,
 } from '@material-ui/core'
+import PageDivider from '../js/components/PageDivider'
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -45,46 +46,50 @@ const Home = () => {
   }, [])
 
   return (
-    <Container>
-      <Grid container>
-        <Grid item xs={12} className={styles.subHeader}>
-          <Typography variant="h4" className={classes.title}>
-            Hi, I'm Nikolai
-          </Typography>
+    <>
+      <Container>
+        <Grid container>
+          <Grid item xs={12} className={styles.subHeader}>
+            <Typography variant="h4" className={classes.title}>
+              Hi, I'm Nikolai
+            </Typography>
 
-          <Typography variant="subtitle1" className={classes.subTitle}>
-            A full stack
-          </Typography>
-          <Typography variant="subtitle1" className={classes.subTitle}>
-            web developer
-          </Typography>
+            <Typography variant="subtitle1" className={classes.subTitle}>
+              A full stack
+            </Typography>
+            <Typography variant="subtitle1" className={classes.subTitle}>
+              web developer
+            </Typography>
+          </Grid>
         </Grid>
-      </Grid>
+      </Container>
 
-      <Divider />
+      <PageDivider />
 
-      <Grid container>
-        <Grid item xs={12} className={styles.intro}>
-          <img src="/images/screen_icon.png" className={styles.screen} />
-          <p>
-            I still remember writing small scripts and apps using Pascal when I
-            was 12 years old just for fun. Fast forward to today, I cannot see
-            myself doing anything else but web development.
-          </p>
-          <p>
-            As a full stack developer, I can build seamless & scalable web
-            applications, websites. Whether it’s from scratch or an existing
-            codebase, I’m ready to jump in.
-          </p>
-          <span className="secondary">
-            <img src="/images/pin_icon.png" className={styles.pin} />
-            Kuala Lumpur, Malaysia (GMT+8)
-          </span>
+      <Container>
+        <Grid container>
+          <Grid item xs={12} className={styles.intro}>
+            <img src="/images/screen_icon.png" className={styles.screen} />
+            <p>
+              I still remember writing small scripts and apps using Pascal when
+              I was 12 years old just for fun. Fast forward to today, I cannot
+              see myself doing anything else but web development.
+            </p>
+            <p>
+              As a full stack developer, I can build seamless & scalable web
+              applications, websites. Whether it’s from scratch or an existing
+              codebase, I’m ready to jump in.
+            </p>
+            <span className="secondary">
+              <img src="/images/pin_icon.png" className={styles.pin} />
+              Kuala Lumpur, Malaysia (GMT+8)
+            </span>
+          </Grid>
         </Grid>
-      </Grid>
+      </Container>
 
-      <Divider />
-    </Container>
+      <PageDivider />
+    </>
   )
 }
 
