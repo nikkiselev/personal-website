@@ -34,7 +34,7 @@ const Home = () => {
       <PageDivider />
 
       <Container>
-        <Grid container justify="center" alignItems="center">
+        <Grid container justify="center">
           <Avatar />
 
           <Grid item xs={12} className={classes.intro}>
