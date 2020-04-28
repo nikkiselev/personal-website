@@ -12,7 +12,7 @@ const Home = () => {
 
       <PageDivider />
 
-      <Container>
+      <Container maxWidth="sm">
         <Grid container justify="center">
           <Avatar />
 
