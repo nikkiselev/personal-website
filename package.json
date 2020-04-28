@@ -10,6 +10,11 @@
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss}\"",
     "lint:fix": "eslint \"{src,test,examples}/**/*.{ts,tsx}\" --fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run types:check && lint-staged"
+    }
+  },
   "lint-staged": {
     "*.{ts,tsx}": [
       "npm run lint:fix",
