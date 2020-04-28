@@ -6,6 +6,7 @@ import {
   Typography,
   makeStyles,
   createStyles,
+  Avatar,
 } from '@material-ui/core'
 import PageDivider from '../js/components/PageDivider'
 import SubHeader from '../js/components/SubHeader'
@@ -25,6 +26,10 @@ const useStyles = makeStyles(() =>
       height: '100%',
       display: 'flex',
       alignItems: 'center',
+    },
+    avatar: {
+      width: '100%',
+      height: 'auto',
     },
   })
 )
@@ -57,9 +62,12 @@ const Home = () => {
       <PageDivider />
 
       <Container>
-        <Grid container>
+        <Grid container justify="center" alignItems="center">
+          <Grid item xs={9}>
+            <Avatar src="/images/avatar.jpeg" className={classes.avatar} />
+          </Grid>
+
           <Grid item xs={12} className={styles.intro}>
-            <img src="/images/screen_icon.png" className={styles.screen} />
             <p>
               I still remember writing small scripts and apps using Pascal when
               I was 12 years old just for fun. Fast forward to today, I cannot
