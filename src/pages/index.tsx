@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '../src/css/index.module.css';
 import App from '../src/js/components/app';
+import Divider from '../src/js/components/divider';
 
 const Home = () => {
 
@@ -26,33 +27,21 @@ const Home = () => {
 
 
         <Container>
-            <Row >
-              <Col 
-                xs={12} 
-                className={styles.subHeader} 
-              >
-                <h1 className={styles.title}>Hi, I'm Nikolai</h1>
-                <h3 className={styles.subTitle}>A full stack </h3> 
-                <h3 className={styles.subTitle}>web developer</h3>
-              </Col>
+          <Row>
+            <Col 
+              xs={12} 
+              className={styles.subHeader} 
+            >
+              <h1 className={styles.title}>Hi, I'm Nikolai</h1>
+              <h3 className={styles.subTitle}>A full stack </h3> 
+              <h3 className={styles.subTitle}>web developer</h3>
+            </Col>
+          </Row>
+        </Container>
 
-              {/* <div className="col"></div> */}
+        <Divider/>
 
-
-                {/* <div className="avatar"></div> */}
-
-                
-                {/* <a href="mailto:nik@kiselev.dev">nik@kiselev.dev</a>
-
-                <div className="links">
-                    <a href="https://www.upwork.com/fl/nikolayk">Upwork</a>
-                    <a href="https://github.com/nikkiselev">GitHub</a>
-                    <a href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile">Stack
-                        Overflow</a>
-                </div> */}
-                {/* <p className="copyright">© 2019 Nikolai Kiselev</p> */}
-            </Row>
-
+        <Container>
             <Row>
               <Col 
                 xs={12} 
@@ -77,10 +66,14 @@ const Home = () => {
                   />
                   Kuala Lumpur, Malaysia (GMT+8)
                   </span>
-                  <hr className="divider"/>
+                  
               </Col>
             </Row>
+          </Container>
 
+          <Divider/>
+
+          <Container>
             <Row>
               <Col 
                 xs={12}

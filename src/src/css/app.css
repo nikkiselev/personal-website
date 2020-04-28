@@ -10,11 +10,6 @@ html body {
     color: #4129C6;
 }
 
-.divider {
-    margin: 55px 0;
-    border-top: 3px dashed #1f2020;
-}
-
 a, a:hover {
     color: #4129C6;
     font-size: 20px;
