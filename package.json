@@ -5,7 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "types:check": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss}\"",
+    "lint:fix": "eslint \"{src,test,examples}/**/*.{ts,tsx}\" --fix"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint:fix",
+      "npm run format",
+      "git add"
+    ]
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -17,6 +27,15 @@
   "devDependencies": {
     "@types/node": "^13.7.6",
     "@types/react-bootstrap": "^0.32.20",
-    "typescript": "^3.8.2"
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.6",
+    "prettier": "^2.0.4",
+    "typescript": "^3.8.3"
   }
 }
