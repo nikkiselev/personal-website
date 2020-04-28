@@ -1,27 +1,14 @@
-import { createStyles, makeStyles, Theme, Typography } from '@material-ui/core'
+import { Typography, Box } from '@material-ui/core'
 import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined'
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    icon: {
-      marginRight: theme.spacing(1),
-    },
-  })
-)
-
 const Location = () => {
-  const classes = useStyles()
-
   return (
-    <div className={classes.root}>
-      <RoomOutlinedIcon className={classes.icon} />
+    <Box display="flex" alignItems="center" justifyContent="center">
+      <Box mr={1} clone>
+        <RoomOutlinedIcon />
+      </Box>
       <Typography color="primary">Kuala Lumpur, Malaysia (GMT+8)</Typography>
-    </div>
+    </Box>
   )
 }
 
