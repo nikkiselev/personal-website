@@ -3,7 +3,6 @@ import styles from '../css/index.module.scss'
 import {
   Container,
   Grid,
-  Divider,
   Typography,
   makeStyles,
   createStyles,
@@ -20,6 +19,11 @@ const useStyles = makeStyles(() =>
     subTitle: {
       fontWeight: 'bold',
       letterSpacing: 7,
+    },
+    subHeader: {
+      height: '100%',
+      display: 'flex',
+      alignItems: 'center',
     },
   })
 )
@@ -47,7 +51,7 @@ const Home = () => {
 
   return (
     <>
-      <Container>
+      <Container className={classes.subHeader}>
         <Grid container>
           <Grid item xs={12} className={styles.subHeader}>
             <Typography variant="h4" className={classes.title}>
