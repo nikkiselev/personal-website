@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import styles from '../css/index.module.scss'
-import Divider from '../js/components/divider'
-import { Container, Grid } from '@material-ui/core'
+import { Container, Grid, Divider } from '@material-ui/core'
 
 const Home = () => {
   useEffect(() => {
