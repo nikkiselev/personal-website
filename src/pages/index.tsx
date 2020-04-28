@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <Container>
       <Grid container>
-        <Grid xs={12} className={styles.subHeader}>
+        <Grid item xs={12} className={styles.subHeader}>
           <h1 className={styles.title}>Hi, I'm Nikolai</h1>
           <h3 className={styles.subTitle}>A full stack </h3>
           <h3 className={styles.subTitle}>web developer</h3>
