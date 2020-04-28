@@ -8,6 +8,7 @@ import {
   createStyles,
 } from '@material-ui/core'
 import PageDivider from '../js/components/PageDivider'
+import SubHeader from '../js/components/SubHeader'
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -51,22 +52,7 @@ const Home = () => {
 
   return (
     <>
-      <Container className={classes.subHeader}>
-        <Grid container>
-          <Grid item xs={12} className={styles.subHeader}>
-            <Typography variant="h4" className={classes.title}>
-              Hi, I'm Nikolai
-            </Typography>
-
-            <Typography variant="subtitle1" className={classes.subTitle}>
-              A full stack
-            </Typography>
-            <Typography variant="subtitle1" className={classes.subTitle}>
-              web developer
-            </Typography>
-          </Grid>
-        </Grid>
-      </Container>
+      <SubHeader />
 
       <PageDivider />
 
