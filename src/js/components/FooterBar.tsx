@@ -1,9 +1,15 @@
-import { Grid, Typography, createStyles, makeStyles } from '@material-ui/core'
+import {
+  Grid,
+  Typography,
+  createStyles,
+  makeStyles,
+  Theme,
+} from '@material-ui/core'
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      marginTop: '65px',
+      marginTop: theme.spacing(8),
       backgroundColor: '#1f2020',
       color: 'white',
       height: '100px',
