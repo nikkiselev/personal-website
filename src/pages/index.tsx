@@ -1,8 +1,31 @@
 import { useEffect } from 'react'
 import styles from '../css/index.module.scss'
-import { Container, Grid, Divider } from '@material-ui/core'
+import {
+  Container,
+  Grid,
+  Divider,
+  Typography,
+  makeStyles,
+  createStyles,
+} from '@material-ui/core'
+
+const useStyles = makeStyles(() =>
+  createStyles({
+    title: {
+      fontWeight: 'bold',
+      fontSize: '26px',
+      marginBottom: '30px',
+    },
+    subTitle: {
+      fontWeight: 'bold',
+      letterSpacing: 7,
+    },
+  })
+)
 
 const Home = () => {
+  const classes = useStyles()
+
   useEffect(() => {
     if (process.env.NODE_ENV === 'production') {
       // @ts-ignore
@@ -25,9 +48,16 @@ const Home = () => {
     <Container>
       <Grid container>
         <Grid item xs={12} className={styles.subHeader}>
-          <h1 className={styles.title}>Hi, I'm Nikolai</h1>
-          <h3 className={styles.subTitle}>A full stack </h3>
-          <h3 className={styles.subTitle}>web developer</h3>
+          <Typography variant="h4" className={classes.title}>
+            Hi, I'm Nikolai
+          </Typography>
+
+          <Typography variant="subtitle1" className={classes.subTitle}>
+            A full stack
+          </Typography>
+          <Typography variant="subtitle1" className={classes.subTitle}>
+            web developer
+          </Typography>
         </Grid>
       </Grid>
 
