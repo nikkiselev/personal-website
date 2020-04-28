@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import styles from '../src/css/index.module.css'
-import App from '../src/js/components/app'
-import Divider from '../src/js/components/divider'
+import App from '../js/components/app'
+import Divider from '../js/components/divider'
 
 const Home = () => {
   useEffect(() => {
