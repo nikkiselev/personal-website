@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import {
   Container,
   Grid,
@@ -27,24 +26,6 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const Home = () => {
   const classes = useStyles()
-
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      // @ts-ignore
-      window.dataLayer = window.dataLayer || []
-
-      // @ts-ignore
-      function gtag() {
-        // @ts-ignore
-        dataLayer.push(arguments)
-      }
-      // @ts-ignore
-      gtag('js', new Date())
-
-      // @ts-ignore
-      gtag('config', 'UA-135544092-1')
-    }
-  }, [])
 
   return (
     <>

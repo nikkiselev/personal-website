@@ -9,6 +9,24 @@ import Footer from '../js/components/Footer'
 
 export default ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
+    if (process.env.NODE_ENV === 'production') {
+      // @ts-ignore
+      window.dataLayer = window.dataLayer || []
+
+      // @ts-ignore
+      function gtag() {
+        // @ts-ignore
+        dataLayer.push(arguments)
+      }
+      // @ts-ignore
+      gtag('js', new Date())
+
+      // @ts-ignore
+      gtag('config', 'UA-135544092-1')
+    }
+  }, [])
+
+  useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.getElementById('jss-server-side')
     if (jssStyles) {
