@@ -20,7 +20,7 @@ const Location = () => {
   return (
     <div className={classes.root}>
       <RoomOutlinedIcon className={classes.icon} />
-      <Typography>Kuala Lumpur, Malaysia (GMT+8)</Typography>
+      <Typography color="primary">Kuala Lumpur, Malaysia (GMT+8)</Typography>
     </div>
   )
 }
