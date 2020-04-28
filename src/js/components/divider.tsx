@@ -1,9 +1,9 @@
-import { Container } from 'react-bootstrap'
+import { Grid } from '@material-ui/core'
 
 const Divider: React.FC = () => (
-  <Container fluid className="p-0">
+  <Grid container className="p-0">
     <hr className="m-0" />
-  </Container>
+  </Grid>
 )
 
 export default Divider
