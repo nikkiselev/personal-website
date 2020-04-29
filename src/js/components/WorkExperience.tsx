@@ -17,15 +17,15 @@ type Props = {
 }
 
 const Job = ({
-  job: { role, company, from, to, country, responsibilities, skills },
+  job: { role, company, from, to, place, responsibilities, skills },
 }: Props) => (
-  <>
+  <Box mb={3}>
     <Typography variant="h5">{role}</Typography>
     <Typography variant="subtitle1">
-      {company}, {from}-{to}
+      {company}, {from} - {to}
     </Typography>
     <Typography variant="subtitle1" color="textSecondary">
-      {country}
+      {place}
     </Typography>
 
     <List>
@@ -37,10 +37,10 @@ const Job = ({
     </List>
     {skills.map((label: string) => (
       <Box mr={1} key={label} clone>
-        <Chip label={label} color="primary" />
+        <Chip label={label} color="primary" variant="outlined" />
       </Box>
     ))}
-  </>
+  </Box>
 )
 
 const WorkExperience = () => {

@@ -7,7 +7,7 @@ export type MenuItem = {
 export type Job = {
   role: string
   company: string
-  country: string
+  place: string
   from: number
   to: number | string
   responsibilities: string[]
