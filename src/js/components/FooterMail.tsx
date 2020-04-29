@@ -3,11 +3,7 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline'
 
 const FooterMail = () => {
   return (
-    <Box
-      display="flex"
-      alignItems="center"
-      justifyContent={{ xs: 'center', md: 'left' }}
-    >
+    <Box display="flex" alignItems="center" justifyContent={{ xs: 'center' }}>
       <Box mr={1} clone>
         <MailOutlineIcon />
       </Box>
