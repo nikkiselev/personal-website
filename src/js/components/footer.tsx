@@ -1,6 +1,7 @@
 import { Grid, Typography, Link, Box, Container } from '@material-ui/core'
 import FooterBar from './FooterBar'
 import FooterMail from './FooterMail'
+import PageSubTitle from './PageSubTitle'
 
 const itemSpacing = 1
 
@@ -12,11 +13,7 @@ const Footer = () => {
           <Box textAlign={{ xs: 'center', md: 'left' }}>
             <Grid item xs={12}>
               <Box my={itemSpacing}>
-                <Typography variant="h5">
-                  <Box fontWeight="bold" mb={1}>
-                    Work with me
-                  </Box>
-                </Typography>
+                <PageSubTitle text="Work with me" />
 
                 <Typography variant="body1">
                   I'm a practical person so if you have a cool project to work
