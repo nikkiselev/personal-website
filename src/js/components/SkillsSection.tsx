@@ -17,7 +17,7 @@ const SkilsSection = () => (
         </Typography>
 
         <Grid container>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Skills />
           </Grid>
         </Grid>

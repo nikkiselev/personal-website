@@ -13,12 +13,14 @@ type Props = {
 }
 
 const SkillItem = (props: Props) => {
+  const { name, years } = props.skill
+
+  const text = `${years} year${years > 1 ? 's' : ''}`
+
   return (
     <ListItem>
-      <ListItemText primary={props.skill.name} />
-      <ListItemSecondaryAction>
-        {props.skill.years} years
-      </ListItemSecondaryAction>
+      <ListItemText primary={name} />
+      <ListItemSecondaryAction>{text}</ListItemSecondaryAction>
     </ListItem>
   )
 }
