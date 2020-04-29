@@ -6,10 +6,8 @@ import {
   Box,
   createStyles,
   makeStyles,
-  Grid,
-  Tabs,
 } from '@material-ui/core'
-import MenuItem from './MenuItem'
+import MobileMenu from './MobileMenu'
 
 const useStyles = makeStyles(() => createStyles({}))
 
@@ -28,17 +26,7 @@ const Header = () => {
         </Box>
       </Toolbar>
 
-      <Box display={{ xs: 'block', md: 'none' }}>
-        <Toolbar>
-          <Box flexGrow={1}>
-            <Tabs value={0} variant="fullWidth">
-              <MenuItem text="About" />
-              <MenuItem text="Work experience" />
-              <MenuItem text="Work with me" />
-            </Tabs>
-          </Box>
-        </Toolbar>
-      </Box>
+      <MobileMenu />
     </AppBar>
   )
 }
