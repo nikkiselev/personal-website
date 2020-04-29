@@ -4,12 +4,16 @@ import {
   Typography,
   makeStyles,
   createStyles,
+  Theme,
+  Box,
 } from '@material-ui/core'
+import Avatar from './Avatar'
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      height: '100%',
+      // height: '100%',
+      marginTop: theme.spacing(5),
       display: 'flex',
       alignItems: 'center',
       textTransform: 'uppercase',
@@ -17,7 +21,7 @@ const useStyles = makeStyles(() =>
     },
     title: {
       fontWeight: 'bold',
-      marginBottom: '30px',
+      // marginBottom: '30px',
     },
     subTitle: {
       fontWeight: 'bold',
@@ -36,6 +40,10 @@ const SubHeader = () => {
           <Typography variant="h4" className={classes.title}>
             Hi, I'm Nikolai
           </Typography>
+
+          <Box display="flex" justifyContent="center" marginY={3}>
+            <Avatar />
+          </Box>
 
           <Typography variant="subtitle1" className={classes.subTitle}>
             A Full Stack

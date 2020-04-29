@@ -1,7 +1,6 @@
 import { Container, Grid, Typography, Box } from '@material-ui/core'
 import PageDivider from '../js/components/PageDivider'
 import SubHeader from '../js/components/SubHeader'
-import Avatar from '../js/components/Avatar'
 
 import Location from '../js/components/Location'
 import SkillsSection from '../js/components/SkillsSection'
@@ -15,8 +14,6 @@ const Home = () => {
 
       <Container maxWidth="sm">
         <Grid container justify="center">
-          <Avatar />
-
           <Box textAlign="center" mt={5}>
             <Grid item xs={12}>
               <Typography variant="body1">
