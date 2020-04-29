@@ -5,7 +5,7 @@ type Props = {
 }
 export default (props: Props) => (
   <Typography variant="h3">
-    <Box fontWeight="bold" mb={5}>
+    <Box fontWeight="bold" textAlign="center" mb={5}>
       {props.text}
     </Box>
   </Typography>

@@ -11,6 +11,7 @@ import {
 import PageSubTitle from './PageSubTitle'
 import jobs from '../../data/jobs'
 import { Job as JobType } from '../../types'
+import PageSection from './PageSection'
 
 type Props = {
   job: JobType
@@ -45,17 +46,19 @@ const Job = ({
 
 const WorkExperience = () => {
   return (
-    <Container maxWidth="md">
-      <Grid container>
-        <Grid item xs={12}>
-          <PageSubTitle text="Work Experience" />
+    <PageSection>
+      <Container maxWidth="md">
+        <Grid container>
+          <Grid item xs={12}>
+            <PageSubTitle text="Work Experience" />
 
-          {jobs.map((job: any) => (
-            <Job job={job} key={job.company} />
-          ))}
+            {jobs.map((job: any) => (
+              <Job job={job} key={job.company} />
+            ))}
+          </Grid>
         </Grid>
-      </Grid>
-    </Container>
+      </Container>
+    </PageSection>
   )
 }
 

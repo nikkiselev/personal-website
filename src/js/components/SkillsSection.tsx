@@ -9,28 +9,30 @@ import {
 } from '@material-ui/core'
 import PageSubTitle from './PageSubTitle'
 import Skills from './Skills'
+import PageSection from './PageSection'
 
 const year = 2014
 const years = new Date().getFullYear() - year
 
 const SkilsSection = () => (
-  <Container maxWidth="md">
-    <Grid container>
-      <Grid item xs={12}>
-        <Box textAlign={{ xs: 'center' }}>
-          <PageSubTitle text="Skill Set" />
+  <PageSection>
+    <Container maxWidth="md">
+      <Grid container>
+        <Grid item xs={12}>
+          <Box textAlign={{ xs: 'center' }}>
+            <PageSubTitle text="Skill Set" />
 
-          <Typography>
-            These are the skills I've picked up over my {years} years as a
-            professional developer.
-          </Typography>
+            <Typography>
+              These are the skills I've picked up over my {years} years as a
+              professional developer.
+            </Typography>
 
-          <Grid container justify="center">
-            <Grid item xs={12} sm={6}>
-              <Skills />
-            </Grid>
+            <Grid container justify="center">
+              <Grid item xs={12} sm={6}>
+                <Skills />
+              </Grid>
 
-            {/* <Grid item xs={12} sm={6}>
+              {/* <Grid item xs={12} sm={6}>
 
               <List>
                 <ListSubheader>Other things I’m familiar with:</ListSubheader>
@@ -58,11 +60,12 @@ const SkilsSection = () => (
               Project management - AGILE, Jira, Trello
               Github Pages, Vercel (Zeit) Now.
             </Grid> */}
-          </Grid>
-        </Box>
+            </Grid>
+          </Box>
+        </Grid>
       </Grid>
-    </Grid>
-  </Container>
+    </Container>
+  </PageSection>
 )
 
 export default SkilsSection

@@ -9,6 +9,7 @@ import {
 } from '@material-ui/core'
 import Avatar from './Avatar'
 import SubHeaderActions from './SubHeaderActions'
+import PageSection from './PageSection'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -39,36 +40,42 @@ const SubHeader = () => {
   const classes = useStyles()
 
   return (
-    <Container className={classes.root} maxWidth="md">
-      <Grid container justify="center" alignItems="center">
-        <Grid item xs={12} md={6}>
-          <Typography variant="h2">
-            <Box fontWeight="bold">Hi, I'm Nikolai</Box>
-          </Typography>
+    <PageSection>
+      <Container className={classes.root} maxWidth="md">
+        <Grid container justify="center" alignItems="center">
+          <Grid item xs={12} md={6}>
+            <Typography variant="h2">
+              <Box fontWeight="bold">Hi, I'm Nikolai</Box>
+            </Typography>
+
+            <Box
+              display={{ xs: 'flex', md: 'none' }}
+              justifyContent="center"
+              my={3}
+            >
+              <Avatar />
+            </Box>
+
+            <SubTitle text="A Full Stack" />
+            <SubTitle text="Web Developer" />
+
+            <Box mt={3}>
+              <SubHeaderActions />
+            </Box>
+          </Grid>
 
           <Box
-            display={{ xs: 'flex', md: 'none' }}
+            display={{ xs: 'none', md: 'flex' }}
             justifyContent="center"
-            marginY={3}
+            clone
           >
-            <Avatar />
-          </Box>
-
-          <SubTitle text="A Full Stack" />
-          <SubTitle text="Web Developer" />
-
-          <Box mt={3}>
-            <SubHeaderActions />
+            <Grid item xs={12} md={6}>
+              <Avatar />
+            </Grid>
           </Box>
         </Grid>
-
-        <Box display={{ xs: 'none', md: 'flex' }} justifyContent="center" clone>
-          <Grid item xs={12} md={6}>
-            <Avatar />
-          </Grid>
-        </Box>
-      </Grid>
-    </Container>
+      </Container>
+    </PageSection>
   )
 }
 
