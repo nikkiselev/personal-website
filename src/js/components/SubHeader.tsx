@@ -6,7 +6,6 @@ import {
   createStyles,
   Theme,
   Box,
-  Button,
 } from '@material-ui/core'
 import Avatar from './Avatar'
 import SubHeaderActions from './SubHeaderActions'
@@ -21,15 +20,19 @@ const useStyles = makeStyles((theme: Theme) =>
       textTransform: 'uppercase',
       textAlign: 'center',
     },
-    title: {
-      fontWeight: 'bold',
-      // marginBottom: '30px',
-    },
-    subTitle: {
-      fontWeight: 'bold',
-      letterSpacing: 7,
-    },
   })
+)
+
+type SubTitle = {
+  text: string
+}
+
+const SubTitle = (props: SubTitle) => (
+  <Typography variant="subtitle1">
+    <Box fontWeight="bold" letterSpacing={5}>
+      {props.text}
+    </Box>
+  </Typography>
 )
 
 const SubHeader = () => {
@@ -39,20 +42,16 @@ const SubHeader = () => {
     <Container className={classes.root}>
       <Grid container>
         <Grid item xs={12}>
-          <Typography variant="h4" className={classes.title}>
-            Hi, I'm Nikolai
+          <Typography variant="h4">
+            <Box fontWeight="bold">Hi, I'm Nikolai</Box>
           </Typography>
 
           <Box display="flex" justifyContent="center" marginY={3}>
             <Avatar />
           </Box>
 
-          <Typography variant="subtitle1" className={classes.subTitle}>
-            A Full Stack
-          </Typography>
-          <Typography variant="subtitle1" className={classes.subTitle}>
-            Web Developer
-          </Typography>
+          <SubTitle text="A Full Stack" />
+          <SubTitle text="Web Developer" />
 
           <Box mt={3}>
             <SubHeaderActions />
