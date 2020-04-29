@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from '@material-ui/core'
+import { Container, Grid, Typography, Box } from '@material-ui/core'
 import PageSubTitle from './PageSubTitle'
 import Skills from './Skills'
 
@@ -9,18 +9,20 @@ const SkilsSection = () => (
   <Container maxWidth="md">
     <Grid container>
       <Grid item xs>
-        <PageSubTitle text="Skill Set" />
+        <Box textAlign={{ xs: 'center' }}>
+          <PageSubTitle text="Skill Set" />
 
-        <Typography>
-          These are the skills I've picked up over my {years} years as a
-          professional developer.
-        </Typography>
+          <Typography>
+            These are the skills I've picked up over my {years} years as a
+            professional developer.
+          </Typography>
 
-        <Grid container>
-          <Grid item xs={12} sm={6} md={4}>
-            <Skills />
+          <Grid container justify="center">
+            <Grid item xs={12} sm={6} md={4}>
+              <Skills />
+            </Grid>
           </Grid>
-        </Grid>
+        </Box>
       </Grid>
     </Grid>
   </Container>
