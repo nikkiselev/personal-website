@@ -4,6 +4,7 @@ import SubHeader from '../js/components/SubHeader'
 
 import Location from '../js/components/Location'
 import SkillsSection from '../js/components/SkillsSection'
+import WorkExperience from '../js/components/WorkExperience'
 
 const Home = () => {
   return (
@@ -42,6 +43,9 @@ const Home = () => {
 
       <SkillsSection />
 
+      <PageDivider />
+
+      <WorkExperience />
       <PageDivider />
     </>
   )
