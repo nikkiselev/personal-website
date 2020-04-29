@@ -3,7 +3,11 @@ import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined'
 
 const Location = () => {
   return (
-    <Box display="flex" alignItems="center" justifyContent="center">
+    <Box
+      display="flex"
+      alignItems="center"
+      justifyContent={{ xs: 'center', md: 'start' }}
+    >
       <Box mr={1} clone>
         <RoomOutlinedIcon />
       </Box>

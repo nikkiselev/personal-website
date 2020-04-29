@@ -12,9 +12,9 @@ const Home = () => {
 
       <PageDivider />
 
-      <Container maxWidth="sm">
-        <Grid container justify="center">
-          <Box textAlign="center" mt={5}>
+      <Container maxWidth="md">
+        <Grid container>
+          <Box textAlign={{ xs: 'center', md: 'left' }}>
             <Grid item xs={12}>
               <Typography variant="body1">
                 I still remember writing small scripts and apps using Pascal
