@@ -6,11 +6,11 @@ const menu: MenuItem[] = [
     label: 'About',
     href: '/',
   },
-  {
-    id: 2,
-    label: 'Work experience',
-    href: '/',
-  },
+  // {
+  //   id: 2,
+  //   label: 'Work experience',
+  //   href: '/',
+  // },
   {
     id: 3,
     label: 'Work with me',
