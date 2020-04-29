@@ -1,12 +1,4 @@
-import {
-  Container,
-  Grid,
-  Typography,
-  Box,
-  List,
-  ListSubheader,
-  ListItem,
-} from '@material-ui/core'
+import { Container, Grid, Typography, Box } from '@material-ui/core'
 import PageSubTitle from './PageSubTitle'
 import Skills from './Skills'
 import PageSection from './PageSection'
