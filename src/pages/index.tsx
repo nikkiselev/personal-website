@@ -16,9 +16,9 @@ const Home = () => {
 
       <PageSection>
         <Container maxWidth="md">
-          <Grid container>
-            <Box textAlign={{ xs: 'center', md: 'left' }}>
-              <Grid item xs={12}>
+          <Grid container justify="center">
+            <Box textAlign={{ xs: 'center' }} clone>
+              <Grid item xs={12} md={9}>
                 <Typography variant="body1">
                   I still remember writing small scripts and apps using Pascal
                   when I was 12 years old just for fun. Fast forward to today, I
