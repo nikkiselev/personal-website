@@ -42,7 +42,7 @@ const SubHeader = () => {
     <Container className={classes.root} maxWidth="md">
       <Grid container justify="center" alignItems="center">
         <Grid item xs={12} md={6}>
-          <Typography variant="h4">
+          <Typography variant="h2">
             <Box fontWeight="bold">Hi, I'm Nikolai</Box>
           </Typography>
 
