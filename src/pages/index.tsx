@@ -4,6 +4,7 @@ import SubHeader from '../js/components/SubHeader'
 import Avatar from '../js/components/Avatar'
 
 import Location from '../js/components/Location'
+import SkillsSection from '../js/components/SkillsSection'
 
 const Home = () => {
   return (
@@ -39,6 +40,10 @@ const Home = () => {
           </Box>
         </Grid>
       </Container>
+
+      <PageDivider />
+
+      <SkillsSection />
 
       <PageDivider />
     </>
