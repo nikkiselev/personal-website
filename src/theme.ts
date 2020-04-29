@@ -4,6 +4,9 @@ import { deepPurple } from '@material-ui/core/colors'
 const theme = createMuiTheme({
   palette: {
     primary: deepPurple,
+    background: {
+      default: 'white',
+    },
   },
   typography: {
     fontFamily: '"Ubuntu", "Helvetica", "Arial", sans-serif',
