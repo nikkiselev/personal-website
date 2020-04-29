@@ -1,30 +1,15 @@
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Box,
-  createStyles,
-  makeStyles,
-} from '@material-ui/core'
+import { AppBar, Toolbar } from '@material-ui/core'
 import MobileMenu from './MobileMenu'
 import DesktopMenu from './DesktopMenu'
-
-const useStyles = makeStyles(() => createStyles({}))
+import Logo from './Logo'
 
 const Header = () => {
-  const classes = useStyles()
-
   return (
     <AppBar color="default" position="absolute">
       <Toolbar>
-        <Box flexGrow={1}>
-          <Typography variant="h6">kiselev.dev</Typography>
-        </Box>
-
+        <Logo />
         <DesktopMenu />
       </Toolbar>
-
       <MobileMenu />
     </AppBar>
   )
