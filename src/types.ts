@@ -3,3 +3,9 @@ export type MenuItem = {
   label: string
   href: string
 }
+
+export type Skill = {
+  id: number
+  name: string
+  years: number
+}
