@@ -26,7 +26,7 @@ const SkillItem = (props: Props) => {
 }
 
 export default () => (
-  <List dense>
+  <List>
     {skills.map((skill: Skill) => (
       <SkillItem skill={skill} key={skill.id} />
     ))}

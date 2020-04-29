@@ -15,7 +15,7 @@ const FooterBar = () => {
         >
           <Grid item xs={12}>
             <Typography component="div">
-              &copy; Nikolai Kiselev {new Date().getFullYear()}
+              Copyright &copy; {new Date().getFullYear()} Nikolai Kiselev
             </Typography>
           </Grid>
         </Box>

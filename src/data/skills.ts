@@ -29,7 +29,7 @@ const skills: Skill[] = [
   },
   {
     id: 6,
-    name: 'MySQL / Relational databases',
+    name: 'MySQL',
     years: 8,
   },
   {
