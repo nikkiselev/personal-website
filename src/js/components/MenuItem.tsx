@@ -1,11 +1,19 @@
-import { Grid, Button, makeStyles, createStyles } from '@material-ui/core'
+import {
+  Grid,
+  Button,
+  makeStyles,
+  createStyles,
+  Box,
+  Typography,
+  Tab,
+} from '@material-ui/core'
 
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
       textAlign: 'center',
     },
-    button: {
+    tab: {
       textTransform: 'initial',
     },
   })
@@ -20,9 +28,7 @@ const MenuItem = (props: MenuItemProps) => {
 
   return (
     <Grid item xs={4} className={classes.root}>
-      <Button href="/" className={classes.button}>
-        {props.text}
-      </Button>
+      <Tab label={props.text} className={classes.tab} />
     </Grid>
   )
 }
