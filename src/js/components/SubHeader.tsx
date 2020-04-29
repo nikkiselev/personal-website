@@ -39,14 +39,18 @@ const SubHeader = () => {
   const classes = useStyles()
 
   return (
-    <Container className={classes.root}>
-      <Grid container>
-        <Grid item xs={12}>
+    <Container className={classes.root} maxWidth="md">
+      <Grid container justify="center" alignItems="center">
+        <Grid item xs={12} md={6}>
           <Typography variant="h4">
             <Box fontWeight="bold">Hi, I'm Nikolai</Box>
           </Typography>
 
-          <Box display="flex" justifyContent="center" marginY={3}>
+          <Box
+            display={{ xs: 'flex', md: 'none' }}
+            justifyContent="center"
+            marginY={3}
+          >
             <Avatar />
           </Box>
 
@@ -57,6 +61,12 @@ const SubHeader = () => {
             <SubHeaderActions />
           </Box>
         </Grid>
+
+        <Box display={{ xs: 'none', md: 'flex' }} justifyContent="center" clone>
+          <Grid item xs={12} md={6}>
+            <Avatar />
+          </Grid>
+        </Box>
       </Grid>
     </Container>
   )
