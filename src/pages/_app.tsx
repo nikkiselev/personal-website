@@ -6,6 +6,7 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../theme'
 import '../css/app.css'
 import Footer from '../js/components/Footer'
+import Header from '../js/components/Header'
 
 export default ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -50,6 +51,7 @@ export default ({ Component, pageProps }: AppProps) => {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
+        <Header />
         <Component {...pageProps} />
         <Footer />
       </ThemeProvider>
