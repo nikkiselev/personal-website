@@ -1,7 +1,12 @@
 import { Box } from '@material-ui/core'
 
+const padding = 20
 const PageSection = (props: any) => (
-  <Box py={20} clone>
+  <Box
+    py={padding}
+    pb={props.noPb ? 0 : padding}
+    bgcolor={props.gray ? '#fafafa' : ''}
+  >
     {props.children}
   </Box>
 )

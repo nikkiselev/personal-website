@@ -2,7 +2,7 @@ import { Grid, Typography, Box } from '@material-ui/core'
 
 const FooterBar = () => {
   return (
-    <Box mt={8}>
+    <Box>
       <Grid container>
         <Box
           display="flex"

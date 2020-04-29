@@ -46,7 +46,7 @@ const Job = ({
 
 const WorkExperience = () => {
   return (
-    <PageSection>
+    <PageSection gray>
       <Container maxWidth="md">
         <Grid container>
           <Grid item xs={12}>

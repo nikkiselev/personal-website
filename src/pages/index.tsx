@@ -14,7 +14,7 @@ const Home = () => {
 
       {/* <PageDivider /> */}
 
-      <PageSection>
+      <PageSection gray>
         <Container maxWidth="md">
           <Grid container justify="center">
             <Box textAlign={{ xs: 'center' }} clone>

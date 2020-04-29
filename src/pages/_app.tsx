@@ -7,6 +7,7 @@ import theme from '../theme'
 import '../css/app.css'
 import Footer from '../js/components/Footer'
 import Header from '../js/components/Header'
+import FooterBar from '../js/components/FooterBar'
 
 export default ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -54,6 +55,7 @@ export default ({ Component, pageProps }: AppProps) => {
         <Header />
         <Component {...pageProps} />
         <Footer />
+        <FooterBar />
       </ThemeProvider>
     </>
   )
