@@ -9,26 +9,16 @@ import {
   Box,
 } from '@material-ui/core'
 import PageSubTitle from './PageSubTitle'
+import jobs from '../../data/jobs'
 
-const jobs = [
-  {
-    role: 'Full Stack Web Developer',
-    company: 'ITConstruct',
-    from: 2014,
-    to: 2015,
-    responsibilities: [
-      'Developed e-commerce websites',
-      'Provided tech customer support',
-    ],
-    skills: ['Javascript', 'PHP', 'MySQL', 'jQuery', 'CSS', 'BEM', 'CMS'],
-  },
-]
-
-const WorkExperienceItem = (props: any) => (
+const Job = (props: any) => (
   <>
     <Typography variant="h5">{props.job.role}</Typography>
     <Typography variant="subtitle1">
       {props.job.company}, {props.job.from}-{props.job.to}
+    </Typography>
+    <Typography variant="subtitle1" color="textSecondary">
+      {props.job.country}
     </Typography>
 
     <List>
@@ -54,7 +44,7 @@ const WorkExperience = () => {
           <PageSubTitle text="Work Experience" />
 
           {jobs.map((job: any) => (
-            <WorkExperienceItem job={job} key={job.company} />
+            <Job job={job} key={job.company} />
           ))}
         </Grid>
       </Grid>
