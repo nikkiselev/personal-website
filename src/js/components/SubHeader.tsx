@@ -6,8 +6,10 @@ import {
   createStyles,
   Theme,
   Box,
+  Button,
 } from '@material-ui/core'
 import Avatar from './Avatar'
+import SubHeaderActions from './SubHeaderActions'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -51,6 +53,10 @@ const SubHeader = () => {
           <Typography variant="subtitle1" className={classes.subTitle}>
             Web Developer
           </Typography>
+
+          <Box mt={3}>
+            <SubHeaderActions />
+          </Box>
         </Grid>
       </Grid>
     </Container>
