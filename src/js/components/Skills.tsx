@@ -1,13 +1,18 @@
-import { Grid } from '@material-ui/core'
 import React from 'react'
-import categories from '../../data/skills'
+import { Grid } from '@material-ui/core'
+
 import { Category } from '../../types'
 import SkillsCategory from './SkillsCategory'
+import categories from '../../data/skills'
 
-export default () => (
-  <Grid container spacing={5}>
-    {categories.map((category: Category) => (
-      <SkillsCategory category={category} key={category.name} />
-    ))}
-  </Grid>
-)
+export default () => {
+  const items = categories.map((item: Category) => (
+    <SkillsCategory category={item} key={item.name} />
+  ))
+
+  return (
+    <Grid container spacing={5}>
+      {items}
+    </Grid>
+  )
+}
