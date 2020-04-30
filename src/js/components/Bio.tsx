@@ -16,14 +16,13 @@ export default () => (
       <Grid container justify="center">
         <Box textAlign={{ xs: 'center' }} clone>
           <Grid item xs={12} md={9}>
-            <Typography variant="body1">{text1}</Typography>
-
+            <Typography variant="body1" component="p">
+              {text1}
+            </Typography>
             <br />
-
-            <Box mb={3}>
-              <Typography variant="body1">{text2}</Typography>
-            </Box>
-
+            <Typography variant="body1" component="p">
+              {text2}
+            </Typography>
             <Location />
           </Grid>
         </Box>
