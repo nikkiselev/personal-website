@@ -4,7 +4,7 @@ const jobs: Job[] = [
   {
     role: 'Full Stack Web Developer',
     company: 'ITConstruct',
-    country: 'Russia',
+    place: 'Russia',
     from: 2014,
     to: 2015,
     responsibilities: [
