@@ -1,17 +1,28 @@
-import { Box } from '@material-ui/core'
+import { Box, makeStyles, createStyles } from '@material-ui/core'
 import theme from '../../theme'
 
-const padding = 20
-const color: any = theme.palette.primary
+type Props = {
+  noPb?: boolean
+  withBg?: boolean
+}
 
-const PageSection = (props: any) => (
-  <Box
-    py={padding}
-    pb={props.noPb ? 0 : padding}
-    bgcolor={props.withBg ? color['50'] : ''}
-  >
-    {props.children}
-  </Box>
+const padding = theme.spacing(20)
+const color = theme.palette.primary.main
+
+const useStyles = makeStyles(() =>
+  createStyles({
+    root: {
+      paddingTop: padding,
+      backgroundColor: (props: Props) => (props.withBg ? color : ''),
+      paddingBottom: (props: Props) => (props.noPb ? 0 : padding),
+    },
+  })
 )
+
+const PageSection = (props: any) => {
+  const classes = useStyles(props)
+
+  return <Box className={classes.root}>{props.children}</Box>
+}
 
 export default PageSection
