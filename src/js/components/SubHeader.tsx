@@ -14,7 +14,6 @@ import PageSection from './PageSection'
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      // height: '100%',
       marginTop: theme.spacing(5),
       display: 'flex',
       alignItems: 'center',
