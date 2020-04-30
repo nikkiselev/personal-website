@@ -7,7 +7,7 @@ const year = 2014
 const years = new Date().getFullYear() - year
 
 const SkilsSection = () => (
-  <PageSection gray>
+  <PageSection withBg>
     <Container maxWidth="lg">
       <Grid container>
         <Grid item xs={12}>

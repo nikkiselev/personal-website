@@ -11,7 +11,7 @@ const text = `I'm a practical person so if you have a cool project to work
 
 const PageFooter = () => {
   return (
-    <PageSection gray>
+    <PageSection withBg>
       <Box>
         <Container maxWidth="md">
           <Grid container>
@@ -46,7 +46,6 @@ const PageFooter = () => {
         </Container>
       </Box>
     </PageSection>
-    // <FooterBar />
   )
 }
 

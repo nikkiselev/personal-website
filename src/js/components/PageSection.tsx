@@ -8,7 +8,7 @@ const PageSection = (props: any) => (
   <Box
     py={padding}
     pb={props.noPb ? 0 : padding}
-    bgcolor={props.gray ? color['50'] : ''}
+    bgcolor={props.withBg ? color['50'] : ''}
   >
     {props.children}
   </Box>
