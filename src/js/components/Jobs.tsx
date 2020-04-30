@@ -44,7 +44,7 @@ const Job = ({
   </Box>
 )
 
-const WorkExperience = () => {
+const Jobs = () => {
   return (
     <PageSection>
       <Container maxWidth="md">
@@ -62,4 +62,4 @@ const WorkExperience = () => {
   )
 }
 
-export default WorkExperience
+export default Jobs

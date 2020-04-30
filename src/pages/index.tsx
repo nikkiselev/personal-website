@@ -4,7 +4,7 @@ import SubHeader from '../js/components/SubHeader'
 
 import Location from '../js/components/Location'
 import SkillsSection from '../js/components/SkillsSection'
-import WorkExperience from '../js/components/WorkExperience'
+import Jobs from '../js/components/Jobs'
 import PageSection from '../js/components/PageSection'
 
 const Home = () => {
@@ -48,7 +48,7 @@ const Home = () => {
 
       {/* <PageDivider /> */}
 
-      <WorkExperience />
+      <Jobs />
       {/* <PageDivider /> */}
     </>
   )
