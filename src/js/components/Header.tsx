@@ -5,7 +5,7 @@ import Logo from './Logo'
 
 const Header = () => {
   return (
-    <AppBar color="default" position="static">
+    <AppBar color="secondary" position="static">
       <Container maxWidth="md">
         <Toolbar>
           <Logo />

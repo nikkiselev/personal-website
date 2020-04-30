@@ -1,12 +1,16 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
-import { deepPurple } from '@material-ui/core/colors'
+import { teal } from '@material-ui/core/colors'
 
 const theme = createMuiTheme({
   palette: {
-    primary: deepPurple,
-    // secondary:
+    primary: teal,
+    secondary: {
+      main: '#fff',
+      light: '#fff',
+      dark: '#fff',
+    },
     background: {
-      default: 'white',
+      default: '#fff',
     },
   },
   typography: {

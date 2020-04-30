@@ -12,7 +12,9 @@ export default () => (
 
     <Grid item xs={12} sm={6}>
       <Box clone width="100%">
-        <Button variant="contained">View Skills</Button>
+        <Button variant="contained" color="secondary">
+          View Skills
+        </Button>
       </Box>
     </Grid>
   </Grid>

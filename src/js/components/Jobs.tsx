@@ -37,8 +37,8 @@ const Job = ({
       ))}
     </List>
     {skills.map((label: string) => (
-      <Box mr={1} key={label} clone>
-        <Chip label={label} color="primary" variant="outlined" />
+      <Box m={0.5} key={label} clone>
+        <Chip size="small" label={label} color="primary" variant="outlined" />
       </Box>
     ))}
   </Box>
