@@ -1,0 +1,60 @@
+import { Category } from '../../types'
+import {
+  Grid,
+  Box,
+  Card,
+  CardHeader,
+  CardContent,
+  Divider,
+  CardActions,
+  Chip,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemSecondaryAction,
+} from '@material-ui/core'
+
+type Props = {
+  category: Category
+}
+
+const SkillsCategory = (props: Props) => {
+  return (
+    <Grid item xs={12} sm={6} lg={4}>
+      <Box height="100%" clone>
+        <Card>
+          <CardHeader title={props.category.name} />
+          <CardContent>
+            <List dense>
+              {props.category.skills.map((skill: any) => (
+                <ListItem>
+                  <ListItemText>{skill.name}</ListItemText>
+                  <ListItemSecondaryAction>
+                    {skill.years} year{skill.years > 1 ? 's' : ''}
+                  </ListItemSecondaryAction>
+                </ListItem>
+              ))}
+            </List>
+            <Divider />
+          </CardContent>
+          <CardActions>
+            <Box textAlign="left">
+              {props.category.misc?.map((i: string) => (
+                <Box m={0.5} textAlign="left" clone>
+                  <Chip
+                    size="small"
+                    label={i}
+                    variant={'outlined'}
+                    color="primary"
+                  />
+                </Box>
+              ))}
+            </Box>
+          </CardActions>
+        </Card>
+      </Box>
+    </Grid>
+  )
+}
+
+export default SkillsCategory
