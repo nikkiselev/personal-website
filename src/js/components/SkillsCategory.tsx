@@ -5,14 +5,11 @@ import {
   Card,
   CardHeader,
   CardContent,
-  Divider,
-  CardActions,
   Chip,
   List,
   ListItem,
   ListItemText,
   ListItemSecondaryAction,
-  ListSubheader,
 } from '@material-ui/core'
 
 type Props = {
@@ -27,7 +24,6 @@ const SkillsCategory = (props: Props) => {
           <CardHeader title={props.category.name} />
           <CardContent>
             <List dense>
-              {/* <ListSubheader>Main</ListSubheader> */}
               {props.category.skills.map((skill: any) => (
                 <ListItem>
                   <ListItemText>{skill.name}</ListItemText>
@@ -37,9 +33,6 @@ const SkillsCategory = (props: Props) => {
                 </ListItem>
               ))}
             </List>
-            {/* <Divider /> */}
-          </CardContent>
-          <CardActions>
             <Box textAlign="left">
               {props.category.misc?.map((i: string) => (
                 <Box m={0.5} textAlign="left" clone>
@@ -52,7 +45,7 @@ const SkillsCategory = (props: Props) => {
                 </Box>
               ))}
             </Box>
-          </CardActions>
+          </CardContent>
         </Card>
       </Box>
     </Grid>
