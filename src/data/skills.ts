@@ -77,11 +77,6 @@ const storages: Skill[] = [
 
 const other: Skill[] = [
   {
-    name: 'Full Stack web developer',
-    years: 6,
-  },
-
-  {
     name: 'Building REST APIs',
     years: 3,
   },
@@ -95,7 +90,7 @@ export default [
   {
     name: 'Languages',
     skills: languages,
-    misc: ['TDD', 'SOLID', 'DRY', 'YAGNI', 'KISS'],
+    // misc: ['TDD', 'SOLID', 'DRY', 'YAGNI', 'KISS'],
   },
   {
     name: 'Front End',
@@ -127,6 +122,6 @@ export default [
   {
     name: 'Other',
     skills: other,
-    misc: ['AGILE', 'Jira', 'Trello'],
+    misc: ['AGILE', 'Jira', 'Trello', 'TDD', 'SOLID', 'DRY', 'YAGNI', 'KISS'],
   },
 ]

@@ -12,6 +12,7 @@ import {
   ListItem,
   ListItemText,
   ListItemSecondaryAction,
+  ListSubheader,
 } from '@material-ui/core'
 
 type Props = {
@@ -21,11 +22,12 @@ type Props = {
 const SkillsCategory = (props: Props) => {
   return (
     <Grid item xs={12} sm={6} lg={4}>
-      <Box height="100%" clone>
+      <Box height="100%" textAlign="left" clone>
         <Card>
           <CardHeader title={props.category.name} />
           <CardContent>
             <List dense>
+              {/* <ListSubheader>Main</ListSubheader> */}
               {props.category.skills.map((skill: any) => (
                 <ListItem>
                   <ListItemText>{skill.name}</ListItemText>
@@ -35,7 +37,7 @@ const SkillsCategory = (props: Props) => {
                 </ListItem>
               ))}
             </List>
-            <Divider />
+            {/* <Divider /> */}
           </CardContent>
           <CardActions>
             <Box textAlign="left">
