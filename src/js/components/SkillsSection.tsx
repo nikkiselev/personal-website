@@ -7,8 +7,8 @@ const year = 2014
 const years = new Date().getFullYear() - year
 
 const SkilsSection = () => (
-  <PageSection>
-    <Container maxWidth="md">
+  <PageSection gray>
+    <Container maxWidth="lg">
       <Grid container>
         <Grid item xs={12}>
           <Box textAlign={{ xs: 'center' }}>
@@ -20,38 +20,9 @@ const SkilsSection = () => (
             </Typography>
 
             <Grid container justify="center">
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <Skills />
               </Grid>
-
-              {/* <Grid item xs={12} sm={6}>
-
-              <List>
-                <ListSubheader>Other things I’m familiar with:</ListSubheader>
-                <ListItem>
-                  Frontend - CSS, SASS, BEM, Bootstrap, Styled Components, CSS Modules, Material-UI
-                </ListItem>
-                <ListItem>
-                  Frontend - CSS, SASS, BEM, Bootstrap, Styled Components, CSS Modules, Material-UI
-                </ListItem>
-                <ListItem>
-                  Frontend - CSS, SASS, BEM, Bootstrap, Styled Components, CSS Modules, Material-UI
-                </ListItem>
-                <ListItem>
-                  Frontend - CSS, SASS, BEM, Bootstrap, Styled Components, CSS Modules, Material-UI
-                </ListItem>
-              </List>
-
-            Other things I’m familiar with:
-              Frontend - CSS, SASS, BEM, Bootstrap, Styled Components, CSS Modules, Material-UI
-              Frontend tools - npm, yarn, Webpack, Babel
-              APIs - REST, JSON APIs, SOAP
-              Testing - Unit / Integration testing
-              Design practices - TDD, SOLID, DRY, YAGNI, KISS
-              Authentication - OAuth 1 & 2, JWT
-              Project management - AGILE, Jira, Trello
-              Github Pages, Vercel (Zeit) Now.
-            </Grid> */}
             </Grid>
           </Box>
         </Grid>

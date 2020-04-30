@@ -15,7 +15,12 @@ export type Job = {
 }
 
 export type Skill = {
-  id: number
   name: string
   years: number
+}
+
+export type Category = {
+  name: string
+  skills: Skill[]
+  misc?: string[]
 }
