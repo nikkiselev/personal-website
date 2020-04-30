@@ -7,7 +7,7 @@ import theme from '../theme'
 import '../css/app.css'
 import Header from '../js/components/Header'
 import FooterBar from '../js/components/FooterBar'
-import Footer from '../js/components/Footer'
+import PageFooter from '../js/components/PageFooter'
 
 export default ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -54,7 +54,7 @@ export default ({ Component, pageProps }: AppProps) => {
         <CssBaseline />
         <Header />
         <Component {...pageProps} />
-        <Footer />
+        <PageFooter />
         <FooterBar />
       </ThemeProvider>
     </>

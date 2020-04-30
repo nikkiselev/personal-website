@@ -9,7 +9,7 @@ const text = `I'm a practical person so if you have a cool project to work
               on or share the feeling that I could be a good fit with your
               team, reach out and let's have a chat!`
 
-const Footer = () => {
+const PageFooter = () => {
   return (
     <PageSection gray>
       <Box>
@@ -50,4 +50,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default PageFooter
