@@ -9,29 +9,16 @@ import {
   Grid,
   Box,
   Divider,
-  Typography,
   Chip,
+  CardActions,
 } from '@material-ui/core'
 import React from 'react'
 import categories from '../../data/skills'
-import { Skill, Category } from '../../types'
+import { Category } from '../../types'
 
 type Props = {
   category: Category
 }
-
-// const SkillItem = (props: Props) => {
-//   const { name, years } = props.skill
-
-//   const text = `${years} year${years > 1 ? 's' : ''}`
-
-//   return (
-//     <ListItem>
-//       <ListItemText primary={name} />
-//       <ListItemSecondaryAction>{text}</ListItemSecondaryAction>
-//     </ListItem>
-//   )
-// }
 
 const CategoryItem = (props: Props) => {
   return (
@@ -51,6 +38,8 @@ const CategoryItem = (props: Props) => {
               ))}
             </List>
             <Divider />
+          </CardContent>
+          <CardActions>
             <Box textAlign="left">
               {props.category.misc?.map((i: string) => (
                 <Box m={0.5} textAlign="left" clone>
@@ -63,7 +52,7 @@ const CategoryItem = (props: Props) => {
                 </Box>
               ))}
             </Box>
-          </CardContent>
+          </CardActions>
         </Card>
       </Box>
     </Grid>

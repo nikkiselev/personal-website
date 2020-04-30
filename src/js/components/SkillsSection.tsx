@@ -19,11 +19,7 @@ const SkilsSection = () => (
               professional developer.
             </Typography>
 
-            <Grid container justify="center">
-              <Grid item xs={12}>
-                <Skills />
-              </Grid>
-            </Grid>
+            <Skills />
           </Box>
         </Grid>
       </Grid>
