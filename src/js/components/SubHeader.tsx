@@ -45,7 +45,9 @@ const SubHeader = () => {
         <Grid container justify="center" alignItems="center">
           <Grid item xs={12} md={6}>
             <Typography variant="h3">
-              <Box fontWeight="bold">Hi, I'm Nikolai</Box>
+              <Box fontWeight="bold" mb={4}>
+                Hi, I'm Nikolai
+              </Box>
             </Typography>
 
             <Box
@@ -59,7 +61,7 @@ const SubHeader = () => {
             <SubTitle text="A Full Stack" />
             <SubTitle text="Web Developer" />
 
-            <Box mt={3}>
+            <Box mt={4}>
               <SubHeaderActions />
             </Box>
           </Grid>
