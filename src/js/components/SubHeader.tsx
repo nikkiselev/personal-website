@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       marginTop: theme.spacing(5),
+      marginBottom: theme.spacing(25),
       display: 'flex',
       alignItems: 'center',
       textTransform: 'uppercase',
@@ -65,7 +66,7 @@ const SubHeader = () => {
 
           <Box
             display={{ xs: 'none', md: 'flex' }}
-            justifyContent="center"
+            justifyContent="flex-end"
             clone
           >
             <Grid item xs={12} md={6}>

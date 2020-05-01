@@ -11,7 +11,7 @@ const text2 = `As a full stack developer, I can build seamless & scalable web
               codebase, I’m ready to jump in.`
 
 export default () => (
-  <PageSection>
+  <PageSection withBg noPb>
     <Container maxWidth="md">
       <Grid container justify="center">
         <Box textAlign={{ xs: 'center' }} clone>
