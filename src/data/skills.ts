@@ -6,7 +6,7 @@ const languages: Skill[] = [
     years: 5,
   },
   {
-    name: 'Javascript',
+    name: 'JavaScript',
     years: 6,
   },
   {

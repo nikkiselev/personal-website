@@ -23,7 +23,7 @@ const SkillsCategory = (props: Props) => {
         <Card>
           <CardHeader title={props.category.name} />
           <CardContent>
-            <List dense>
+            <List>
               {props.category.skills.map((skill: any) => (
                 <ListItem>
                   <ListItemText>{skill.name}</ListItemText>
