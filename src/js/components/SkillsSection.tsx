@@ -12,7 +12,7 @@ const SkilsSection = () => (
       <Grid container>
         <Grid item xs={12}>
           <Box textAlign={{ xs: 'center' }}>
-            <PageSubTitle text="Skill Set" />
+            <PageSubTitle text="Skill Set" id="skills" />
 
             <Typography>
               These are the skills I've picked up over my {years} years as a

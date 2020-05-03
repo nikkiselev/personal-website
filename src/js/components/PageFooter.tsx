@@ -17,7 +17,7 @@ const PageFooter = () => {
           <Grid container>
             <Box textAlign={{ xs: 'center' }}>
               <Grid item xs={12}>
-                <PageSubTitle text="Work with me" />
+                <PageSubTitle text="Work with me" id="work-with-me" />
 
                 <Typography variant="body1">{text}</Typography>
               </Grid>

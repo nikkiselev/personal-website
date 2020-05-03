@@ -5,8 +5,8 @@ import Logo from './Logo'
 
 const Header = () => {
   return (
-    <Box clone my={6}>
-      <AppBar color="secondary" position="static" elevation={0}>
+    <Box clone my={{ xs: 2, md: 6 }}>
+      <AppBar color="transparent" position="static" elevation={0}>
         <Container maxWidth="md">
           <Toolbar disableGutters>
             <Logo />

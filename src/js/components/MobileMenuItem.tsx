@@ -18,7 +18,7 @@ const MobileMenuItem = (props: MobileMenuItemProps) => {
 
   return (
     <Box textAlign="center" clone>
-      <Grid item xs>
+      <Grid item xs={4}>
         <Tab label={props.label} className={classes.tab} href={props.href} />
       </Grid>
     </Box>

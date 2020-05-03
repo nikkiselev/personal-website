@@ -5,7 +5,7 @@ import { MenuItem } from '../../types'
 
 const MobileMenu = () => (
   <Box display={{ xs: 'block', md: 'none' }}>
-    <Toolbar>
+    <Toolbar disableGutters>
       <Box flexGrow={1}>
         <Tabs value={0} variant="fullWidth">
           {menu.map((i: MenuItem) => (

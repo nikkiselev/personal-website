@@ -1,4 +1,4 @@
-import { Box, Button, createStyles, makeStyles, Link } from '@material-ui/core'
+import { Box, createStyles, makeStyles, Link } from '@material-ui/core'
 import menu from '../../data/menu'
 import { MenuItem } from '../../types'
 
