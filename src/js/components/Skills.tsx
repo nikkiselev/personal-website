@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
+import { Grid, Box } from '@material-ui/core'
 
 import { Category } from '../../types'
 import SkillsCategory from './SkillsCategory'
@@ -11,8 +11,10 @@ export default () => {
   ))
 
   return (
-    <Grid container spacing={4}>
-      {items}
-    </Grid>
+    <Box mt={5}>
+      <Grid container spacing={4}>
+        {items}
+      </Grid>
+    </Box>
   )
 }

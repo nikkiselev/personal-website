@@ -19,9 +19,12 @@ type Props = {
 const SkillsCategory = (props: Props) => {
   return (
     <Grid item xs={12} sm={6} lg={4}>
-      <Box height="100%" textAlign="left" clone>
+      <Box height="100%" textAlign="middle" clone>
         <Card>
-          <CardHeader title={props.category.name} />
+          <CardHeader
+            title={props.category.name}
+            titleTypographyProps={{ variant: 'h6' }}
+          />
           <CardContent>
             <List>
               {props.category.skills.map((skill: any) => (
