@@ -13,8 +13,10 @@ const SkilsSection = () => (
           <PageSubTitle text="Skill Set" id="skills" />
 
           <Typography>
-            These are the skills I've picked up over my {years} years as a
-            professional developer.
+            <Box mb={{ xs: 5 }}>
+              These are the skills I've picked up over my {years} years as a
+              professional developer.
+            </Box>
           </Typography>
 
           <Skills />
