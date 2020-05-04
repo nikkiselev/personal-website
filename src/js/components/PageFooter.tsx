@@ -45,6 +45,14 @@ const PageFooter = () => {
                     Stack Overflow
                   </Link>
                 </Box>
+                <Box my={itemSpacing}>
+                  <Link
+                    variant="body1"
+                    href="https://www.linkedin.com/in/nikkiselev"
+                  >
+                    LinkedIn
+                  </Link>
+                </Box>
               </Grid>
             </Box>
           </Grid>
