@@ -33,10 +33,15 @@ const PageFooter = () => {
                   <Typography variant="body1">I'm also on:</Typography>
                 </Box>
                 <Box my={itemSpacing}>
-                  <Link href="https://github.com/nikkiselev">GitHub</Link>
+                  <Link variant="body1" href="https://github.com/nikkiselev">
+                    GitHub
+                  </Link>
                 </Box>
                 <Box my={itemSpacing}>
-                  <Link href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile">
+                  <Link
+                    variant="body1"
+                    href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile"
+                  >
                     Stack Overflow
                   </Link>
                 </Box>
