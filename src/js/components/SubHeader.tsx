@@ -40,7 +40,7 @@ const SubHeader = () => {
   const classes = useStyles()
 
   return (
-    <PageSection>
+    <PageSection ptXs={1}>
       <Container className={classes.root} maxWidth="md">
         <Grid container justify="center" alignItems="center">
           <Grid item xs={12} md={6}>

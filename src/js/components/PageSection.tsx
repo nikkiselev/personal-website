@@ -4,9 +4,15 @@ import theme from '../../theme'
 type Props = {
   noPb?: boolean
   withBg?: boolean
+  ptXs: number
 }
 
-const padding = theme.spacing(18)
+const padding = {
+  xs: theme.spacing(6),
+  sm: theme.spacing(12),
+  md: theme.spacing(18),
+}
+
 //@ts-ignore
 const color = theme.palette.primary[50]
 const background = `linear-gradient( to bottom right, transparent 50%, ${color} 50% )`
@@ -14,10 +20,21 @@ const background = `linear-gradient( to bottom right, transparent 50%, ${color} 
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
-      paddingTop: padding,
+      [theme.breakpoints.up('xs')]: {
+        paddingTop: (props: Props) =>
+          props.ptXs ? theme.spacing(props.ptXs) : padding['xs'],
+        paddingBottom: (props: Props) => (props.noPb ? 0 : padding['xs']),
+      },
+      [theme.breakpoints.up('sm')]: {
+        paddingTop: padding['sm'],
+        paddingBottom: (props: Props) => (props.noPb ? 0 : padding['sm']),
+      },
+      [theme.breakpoints.up('md')]: {
+        paddingTop: padding['md'],
+        paddingBottom: (props: Props) => (props.noPb ? 0 : padding['md']),
+      },
       position: 'relative',
       backgroundColor: (props: Props) => (props.withBg ? color : ''),
-      paddingBottom: (props: Props) => (props.noPb ? 0 : padding),
       '&::before': {
         height: '35%',
         top: '-35%',
