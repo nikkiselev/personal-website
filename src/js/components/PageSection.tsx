@@ -43,16 +43,16 @@ const useStyles = makeStyles(() =>
         zIndex: -1,
         background: (props: Props) => (props.withBg ? background : ''),
         [theme.breakpoints.up('xs')]: {
-          height: '12%',
-          top: '-12%',
+          height: '5%',
+          top: '-5%',
         },
         [theme.breakpoints.up('sm')]: {
           height: '18%',
           top: '-18%',
         },
         [theme.breakpoints.up('lg')]: {
-          height: '30%',
-          top: '-30%',
+          height: '25%',
+          top: '-25%',
         },
       },
     },

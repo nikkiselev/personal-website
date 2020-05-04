@@ -1,4 +1,3 @@
-import PageSection from './PageSection'
 import { Container, Grid, Box, Typography } from '@material-ui/core'
 import Location from './Location'
 
@@ -11,22 +10,20 @@ const text2 = `As a full stack developer, I can build seamless & scalable web
               codebase, I’m ready to jump in.`
 
 export default () => (
-  <PageSection withBg noPb>
-    <Container maxWidth="md">
-      <Grid container justify="center">
-        <Box textAlign={{ xs: 'center' }} clone>
-          <Grid item xs={12} md={9}>
-            <Typography variant="body1" component="p">
-              {text1}
-            </Typography>
-            <br />
-            <Typography variant="body1" component="p">
-              {text2}
-            </Typography>
-            <Location />
-          </Grid>
-        </Box>
-      </Grid>
-    </Container>
-  </PageSection>
+  <Container maxWidth="md">
+    <Grid container justify="center">
+      <Box textAlign={{ xs: 'center' }} clone>
+        <Grid item xs={12} md={9}>
+          <Typography variant="body1" component="p">
+            {text1}
+          </Typography>
+          <br />
+          <Typography variant="body1" component="p">
+            {text2}
+          </Typography>
+          <Location />
+        </Grid>
+      </Box>
+    </Grid>
+  </Container>
 )
