@@ -14,7 +14,12 @@ import PageSection from './PageSection'
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      marginTop: theme.spacing(5),
+      [theme.breakpoints.up('xs')]: {
+        marginTop: theme.spacing(5),
+      },
+      [theme.breakpoints.up('md')]: {
+        marginTop: theme.spacing(12),
+      },
       marginBottom: theme.spacing(25),
       display: 'flex',
       alignItems: 'center',
