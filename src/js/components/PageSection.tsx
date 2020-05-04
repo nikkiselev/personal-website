@@ -36,14 +36,24 @@ const useStyles = makeStyles(() =>
       position: 'relative',
       backgroundColor: (props: Props) => (props.withBg ? color : ''),
       '&::before': {
-        height: '35%',
-        top: '-35%',
         content: '""',
         width: '100%',
         position: 'absolute',
         left: 0,
         zIndex: -1,
         background: (props: Props) => (props.withBg ? background : ''),
+        [theme.breakpoints.up('xs')]: {
+          height: '12%',
+          top: '-12%',
+        },
+        [theme.breakpoints.up('sm')]: {
+          height: '18%',
+          top: '-18%',
+        },
+        [theme.breakpoints.up('lg')]: {
+          height: '30%',
+          top: '-30%',
+        },
       },
     },
   })
