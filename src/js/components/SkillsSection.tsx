@@ -12,12 +12,12 @@ const SkilsSection = () => (
         <Box textAlign={{ xs: 'center' }}>
           <PageSubTitle text="Skill Set" id="skills" />
 
-          <Typography>
-            <Box mb={{ xs: 5 }}>
+          <Box clone mb={{ xs: 5 }}>
+            <Typography>
               These are the skills I've picked up over my {years} years as a
               professional developer.
-            </Box>
-          </Typography>
+            </Typography>
+          </Box>
 
           <Skills />
         </Box>
