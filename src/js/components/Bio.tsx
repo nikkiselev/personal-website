@@ -1,4 +1,6 @@
 import { Container, Grid, Box, Typography } from '@material-ui/core'
+import LaptopMacIcon from '@material-ui/icons/LaptopMac'
+
 import Location from './Location'
 
 const text1 = `I still remember writing small scripts and apps using Pascal when
@@ -14,6 +16,9 @@ export default () => (
     <Grid container justify="center">
       <Box textAlign={{ xs: 'center' }} clone>
         <Grid item xs={12} md={9}>
+          <Box clone fontSize={180}>
+            <LaptopMacIcon />
+          </Box>
           <Typography variant="body1" component="p">
             {text1}
           </Typography>
