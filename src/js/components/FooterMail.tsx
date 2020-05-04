@@ -1,14 +1,11 @@
-import { Link, Box } from '@material-ui/core'
-import MailOutlineIcon from '@material-ui/icons/MailOutline'
+import { Box, Button } from '@material-ui/core'
 
 const FooterMail = () => {
   return (
-    <Box display="flex" alignItems="center" justifyContent={{ xs: 'center' }}>
-      <Box mr={1} clone>
-        <MailOutlineIcon />
-      </Box>
-
-      <Link href="mailto:nik@kiselev.dev">nik@kiselev.dev</Link>
+    <Box my={3}>
+      <Button href="mailto:nik@kiselev.dev" variant="contained" color="primary">
+        Contact me
+      </Button>
     </Box>
   )
 }
