@@ -19,34 +19,36 @@ type Props = {
 
 const Job = ({
   job: { role, company, from, to, place, responsibilities, skills },
-}: Props) => (
-  <Box mb={3}>
-    <Typography variant="h5">{role}</Typography>
-    <Typography variant="subtitle1">
-      {company}, {from} - {to}
-    </Typography>
-    <Typography variant="subtitle1" color="textSecondary">
-      {place}
-    </Typography>
+}: Props) => {
+  return (
+    <Box mb={3}>
+      <Typography variant="h5">{role}</Typography>
+      <Typography variant="subtitle1" color="textSecondary">
+        {company}&nbsp;&nbsp;&middot;&nbsp;&nbsp;{from} - {to}
+      </Typography>
+      <Typography variant="subtitle1" color="textSecondary">
+        {place}
+      </Typography>
 
-    <List>
-      {responsibilities.map((item: string) => (
-        <ListItem key={item}>
-          <ListItemText>{item}.</ListItemText>
-        </ListItem>
+      <List>
+        {responsibilities.map((item: string) => (
+          <ListItem key={item}>
+            <ListItemText>&bull; {item}.</ListItemText>
+          </ListItem>
+        ))}
+      </List>
+      {skills.map((label: string) => (
+        <Box m={0.5} key={label} clone>
+          <Chip size="small" label={label} color="primary" variant="outlined" />
+        </Box>
       ))}
-    </List>
-    {skills.map((label: string) => (
-      <Box m={0.5} key={label} clone>
-        <Chip size="small" label={label} color="primary" variant="outlined" />
-      </Box>
-    ))}
-  </Box>
-)
+    </Box>
+  )
+}
 
 const Jobs = () => {
   return (
-    <PageSection>
+    <PageSection noPb>
       <Container maxWidth="md">
         <Grid container>
           <Grid item xs={12}>
