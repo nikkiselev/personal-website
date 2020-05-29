@@ -20,11 +20,13 @@ type Props = {
 const Job = ({
   job: { role, company, from, to, place, responsibilities, skills },
 }: Props) => {
+  const duration = from === to ? from : from + ' - ' + to
+
   return (
     <Box mb={3}>
       <Typography variant="h5">{role}</Typography>
       <Typography variant="subtitle1" color="textSecondary">
-        {company}&nbsp;&nbsp;&middot;&nbsp;&nbsp;{from} - {to}
+        {company}&nbsp;&nbsp;&middot;&nbsp;&nbsp;{duration}
       </Typography>
       <Typography variant="subtitle1" color="textSecondary">
         {place}
