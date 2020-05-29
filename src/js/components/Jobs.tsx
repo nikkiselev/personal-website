@@ -54,7 +54,7 @@ const Jobs = () => {
       <Container maxWidth="md">
         <Grid container>
           <Grid item xs={12}>
-            <PageSubTitle text="Work Experience" id="work-experience" />
+            <PageSubTitle text="Experience" id="experience" />
 
             {jobs.map((job: any) => (
               <Job job={job} key={job.company} />

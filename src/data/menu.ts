@@ -8,8 +8,8 @@ const menu: MenuItem[] = [
   },
   {
     id: 2,
-    label: 'Work experience',
-    href: '#work-experience',
+    label: 'Experience',
+    href: '#experience',
   },
   {
     id: 3,
