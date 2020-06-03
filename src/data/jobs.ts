@@ -3,6 +3,7 @@ import { Job } from '../types'
 const jobs: Job[] = [
   {
     role: 'Full Stack Web Developer',
+    type: 'Full-time',
     company: 'ITConstruct',
     place: 'Russia',
     from: 2014,
