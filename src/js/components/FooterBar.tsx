@@ -1,5 +1,4 @@
 import { Grid, Typography, Box } from '@material-ui/core'
-import theme from '../../theme'
 
 const FooterBar = () => {
   return (
@@ -11,7 +10,7 @@ const FooterBar = () => {
           justifyContent="center"
           height={100}
           color="white"
-          bgcolor={theme.palette.primary.dark}
+          bgcolor="#000"
           clone
         >
           <Grid item xs={12}>
