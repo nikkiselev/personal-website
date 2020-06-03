@@ -27,11 +27,16 @@ collections:
                   label: 'Responsibilitties',
                   name: 'responsibilities',
                   widget: 'list',
-                  field: { label: 'Responsibility', name: 'responsibility',  widget: 'string' },
+                  field:
+                    {
+                      label: 'Responsibility',
+                      name: 'responsibility',
+                      widget: 'string',
+                    },
                 }
               - {
                   label: 'Skills',
                   name: 'skills',
                   widget: 'list',
-                  field: { label: 'Skill', name: 'skill',  widget: 'string' },
+                  field: { label: 'Skill', name: 'skill', widget: 'string' },
                 }

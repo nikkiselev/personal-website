@@ -9,7 +9,7 @@ import {
   Box,
 } from '@material-ui/core'
 import PageSubTitle from './PageSubTitle'
-import jobs from '../../data/jobs'
+import content from '../../../content/home.json'
 import { Job as JobType } from '../../types'
 import PageSection from './PageSection'
 
@@ -58,7 +58,7 @@ const Jobs = () => {
           <Grid item xs={12}>
             <PageSubTitle text="Experience" id="experience" />
 
-            {jobs.map((job: any) => (
+            {content.jobs.map((job: any) => (
               <Job job={job} key={job.company} />
             ))}
           </Grid>
