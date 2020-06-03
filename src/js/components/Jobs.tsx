@@ -20,7 +20,8 @@ type Props = {
 const Job = ({
   job: { role, company, from, to, place, responsibilities, skills, type },
 }: Props) => {
-  const duration = from === to ? from : from + ' - ' + to
+  // const duration = from === to ? from : from + ' - ' + to
+  const duration = from + ' - ' + to
 
   return (
     <Box mb={3}>
