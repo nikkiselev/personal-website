@@ -9,7 +9,7 @@ import {
   Box,
 } from '@material-ui/core'
 import PageSubTitle from './PageSubTitle'
-import content from '../../../content/home.json'
+import content from '../../content/home.json'
 import { Job as JobType } from '../../types'
 import PageSection from './PageSection'
 
