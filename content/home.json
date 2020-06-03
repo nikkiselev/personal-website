@@ -11,7 +11,13 @@
         "Created an app that connects African exporters with international traders",
         "Maintained infrastructure on AWS"
       ],
-      "skills": ["Laravel", "MySQL", "PHP", "JavaScript", "Trello"]
+      "skills": [
+        "Laravel",
+        "MySQL",
+        "PHP",
+        "JavaScript",
+        "Trello"
+      ]
     },
     {
       "role": "Full-Stack Web Developer",
@@ -23,7 +29,14 @@
       "responsibilities": [
         "Upgraded Laravel to the latest version"
       ],
-      "skills": ["Laravel", "MySQL", "REST", "PHP", "JavaScript", "Jira"]
+      "skills": [
+        "Laravel",
+        "MySQL",
+        "REST",
+        "PHP",
+        "JavaScript",
+        "Jira"
+      ]
     },
     {
       "role": "Full-Stack Web Developer",
@@ -86,7 +99,14 @@
         "Created a waste tracking app to help recyclers and carriers organize waste deliveries",
         "Developed a dashboard with charts and data"
       ],
-      "skills": ["Laravel", "MySQL", "Bootstrap", "PHP", "JavaScript", "jQuery"]
+      "skills": [
+        "Laravel",
+        "MySQL",
+        "Bootstrap",
+        "PHP",
+        "JavaScript",
+        "jQuery"
+      ]
     },
     {
       "role": "Back-end Developer",
@@ -99,7 +119,13 @@
         "Developed a mailing API microservice for email and text (SMS) campaigns",
         "Integrated with AWS SES for email sending"
       ],
-      "skills": ["Laravel", "AWS", "PostgreSQL", "PHP", "Codeship"]
+      "skills": [
+        "Laravel",
+        "AWS",
+        "PostgreSQL",
+        "PHP",
+        "Codeship"
+      ]
     },
     {
       "role": "Full-Stack Web Developer",
@@ -113,7 +139,14 @@
         "Integrated the app with identity management service Atlassian Crowd",
         "Made export of applicant resumes to XML, Word and PDF formats"
       ],
-      "skills": ["Laravel", "MySQL", "SASS", "PHP", "jQuery", "Basecamp"]
+      "skills": [
+        "Laravel",
+        "MySQL",
+        "SASS",
+        "PHP",
+        "jQuery",
+        "Basecamp"
+      ]
     },
     {
       "role": "Full-Stack Web Developer",
@@ -128,7 +161,13 @@
         "Solved hundreds of issues: tons of bug fixes and new feature requests",
         "Optimized slow SQL queries"
       ],
-      "skills": ["JavaScript", "PHP", "MySQL", "jQuery", "CSS"]
+      "skills": [
+        "JavaScript",
+        "PHP",
+        "MySQL",
+        "jQuery",
+        "CSS"
+      ]
     },
     {
       "role": "Full-Stack Web Developer",
@@ -140,9 +179,17 @@
       "responsibilities": [
         "Created and supported many e-commerce websites based on Bitrix CMS. That includes integrations with various systems like accounting software, social media websites and etc",
         "Configured cloud Bitrix24 CRM apps",
-        "Provided customer tech support and consulting in a ticket tracking system and by phone"
+        "Provided customer tech support and consulting through phone and a ticket tracking system"
       ],
-      "skills": ["JavaScript", "PHP", "MySQL", "jQuery", "CSS", "BEM", "CMS"]
+      "skills": [
+        "JavaScript",
+        "PHP",
+        "MySQL",
+        "jQuery",
+        "CSS",
+        "BEM",
+        "CMS"
+      ]
     }
   ]
 }
