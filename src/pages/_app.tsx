@@ -1,14 +1,22 @@
 import React, { useEffect } from 'react'
 import Head from 'next/head'
 import { AppProps } from 'next/app'
-import { ThemeProvider } from '@material-ui/core/styles'
+import { ThemeProvider, withStyles } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../theme'
-import '../css/app.css'
 import Header from '../js/components/Header'
 import FooterBar from '../js/components/FooterBar'
 import PageFooter from '../js/components/PageFooter'
 import Particles from '../js/components/Particles'
+
+const GlobalCss = withStyles({
+  '@global': {
+    'html, body, #__next': {
+      height: '100%',
+      scrollBehavior: 'smooth!important',
+    },
+  },
+})(() => null)
 
 export default ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -53,6 +61,7 @@ export default ({ Component, pageProps }: AppProps) => {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
+        <GlobalCss />
         <Particles />
         <Header />
         <Component {...pageProps} />
