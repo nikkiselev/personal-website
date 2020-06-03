@@ -12,6 +12,7 @@ export type Job = {
   to: number | string
   responsibilities: string[]
   skills: string[]
+  type: string
 }
 
 export type Skill = {

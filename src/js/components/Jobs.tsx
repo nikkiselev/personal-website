@@ -18,21 +18,22 @@ type Props = {
 }
 
 const Job = ({
-  job: { role, company, from, to, place, responsibilities, skills },
+  job: { role, company, from, to, place, responsibilities, skills, type },
 }: Props) => {
   const duration = from === to ? from : from + ' - ' + to
 
   return (
     <Box mb={3}>
-      <Typography variant="h5">{role}</Typography>
-      <Typography variant="subtitle1" color="textSecondary">
-        {company}&nbsp;&nbsp;&middot;&nbsp;&nbsp;{duration}
+      <Typography variant="h6">{role}</Typography>
+      <Typography variant="caption">
+        {company}&nbsp;&nbsp;&middot;&nbsp;&nbsp;{type}
       </Typography>
-      <Typography variant="subtitle1" color="textSecondary">
-        {place}
-      </Typography>
+      <br />
+      <Typography variant="caption">{duration}</Typography>
+      <br />
+      <Typography variant="caption">{place}</Typography>
 
-      <List>
+      <List dense>
         {responsibilities.map((item: string) => (
           <ListItem key={item}>
             <ListItemText>&bull; {item}.</ListItemText>
@@ -50,7 +51,7 @@ const Job = ({
 
 const Jobs = () => {
   return (
-    <PageSection noPb>
+    <PageSection noPb withBg>
       <Container maxWidth="md">
         <Grid container>
           <Grid item xs={12}>

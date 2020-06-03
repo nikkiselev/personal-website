@@ -26,7 +26,7 @@ const SkillsCategory = (props: Props) => {
             titleTypographyProps={{ variant: 'h6' }}
           />
           <CardContent>
-            <List>
+            <List dense>
               {props.category.skills.map((skill: any) => (
                 <ListItem>
                   <ListItemText>{skill.name}</ListItemText>

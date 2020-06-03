@@ -34,7 +34,7 @@ type SubTitle = {
 }
 
 const SubTitle = (props: SubTitle) => (
-  <Typography variant="subtitle1">
+  <Typography variant="subtitle1" color="textSecondary">
     <Box fontWeight="bold" letterSpacing={5}>
       {props.text}
     </Box>
@@ -49,7 +49,7 @@ const SubHeader = () => {
       <Container className={classes.root} maxWidth="md">
         <Grid container justify="center" alignItems="center">
           <Grid item xs={12} md={6}>
-            <Typography variant="h3">
+            <Typography variant="h3" color="textSecondary">
               <Box fontWeight="bold" mb={4}>
                 Hi, I'm Nikolai
               </Box>

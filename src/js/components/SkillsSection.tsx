@@ -10,10 +10,10 @@ const SkilsSection = () => (
     <Grid container>
       <Grid item xs={12}>
         <Box textAlign={{ xs: 'center' }}>
-          <PageSubTitle text="Skill Set" id="skills" />
+          <PageSubTitle text="Skill Set" id="skills" color="textSecondary" />
 
           <Box clone mb={{ xs: 5 }}>
-            <Typography>
+            <Typography color="textSecondary">
               These are the skills I've picked up over my {years} years as a
               professional developer.
             </Typography>

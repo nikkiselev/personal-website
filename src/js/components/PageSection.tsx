@@ -1,5 +1,6 @@
 import { Box, makeStyles, createStyles } from '@material-ui/core'
 import theme from '../../theme'
+import Particles from './Particles'
 
 type Props = {
   noPb?: boolean
@@ -14,8 +15,8 @@ const padding = {
 }
 
 //@ts-ignore
-const color = theme.palette.primary[50]
-const background = `linear-gradient( to bottom right, transparent 50%, ${color} 50% )`
+const color = '#fff'
+// const background = `linear-gradient( to bottom right, transparent 50%, ${color} 50% )`
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -35,26 +36,6 @@ const useStyles = makeStyles(() =>
       },
       position: 'relative',
       backgroundColor: (props: Props) => (props.withBg ? color : ''),
-      '&::before': {
-        content: '""',
-        width: '100%',
-        position: 'absolute',
-        left: 0,
-        zIndex: -1,
-        background: (props: Props) => (props.withBg ? background : ''),
-        [theme.breakpoints.up('xs')]: {
-          height: '5%',
-          top: '-5%',
-        },
-        [theme.breakpoints.up('sm')]: {
-          height: '18%',
-          top: '-18%',
-        },
-        [theme.breakpoints.up('lg')]: {
-          height: '25%',
-          top: '-25%',
-        },
-      },
     },
   })
 )
@@ -62,7 +43,12 @@ const useStyles = makeStyles(() =>
 const PageSection = (props: any) => {
   const classes = useStyles(props)
 
-  return <Box className={classes.root}>{props.children}</Box>
+  return (
+    <Box className={classes.root}>
+      {/* {props.withBg && <Particles/> } */}
+      {props.children}
+    </Box>
+  )
 }
 
 export default PageSection

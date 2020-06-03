@@ -22,7 +22,7 @@ const DesktopMenu = () => {
             href={i.href}
             key={i.id}
             className={classes.button}
-            color="textPrimary"
+            color="textSecondary"
           >
             {i.label}
           </Link>

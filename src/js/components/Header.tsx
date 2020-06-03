@@ -5,7 +5,7 @@ import Logo from './Logo'
 
 const Header = () => {
   return (
-    <Box clone my={{ xs: 2, md: 6 }}>
+    <Box clone mb={{ xs: 2, md: 6 }} pt={6}>
       <AppBar color="transparent" position="static" elevation={0}>
         <Container maxWidth="md">
           <Toolbar disableGutters>

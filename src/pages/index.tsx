@@ -13,6 +13,9 @@ const Home = () => {
 
       <PageSection withBg>
         <Bio />
+      </PageSection>
+
+      <PageSection>
         <Box mt={{ xs: 5, sm: 10, md: 15 }}>
           <SkillsSection />
         </Box>
@@ -20,7 +23,7 @@ const Home = () => {
 
       <Jobs />
 
-      <PageSection>
+      <PageSection withBg>
         <Container maxWidth="md">
           <PageSubTitle text="Education" />
           <Typography variant="h6">
