@@ -9,6 +9,26 @@ const text = `I'm a practical person so if you have a cool project to work
               on or share the feeling that I could be a good fit with your
               team, reach out and let's have a chat!`
 
+type Props = {
+  text: string
+  href: string
+}
+
+const FooterLink = (props: Props) => {
+  return (
+    <Box my={itemSpacing}>
+      <Link
+        variant="body1"
+        href={props.href}
+        color="textSecondary"
+        underline="always"
+      >
+        {props.text}
+      </Link>
+    </Box>
+  )
+}
+
 const PageFooter = () => {
   return (
     <PageSection>
@@ -17,9 +37,15 @@ const PageFooter = () => {
           <Grid container>
             <Box textAlign={{ xs: 'center' }}>
               <Grid item xs={12}>
-                <PageSubTitle text="Work with me" id="work-with-me" />
+                <PageSubTitle
+                  text="Work with me"
+                  id="work-with-me"
+                  color="textSecondary"
+                />
 
-                <Typography variant="body1">{text}</Typography>
+                <Typography variant="body1" color="textSecondary">
+                  {text}
+                </Typography>
               </Grid>
 
               <Grid item xs={12}>
@@ -30,29 +56,22 @@ const PageFooter = () => {
 
               <Grid item xs={12}>
                 <Box my={itemSpacing}>
-                  <Typography variant="body1">I'm also on:</Typography>
+                  <Typography variant="body1" color="textSecondary">
+                    I'm also on:
+                  </Typography>
                 </Box>
-                <Box my={itemSpacing}>
-                  <Link variant="body1" href="https://github.com/nikkiselev">
-                    GitHub
-                  </Link>
-                </Box>
-                <Box my={itemSpacing}>
-                  <Link
-                    variant="body1"
-                    href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile"
-                  >
-                    Stack Overflow
-                  </Link>
-                </Box>
-                <Box my={itemSpacing}>
-                  <Link
-                    variant="body1"
-                    href="https://www.linkedin.com/in/nikkiselev"
-                  >
-                    LinkedIn
-                  </Link>
-                </Box>
+                <FooterLink
+                  text="GitHub"
+                  href="https://github.com/nikkiselev"
+                />
+                <FooterLink
+                  text="Stack Overflow"
+                  href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile"
+                />
+                <FooterLink
+                  text="LinkedIn"
+                  href="https://www.linkedin.com/in/nikkiselev"
+                />
               </Grid>
             </Box>
           </Grid>
