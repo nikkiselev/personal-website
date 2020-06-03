@@ -1,0 +1,12 @@
+{
+  "jobs": [
+    {
+      "role": "developer",
+      "type": "Freelance"
+    },
+    {
+      "role": "Developer",
+      "type": "Full-time"
+    }
+  ]
+}
