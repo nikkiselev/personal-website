@@ -8,8 +8,8 @@
       "from": 2019,
       "to": 2019,
       "responsibilities": [
-        "Created an app that connects African exporters with international traders",
-        "Maintained infrastructure on AWS"
+        "Created an app that connects African exporters to international traders",
+        "Maintained server infrastructure on AWS"
       ],
       "skills": ["Laravel", "MySQL", "PHP", "JavaScript", "Trello"]
     },
@@ -20,9 +20,7 @@
       "type": "Freelance",
       "from": 2019,
       "to": 2019,
-      "responsibilities": [
-        "Upgraded Laravel to the latest version"
-      ],
+      "responsibilities": ["Upgraded Laravel to the latest version"],
       "skills": ["Laravel", "MySQL", "REST", "PHP", "JavaScript", "Jira"]
     },
     {
@@ -33,7 +31,7 @@
       "from": 2018,
       "to": 2018,
       "responsibilities": [
-        "Developed an app that automates posting of Facebook Ads for real estate businesses"
+        "Developed an app that automates Facebook ad postings for real estate businesses"
       ],
       "skills": [
         "Laravel",
@@ -54,9 +52,9 @@
       "from": 2017,
       "to": "present",
       "responsibilities": [
-        "Created a large inventory management app for tracking products in stock",
-        "Integrated it with Shopify to manage product stock on hand, orders, users and etc",
-        "Created a recommendation system that: suggests purchase orders to suppliers, notifies staff of low stock, calculates inventorying data",
+        "Created an inventory management app to keep track of all products in stock.",
+        "Integrated it with Shopify to manage product stock on hand, customer orders, users and etc",
+        "Created a recommendation system that suggests purchase orders to suppliers, notifies staff when stock is low and calculates inventory data",
         "Created a wholesale store website and integrated it with Shopify",
         "Wrote more than 500 unit and integration tests",
         "Configured job scheduling with Redis",
@@ -82,7 +80,7 @@
       "from": 2016,
       "to": 2017,
       "responsibilities": [
-        "Created a CRM app to manage products, customers, sales, stores and warehouses. Added features like registering product defects and shippings, warranty cases and etc",
+        "Created a CRM app to manage products, customers, sales, stores and warehouses. Added features including registering product defects, shipping, warranty cases and etc",
         "Created a waste tracking app to help recyclers and carriers organize waste deliveries",
         "Developed a dashboard with charts and data"
       ],
@@ -96,7 +94,7 @@
       "from": 2016,
       "to": 2016,
       "responsibilities": [
-        "Developed a mailing API microservice for email and text (SMS) campaigns",
+        "Developed a mailing API microservice for email and text messaging(SMS) campaigns",
         "Integrated with AWS SES for email sending"
       ],
       "skills": ["Laravel", "AWS", "PostgreSQL", "PHP", "Codeship"]
@@ -109,9 +107,9 @@
       "from": 2016,
       "to": 2016,
       "responsibilities": [
-        "Created a Resume App to help recruiters manage consultant profiles",
-        "Integrated the app with identity management service Atlassian Crowd",
-        "Made export of applicant resumes to XML, Word and PDF formats"
+        "Created a Resume App that helps recruiters manage consultant profiles systematically",
+        "Integrated the app with an identity management service called Atlassian Crowd",
+        "Added a feature that allows export of applicant resumes to XML, Word and PDF formats"
       ],
       "skills": ["Laravel", "MySQL", "SASS", "PHP", "jQuery", "Basecamp"]
     },
@@ -123,9 +121,9 @@
       "from": 2016,
       "to": 2019,
       "responsibilities": [
-        "Developed a large project management app",
+        "Developed a project management app",
         "Integrated the app with Google OAuth2 and Google Calendar",
-        "Solved hundreds of issues: tons of bug fixes and new feature requests",
+        "Solved hundreds of issues: bug fixes and new feature requests",
         "Optimized slow SQL queries"
       ],
       "skills": ["JavaScript", "PHP", "MySQL", "jQuery", "CSS"]
@@ -138,9 +136,9 @@
       "from": 2014,
       "to": 2015,
       "responsibilities": [
-        "Created and supported many e-commerce websites based on Bitrix CMS. That includes integrations with various systems like accounting software, social media websites and etc",
+        "Created and supported many e-commerce websites based on Bitrix CMS. It includes integrations with various systems like accounting software, social media websites and etc",
         "Configured cloud Bitrix24 CRM apps",
-        "Provided customer tech support and consulting in a ticket tracking system and by phone"
+        "Provided customer tech support and consulting through phone and a ticket tracking system"
       ],
       "skills": ["JavaScript", "PHP", "MySQL", "jQuery", "CSS", "BEM", "CMS"]
     }
