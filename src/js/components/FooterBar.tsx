@@ -1,6 +1,23 @@
-import { Grid, Typography, Box } from '@material-ui/core'
+import {
+  Grid,
+  Typography,
+  Box,
+  makeStyles,
+  createStyles,
+} from '@material-ui/core'
+
+const useStyles = makeStyles(() =>
+  createStyles({
+    bar: {
+      background: 'linear-gradient(to right, #e03f6f, #263c94)',
+      height: 10,
+    },
+  })
+)
 
 const FooterBar = () => {
+  const classes = useStyles()
+
   return (
     <Box>
       <Grid container>
@@ -20,6 +37,7 @@ const FooterBar = () => {
           </Grid>
         </Box>
       </Grid>
+      <div className={classes.bar}></div>
     </Box>
   )
 }
