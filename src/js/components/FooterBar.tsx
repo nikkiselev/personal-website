@@ -15,6 +15,8 @@ const useStyles = makeStyles(() =>
   })
 )
 
+const year = new Date().getFullYear()
+
 const FooterBar = () => {
   const classes = useStyles()
 
@@ -32,7 +34,7 @@ const FooterBar = () => {
         >
           <Grid item xs={12}>
             <Typography component="div">
-              &copy; {new Date().getFullYear()} Nikolai Kiselev
+              &copy; {year} Nikolai Kiselev
             </Typography>
           </Grid>
         </Box>
