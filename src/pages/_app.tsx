@@ -8,6 +8,8 @@ import Header from '../js/components/Header'
 import FooterBar from '../js/components/FooterBar'
 import PageFooter from '../js/components/PageFooter'
 import Particles from '../js/components/Particles'
+import { initGA, logPageView } from '../analytics'
+import { Router } from 'next/dist/client/router'
 
 const GlobalCss = withStyles({
   '@global': {
@@ -20,20 +22,13 @@ const GlobalCss = withStyles({
 
 export default ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      // @ts-ignore
-      window.dataLayer = window.dataLayer || []
+    initGA()
+    logPageView()
 
-      // @ts-ignore
-      function gtag() {
-        // @ts-ignore
-        dataLayer.push(arguments)
-      }
-      // @ts-ignore
-      gtag('js', new Date())
+    Router.events.on('routeChangeComplete', logPageView)
 
-      // @ts-ignore
-      gtag('config', 'UA-135544092-1')
+    return () => {
+      Router.events.off('routeChangeComplete', logPageView)
     }
   }, [])
 
@@ -52,10 +47,6 @@ export default ({ Component, pageProps }: AppProps) => {
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
-        />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-135544092-1"
         />
       </Head>
       <ThemeProvider theme={theme}>
