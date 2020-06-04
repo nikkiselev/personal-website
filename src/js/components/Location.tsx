@@ -1,5 +1,6 @@
 import { Typography, Box } from '@material-ui/core'
 import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined'
+import content from '../../content/home.json'
 
 const Location = () => {
   return (
@@ -12,7 +13,7 @@ const Location = () => {
       <Box mr={1} clone>
         <RoomOutlinedIcon />
       </Box>
-      <Typography color="primary">Kuala Lumpur, Malaysia (GMT+8)</Typography>
+      <Typography color="primary">{content.location}</Typography>
     </Box>
   )
 }
