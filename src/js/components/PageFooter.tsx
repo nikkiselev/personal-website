@@ -1,30 +1,11 @@
-import { Grid, Typography, Link, Box, Container } from '@material-ui/core'
+import { Grid, Typography, Box, Container } from '@material-ui/core'
 import FooterMail from './FooterMail'
 import PageSubTitle from './PageSubTitle'
 import PageSection from './PageSection'
 import content from '../../content/home.json'
+import FooterLink from './PageFooterLink'
 
 const itemSpacing = 1
-
-type Props = {
-  text: string
-  href: string
-}
-
-const FooterLink = (props: Props) => {
-  return (
-    <Box my={itemSpacing}>
-      <Link
-        variant="body1"
-        href={props.href}
-        color="textSecondary"
-        underline="always"
-      >
-        {props.text}
-      </Link>
-    </Box>
-  )
-}
 
 const PageFooter = () => {
   return (
