@@ -143,7 +143,7 @@
       "skills": ["JavaScript", "PHP", "MySQL", "jQuery", "CSS", "BEM", "CMS"]
     }
   ],
-  "menu" : [
+  "menu": [
     {
       "id": 1,
       "label": "Skills",
@@ -158,6 +158,76 @@
       "id": 3,
       "label": "Work with me",
       "href": "#work-with-me"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "skills": [
+        { "name": "TypeScript", "years": 5 },
+        { "name": "JavaScript", "years": 6 },
+        { "name": "PHP", "years": 6 },
+        { "name": "Swift", "years": 1 }
+      ]
+    },
+    {
+      "name": "Front End",
+      "skills": [
+        { "name": "React.js", "years": 1 },
+        { "name": "Next.js", "years": 1 },
+        { "name": "Vue.js", "years": 2 }
+      ],
+      "misc": [
+        "Build Tools",
+        "ESLint",
+        "CSS Preprocessors",
+        "CSS in JS",
+        "CSS Frameworks",
+        "Material-UI"
+      ]
+    },
+    {
+      "name": "Back End",
+      "skills": [
+        { "name": "Node.js", "years": 1 },
+        { "name": "Express.js", "years": 1 },
+        { "name": "Laravel", "years": 4 }
+      ],
+      "misc": ["REST", "SOAP", "OAuth", "JWT"]
+    },
+    {
+      "name": "Deployment",
+      "skills": [
+        { "name": "AWS", "years": 4 },
+        { "name": "Nginx / Apache2", "years": 5 }
+      ],
+      "misc": ["GitHub Pages", "Vercel (Zeit) Now", "Laravel Forge"]
+    },
+    {
+      "name": "Data Storage",
+      "skills": [
+        { "name": "MongoDB", "years": 1 },
+        { "name": "MySQL", "years": 8 },
+        { "name": "Redis", "years": 1 }
+      ],
+      "misc": ["AWS RDS", "MariaDB", "MongoDB Atlas"]
+    },
+    {
+      "name": "Other",
+      "skills": [
+        { "name": "Building REST APIs", "years": 3 },
+        { "name": "Git / Github / Bitbucket", "years": 5 }
+      ],
+      "misc": [
+        "AGILE",
+        "Jira",
+        "Trello",
+        "TDD",
+        "SOLID",
+        "DRY",
+        "YAGNI",
+        "KISS"
+      ]
     }
   ]
 }

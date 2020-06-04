@@ -3,10 +3,10 @@ import { Grid, Box } from '@material-ui/core'
 
 import { Category } from '../../types'
 import SkillsCategory from './SkillsCategory'
-import categories from '../../data/skills'
+import content from '../../content/home.json'
 
 export default () => {
-  const items = categories.map((item: Category) => (
+  const items = content.skills.map((item: Category) => (
     <SkillsCategory category={item} key={item.name} />
   ))
 
