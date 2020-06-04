@@ -1,5 +1,5 @@
 import { Box, createStyles, makeStyles, Link } from '@material-ui/core'
-import menu from '../../data/menu'
+import content from '../../content/home.json'
 import { MenuItem } from '../../types'
 
 const useStyles = makeStyles(() =>
@@ -16,7 +16,7 @@ const DesktopMenu = () => {
 
   return (
     <Box display={{ xs: 'none', md: 'block' }}>
-      {menu.map((i: MenuItem) => (
+      {content.menu.map((i: MenuItem) => (
         <Box ml={5} display="inline-flex" key={i.id}>
           <Link
             href={i.href}

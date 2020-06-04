@@ -142,5 +142,22 @@
       ],
       "skills": ["JavaScript", "PHP", "MySQL", "jQuery", "CSS", "BEM", "CMS"]
     }
+  ],
+  "menu" : [
+    {
+      "id": 1,
+      "label": "Skills",
+      "href": "#skills"
+    },
+    {
+      "id": 2,
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "id": 3,
+      "label": "Work with me",
+      "href": "#work-with-me"
+    }
   ]
 }
