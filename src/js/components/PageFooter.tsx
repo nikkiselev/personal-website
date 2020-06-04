@@ -2,12 +2,9 @@ import { Grid, Typography, Link, Box, Container } from '@material-ui/core'
 import FooterMail from './FooterMail'
 import PageSubTitle from './PageSubTitle'
 import PageSection from './PageSection'
+import content from '../../content/home.json'
 
 const itemSpacing = 1
-
-const text = `I'm a practical person so if you have a cool project to work
-              on or share the feeling that I could be a good fit with your
-              team, reach out and let's have a chat!`
 
 type Props = {
   text: string
@@ -44,7 +41,7 @@ const PageFooter = () => {
                 />
 
                 <Typography variant="body1" color="textSecondary">
-                  {text}
+                  {content.footerText}
                 </Typography>
               </Grid>
 
