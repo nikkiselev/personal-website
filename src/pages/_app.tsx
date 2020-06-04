@@ -7,7 +7,7 @@ import theme from '../theme'
 import Header from '../js/components/Header'
 import FooterBar from '../js/components/FooterBar'
 import PageFooter from '../js/components/PageFooter'
-import Particles from '../js/components/Particles'
+// import Particles from '../js/components/Particles'
 import { initGA, logPageView } from '../analytics'
 import { Router } from 'next/dist/client/router'
 
@@ -53,7 +53,7 @@ export default ({ Component, pageProps }: AppProps) => {
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <GlobalCss />
-        <Particles />
+        {/* <Particles /> */}
         <Header />
         <Component {...pageProps} />
         <PageFooter />
