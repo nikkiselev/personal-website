@@ -1,7 +1,7 @@
 import { Box, Toolbar, Tabs } from '@material-ui/core'
 import Item from './MobileMenuItem'
-import content from '../../content/home.json'
-import { MenuItem } from '../types'
+import content from 'content/home.json'
+import { MenuItem } from 'js/types'
 
 const MobileMenu = () => (
   <Box display={{ xs: 'block', md: 'none' }}>

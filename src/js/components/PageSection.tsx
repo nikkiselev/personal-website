@@ -1,6 +1,5 @@
 import { Box, makeStyles, createStyles } from '@material-ui/core'
-import theme from '../theme'
-import Particles from './Particles'
+import theme from 'js/theme'
 
 type Props = {
   noPb?: boolean

@@ -1,6 +1,5 @@
 import { Container, Grid, Box, Typography } from '@material-ui/core'
 import LaptopMacIcon from '@material-ui/icons/LaptopMac'
-
 import Location from './Location'
 
 const text1 = `I still remember writing small scripts and apps using Pascal when

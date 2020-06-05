@@ -2,7 +2,7 @@ import { Grid, Typography, Box, Container } from '@material-ui/core'
 import FooterMail from './FooterMail'
 import PageSubTitle from './PageSubTitle'
 import PageSection from './PageSection'
-import content from '../../content/home.json'
+import content from 'content/home.json'
 import FooterLink from './PageFooterLink'
 
 const itemSpacing = 1

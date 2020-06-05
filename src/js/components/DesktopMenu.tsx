@@ -1,6 +1,6 @@
 import { Box } from '@material-ui/core'
-import content from '../../content/home.json'
-import { MenuItem } from '../types'
+import content from 'content/home.json'
+import { MenuItem } from 'js/types'
 import DesktopMenuItem from './DesktopMenuItem'
 
 const DesktopMenu = () => (

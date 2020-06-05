@@ -1,6 +1,6 @@
 import { Container, Grid } from '@material-ui/core'
 import PageSubTitle from './PageSubTitle'
-import content from '../../content/home.json'
+import content from 'content/home.json'
 import PageSection from './PageSection'
 import JobsItem from './JobsItem'
 

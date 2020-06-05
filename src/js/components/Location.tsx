@@ -1,6 +1,6 @@
 import { Typography, Box } from '@material-ui/core'
 import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined'
-import content from '../../content/home.json'
+import content from 'content/home.json'
 
 const Location = () => {
   return (
