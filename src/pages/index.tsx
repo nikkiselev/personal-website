@@ -3,13 +3,25 @@ import SkillsSection from 'js/components/SkillsSection'
 // import Jobs from 'js/components/Jobs'
 import Bio from 'js/components/Bio'
 import PageSection from 'js/components/PageSection'
-import { Box, Typography, Container } from '@material-ui/core'
+import { Box, Container } from '@material-ui/core'
 import PageSubTitle from 'js/components/PageSubTitle'
 import dynamic from 'next/dynamic'
+import JobsItem from 'js/components/JobsItem'
 
 const Jobs = dynamic(() => import('js/components/Jobs'), {
   ssr: false,
 })
+
+const uni = {
+  role: 'Bachelor of Applied Science (B.A.Sc.), Computer science',
+  company: 'Novosibirsk State Technical University',
+  from: 2009,
+  to: 2013,
+  type: '',
+  place: 'Novosibirsk, Russia',
+  responsibilities: [],
+  skills: [],
+}
 
 const Home = () => {
   return (
@@ -31,13 +43,7 @@ const Home = () => {
       <PageSection withBg>
         <Container maxWidth="md">
           <PageSubTitle text="Education" />
-          <Typography variant="h6">
-            Bachelor of Applied Science (B.A.Sc.), Computer science
-          </Typography>
-          <Typography color="textSecondary">
-            Novosibirsk State Technical University
-          </Typography>
-          <Typography color="textSecondary">2009-2013</Typography>
+          <JobsItem job={uni} />
         </Container>
       </PageSection>
     </>

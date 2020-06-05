@@ -15,7 +15,7 @@ export default () => (
     <Grid container justify="center">
       <Box textAlign={{ xs: 'center' }} clone>
         <Grid item xs={12} md={9}>
-          <Box clone fontSize={180}>
+          <Box clone fontSize="180px!important">
             <LaptopMacIcon />
           </Box>
           <Typography variant="body1" component="p">
