@@ -5,13 +5,19 @@ import { ThemeProvider, withStyles } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from 'js/theme'
 import Header from 'js/components/Header'
-import FooterBar from 'js/components/FooterBar'
-import PageFooter from 'js/components/PageFooter'
+// import FooterBar from 'js/components/FooterBar'
+// import PageFooter from 'js/components/PageFooter'
 import { initGA, logPageView } from 'js/analytics'
 import { Router } from 'next/dist/client/router'
 import dynamic from 'next/dynamic'
 
 const Particles = dynamic(() => import('js/components/Particles'), {
+  ssr: false,
+})
+const FooterBar = dynamic(() => import('js/components/FooterBar'), {
+  ssr: false,
+})
+const PageFooter = dynamic(() => import('js/components/PageFooter'), {
   ssr: false,
 })
 
