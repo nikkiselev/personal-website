@@ -3,15 +3,17 @@ import Head from 'next/head'
 import { AppProps } from 'next/app'
 import { ThemeProvider, withStyles } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import theme from '../js/theme'
-import Header from '../js/components/Header'
-import FooterBar from '../js/components/FooterBar'
-import PageFooter from '../js/components/PageFooter'
-import { initGA, logPageView } from '../js/analytics'
+import theme from 'js/theme'
+import Header from 'js/components/Header'
+import FooterBar from 'js/components/FooterBar'
+import PageFooter from 'js/components/PageFooter'
+import { initGA, logPageView } from 'js/analytics'
 import { Router } from 'next/dist/client/router'
 import dynamic from 'next/dynamic'
 
-const Particles = dynamic(() => import('../js/components/Particles'))
+const Particles = dynamic(() => import('js/components/Particles'), {
+  ssr: false,
+})
 
 const GlobalCss = withStyles({
   '@global': {
