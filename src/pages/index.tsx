@@ -1,10 +1,15 @@
-import SubHeader from '../js/components/SubHeader'
-import SkillsSection from '../js/components/SkillsSection'
-import Jobs from '../js/components/Jobs'
-import Bio from '../js/components/Bio'
-import PageSection from '../js/components/PageSection'
+import SubHeader from 'js/components/SubHeader'
+import SkillsSection from 'js/components/SkillsSection'
+// import Jobs from 'js/components/Jobs'
+import Bio from 'js/components/Bio'
+import PageSection from 'js/components/PageSection'
 import { Box, Typography, Container } from '@material-ui/core'
-import PageSubTitle from '../js/components/PageSubTitle'
+import PageSubTitle from 'js/components/PageSubTitle'
+import dynamic from 'next/dynamic'
+
+const Jobs = dynamic(() => import('js/components/Jobs'), {
+  ssr: false,
+})
 
 const Home = () => {
   return (
