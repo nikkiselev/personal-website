@@ -6,7 +6,7 @@ import {
   Chip,
   Box,
 } from '@material-ui/core'
-import { Job as JobType } from '../../types'
+import { Job as JobType } from '../types'
 
 type Props = {
   job: JobType

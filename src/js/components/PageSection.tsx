@@ -1,5 +1,5 @@
 import { Box, makeStyles, createStyles } from '@material-ui/core'
-import theme from '../../theme'
+import theme from '../theme'
 import Particles from './Particles'
 
 type Props = {

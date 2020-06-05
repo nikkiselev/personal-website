@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Box } from '@material-ui/core'
 
-import { Category } from '../../types'
+import { Category } from '../types'
 import SkillsCategory from './SkillsCategory'
 import content from '../../content/home.json'
 
