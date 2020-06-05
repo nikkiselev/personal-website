@@ -28,7 +28,7 @@ const SkillsCategory = (props: Props) => {
           <CardContent>
             <List dense>
               {props.category.skills.map((skill: any) => (
-                <ListItem>
+                <ListItem key={skill.name}>
                   <ListItemText>{skill.name}</ListItemText>
                   <ListItemSecondaryAction>
                     {skill.years} year{skill.years > 1 ? 's' : ''}
@@ -38,7 +38,7 @@ const SkillsCategory = (props: Props) => {
             </List>
             <Box textAlign="left">
               {props.category.misc?.map((i: string) => (
-                <Box m={0.5} textAlign="left" clone>
+                <Box m={0.5} textAlign="left" clone key={i}>
                   <Chip
                     size="small"
                     label={i}

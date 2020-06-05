@@ -10,7 +10,6 @@ const useStyles = makeStyles(() =>
 )
 
 type Props = {
-  id: number
   href: string
   label: string
 }
@@ -19,13 +18,8 @@ const DesktopMenuItem = (props: Props) => {
   const classes = useStyles()
 
   return (
-    <Box ml={5} display="inline-flex" key={props.id}>
-      <Link
-        href={props.href}
-        key={props.id}
-        className={classes.button}
-        color="textSecondary"
-      >
+    <Box ml={5} display="inline-flex">
+      <Link href={props.href} className={classes.button} color="textSecondary">
         {props.label}
       </Link>
     </Box>
