@@ -47,6 +47,7 @@ const options = {
       distance: 150,
     },
     move: {
+      enable: false,
       speed: 1,
     },
   },

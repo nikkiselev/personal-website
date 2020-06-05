@@ -6,10 +6,12 @@ import {
   createStyles,
   Theme,
   Box,
+  Fade,
 } from '@material-ui/core'
 import Avatar from './Avatar'
 import SubHeaderActions from './SubHeaderActions'
 import PageSection from './PageSection'
+import { useEffect, useState } from 'react'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -44,16 +46,34 @@ const SubTitle = (props: SubTitle) => (
 const SubHeader = () => {
   const classes = useStyles()
 
+  const [showTitle, setShowTitle] = useState(false)
+  const [showActions, setShowActions] = useState(false)
+  const [showAvatar, setShowAvatar] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowTitle(true)
+    }, 500)
+    setTimeout(() => {
+      setShowActions(true)
+    }, 1000)
+    setTimeout(() => {
+      setShowAvatar(true)
+    }, 1500)
+  }, [])
+
   return (
     <PageSection ptXs={1}>
       <Container className={classes.root} maxWidth="md">
         <Grid container justify="center" alignItems="center">
           <Grid item xs={12} md={6}>
-            <Typography variant="h3" color="textSecondary">
-              <Box fontWeight="bold" mb={4}>
-                Hi, I'm Nikolai
-              </Box>
-            </Typography>
+            <Fade in={true} timeout={400}>
+              <Typography variant="h3" color="textSecondary">
+                <Box fontWeight="bold" mb={4}>
+                  Hi, I'm Nikolai
+                </Box>
+              </Typography>
+            </Fade>
 
             <Box
               display={{ xs: 'flex', md: 'none' }}
@@ -63,12 +83,18 @@ const SubHeader = () => {
               <Avatar />
             </Box>
 
-            <SubTitle text="A Full Stack" />
-            <SubTitle text="Web Developer" />
+            <Fade in={showTitle} timeout={400}>
+              <div>
+                <SubTitle text="A Full Stack" />
+                <SubTitle text="Web Developer" />
+              </div>
+            </Fade>
 
-            <Box mt={4}>
-              <SubHeaderActions />
-            </Box>
+            <Fade in={showActions} timeout={400}>
+              <Box mt={4}>
+                <SubHeaderActions />
+              </Box>
+            </Fade>
           </Grid>
 
           <Box
@@ -77,7 +103,11 @@ const SubHeader = () => {
             clone
           >
             <Grid item xs={12} md={6}>
-              <Avatar />
+              <Fade in={showAvatar} timeout={400}>
+                <div>
+                  <Avatar />
+                </div>
+              </Fade>
             </Grid>
           </Box>
         </Grid>
