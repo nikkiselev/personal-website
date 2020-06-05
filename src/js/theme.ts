@@ -6,7 +6,7 @@ const theme = createMuiTheme({
     primary: pink,
     secondary: grey,
     background: {
-      default: '#fff',
+      default: '#20222d',
     },
     text: {
       secondary: '#fff',
