@@ -7,9 +7,11 @@ import theme from '../js/theme'
 import Header from '../js/components/Header'
 import FooterBar from '../js/components/FooterBar'
 import PageFooter from '../js/components/PageFooter'
-import Particles from '../js/components/Particles'
 import { initGA, logPageView } from '../js/analytics'
 import { Router } from 'next/dist/client/router'
+import dynamic from 'next/dynamic'
+
+const Particles = dynamic(() => import('../js/components/Particles'))
 
 const GlobalCss = withStyles({
   '@global': {
