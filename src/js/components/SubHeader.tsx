@@ -13,6 +13,7 @@ import SubHeaderActions from './SubHeaderActions'
 import PageSection from './PageSection'
 import { useEffect, useState } from 'react'
 import SocialMedia from './SocialMedia'
+import config from 'js/config'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -34,15 +35,9 @@ const SubHeader = () => {
   const [showAvatar, setShowAvatar] = useState(false)
 
   useEffect(() => {
-    setTimeout(() => {
-      setShowTitle(true)
-    }, 400)
-    setTimeout(() => {
-      setShowActions(true)
-    }, 800)
-    setTimeout(() => {
-      setShowAvatar(true)
-    }, 1200)
+    setTimeout(() => setShowTitle(true), 400)
+    setTimeout(() => setShowActions(true), 800)
+    setTimeout(() => setShowAvatar(true), config.timeoutShowAllContent)
   }, [])
 
   return (
@@ -51,7 +46,7 @@ const SubHeader = () => {
         <Grid container justify="flex-start" alignItems="flex-start">
           <Box clone textAlign="left">
             <Grid item xs={12} md={7} justify="flex-start">
-              <Fade in={true} timeout={400}>
+              <Fade in={true} timeout={config.timeoutContentFade}>
                 <Typography variant="h3" color="textSecondary">
                   <Box fontWeight="bold" mb={4}>
                     Nikolai Kiselev
@@ -59,7 +54,7 @@ const SubHeader = () => {
                 </Typography>
               </Fade>
 
-              <Fade in={showTitle} timeout={400}>
+              <Fade in={showTitle} timeout={config.timeoutContentFade}>
                 <div>
                   <Typography color="textSecondary">
                     <Box>
@@ -70,7 +65,7 @@ const SubHeader = () => {
                 </div>
               </Fade>
 
-              <Fade in={showActions} timeout={400}>
+              <Fade in={showActions} timeout={config.timeoutContentFade}>
                 <Box mt={4}>
                   <SubHeaderActions />
                   <Box mt={6}>
@@ -82,7 +77,7 @@ const SubHeader = () => {
           </Box>
 
           <Grid xs={12} md={5}>
-            <Fade in={showAvatar} timeout={400}>
+            <Fade in={showAvatar} timeout={config.timeoutContentFade}>
               <Box display="flex" justifyContent="flex-end">
                 <Avatar />
               </Box>

@@ -228,5 +228,15 @@
     }
   ],
   "location": "Kuala Lumpur, Malaysia (GMT+8)",
-  "footerText": "I'm a practical person so if you have a cool project to work on or share the feeling that I could be a good fit with your team, reach out and let's have a chat!"
+  "footerText": "I'm a practical person so if you have a cool project to work on or share the feeling that I could be a good fit with your team, reach out and let's have a chat!",
+  "education": {
+    "role": "Bachelor of Applied Science (B.A.Sc.), Computer science",
+    "type": "",
+    "company": "Novosibirsk State Technical University",
+    "place": "Novosibirsk, Russia",
+    "from": 2009,
+    "to": 2013,
+    "responsibilities": [],
+    "skills": []
+  }
 }
