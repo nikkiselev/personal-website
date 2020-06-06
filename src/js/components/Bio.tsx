@@ -1,6 +1,7 @@
 import { Container, Grid, Box, Typography } from '@material-ui/core'
 import LaptopMacIcon from '@material-ui/icons/LaptopMac'
 import Location from './Location'
+import Avatar from './Avatar'
 
 const text1 = `I still remember writing small scripts and apps using Pascal when
               I was 12 years old just for fun. I built my first website in 2004 about history of Earth. Fast forward to today, I cannot
@@ -13,10 +14,16 @@ const text2 = `As a full-stack developer, I can build seamless & scalable web
 export default () => (
   <Container maxWidth="md">
     <Grid container justify="center">
-      <Box textAlign={{ xs: 'center' }} clone>
+      <Box
+        textAlign={{ xs: 'center' }}
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        clone
+      >
         <Grid item xs={12} md={9}>
-          <Box clone fontSize="180px!important">
-            <LaptopMacIcon />
+          <Box mb={4}>
+            <Avatar />
           </Box>
           <Typography variant="body1" component="p">
             {text1}

@@ -12,6 +12,7 @@ import Avatar from './Avatar'
 import SubHeaderActions from './SubHeaderActions'
 import PageSection from './PageSection'
 import { useEffect, useState } from 'react'
+import SocialMedia from './SocialMedia'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -66,22 +67,17 @@ const SubHeader = () => {
     <PageSection ptXs={1}>
       <Container className={classes.root} maxWidth="md">
         <Grid container justify="center" alignItems="center">
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} justify="center">
             <Fade in={true} timeout={400}>
               <Typography variant="h3" color="textSecondary">
+                {/* <Box display="flex" justifyContent="center">
+                  <Avatar/>
+                </Box> */}
                 <Box fontWeight="bold" mb={4}>
                   Hi, I'm Nikolai
                 </Box>
               </Typography>
             </Fade>
-
-            <Box
-              display={{ xs: 'flex', md: 'none' }}
-              justifyContent="center"
-              my={3}
-            >
-              <Avatar />
-            </Box>
 
             <Fade in={showTitle} timeout={400}>
               <div>
@@ -93,23 +89,12 @@ const SubHeader = () => {
             <Fade in={showActions} timeout={400}>
               <Box mt={4}>
                 <SubHeaderActions />
+                <Box mt={6}>
+                  <SocialMedia />
+                </Box>
               </Box>
             </Fade>
           </Grid>
-
-          <Box
-            display={{ xs: 'none', md: 'flex' }}
-            justifyContent="flex-end"
-            clone
-          >
-            <Grid item xs={12} md={6}>
-              <Fade in={showAvatar} timeout={400}>
-                <div>
-                  <Avatar />
-                </div>
-              </Fade>
-            </Grid>
-          </Box>
         </Grid>
       </Container>
     </PageSection>
