@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: theme.spacing(25),
       display: 'flex',
       alignItems: 'center',
-      textTransform: 'uppercase',
+      // textTransform: 'uppercase',
       textAlign: 'center',
     },
   })
@@ -62,31 +62,43 @@ const SubHeader = () => {
   return (
     <PageSection ptXs={1}>
       <Container className={classes.root} maxWidth="md">
-        <Grid container justify="center" alignItems="center">
-          <Grid item xs={12} md={6} justify="center">
-            <Fade in={true} timeout={400}>
-              <Typography variant="h3" color="textSecondary">
-                <Box fontWeight="bold" mb={4}>
-                  Hi, I'm Nikolai
-                </Box>
-              </Typography>
-            </Fade>
+        <Grid container justify="flex-start" alignItems="flex-start">
+          <Box clone textAlign="left">
+            <Grid item xs={12} md={7} justify="flex-start">
+              <Fade in={true} timeout={400}>
+                <Typography variant="h3" color="textSecondary">
+                  <Box fontWeight="bold" mb={4}>
+                    Nikolai Kiselev
+                  </Box>
+                </Typography>
+              </Fade>
 
-            <Fade in={showTitle} timeout={400}>
-              <div>
-                <SubTitle text="A Full-Stack" />
-                <SubTitle text="Web Developer" />
-              </div>
-            </Fade>
+              <Fade in={showTitle} timeout={400}>
+                <div>
+                  <Typography color="textSecondary">
+                    <Box>
+                      A full-stack web developer based in Kuala Lumpur,
+                      Malaysia. I build modern and secure web applications.
+                    </Box>
+                  </Typography>
+                </div>
+              </Fade>
 
-            <Fade in={showActions} timeout={400}>
-              <Box mt={4}>
-                <SubHeaderActions />
-                <Box mt={6}>
-                  <SocialMedia />
+              <Fade in={showActions} timeout={400}>
+                <Box mt={4}>
+                  <SubHeaderActions />
+                  <Box mt={6}>
+                    <SocialMedia />
+                  </Box>
                 </Box>
-              </Box>
-            </Fade>
+              </Fade>
+            </Grid>
+          </Box>
+
+          <Grid xs={12} md={5}>
+            <Box display="flex" justifyContent="flex-end">
+              <Avatar />
+            </Box>
           </Grid>
         </Grid>
       </Container>

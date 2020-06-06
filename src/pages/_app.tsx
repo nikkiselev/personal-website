@@ -54,9 +54,7 @@ export default ({ Component, pageProps }: AppProps) => {
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <GlobalCss />
-        <Fade in={false}>
-          <Particles />
-        </Fade>
+        {/* <Particles /> */}
         <Header />
         <Component {...pageProps} />
         <PageFooter />

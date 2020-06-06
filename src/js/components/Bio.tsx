@@ -1,7 +1,5 @@
 import { Container, Grid, Box, Typography } from '@material-ui/core'
-import LaptopMacIcon from '@material-ui/icons/LaptopMac'
 import Location from './Location'
-import Avatar from './Avatar'
 
 const text1 = `I still remember writing small scripts and apps using Pascal when
               I was 12 years old just for fun. I built my first website in 2004 about history of Earth. Fast forward to today, I cannot
@@ -22,9 +20,6 @@ export default () => (
         clone
       >
         <Grid item xs={12} md={9}>
-          <Box mb={4}>
-            <Avatar />
-          </Box>
           <Typography variant="body1" component="p">
             {text1}
           </Typography>
