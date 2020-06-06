@@ -49,7 +49,6 @@ const SubHeader = () => {
 
   const [showTitle, setShowTitle] = useState(false)
   const [showActions, setShowActions] = useState(false)
-  const [showAvatar, setShowAvatar] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
@@ -58,9 +57,6 @@ const SubHeader = () => {
     setTimeout(() => {
       setShowActions(true)
     }, 1000)
-    setTimeout(() => {
-      setShowAvatar(true)
-    }, 1500)
   }, [])
 
   return (
@@ -70,9 +66,6 @@ const SubHeader = () => {
           <Grid item xs={12} md={6} justify="center">
             <Fade in={true} timeout={400}>
               <Typography variant="h3" color="textSecondary">
-                {/* <Box display="flex" justifyContent="center">
-                  <Avatar/>
-                </Box> */}
                 <Box fontWeight="bold" mb={4}>
                   Hi, I'm Nikolai
                 </Box>
