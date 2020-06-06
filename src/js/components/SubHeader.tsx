@@ -85,7 +85,7 @@ const SubHeader = () => {
 
             <Fade in={showTitle} timeout={400}>
               <div>
-                <SubTitle text="A Full Stack" />
+                <SubTitle text="A Full-Stack" />
                 <SubTitle text="Web Developer" />
               </div>
             </Fade>

@@ -6,7 +6,7 @@ const text1 = `I still remember writing small scripts and apps using Pascal when
               I was 12 years old just for fun. I built my first website in 2004 about history of Earth. Fast forward to today, I cannot
               see myself doing anything else but web development.`
 
-const text2 = `As a full stack developer, I can build seamless & scalable web
+const text2 = `As a full-stack developer, I can build seamless & scalable web
               applications, websites. Whether it’s from scratch or an existing
               codebase, I’m ready to jump in.`
 
