@@ -11,7 +11,7 @@ export default (props: Props) => (
     color={props.color ? props.color : 'textPrimary'}
     id={props.id}
   >
-    <Box fontWeight="bold" textAlign="center" my={5}>
+    <Box fontWeight="bold" textAlign="center" mb={5}>
       {props.text}
     </Box>
   </Typography>

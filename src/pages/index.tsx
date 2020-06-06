@@ -27,15 +27,8 @@ const Home = () => {
   return (
     <>
       <SubHeader />
-
       <Bio />
-
-      <PageSection>
-        <Box mt={{ xs: 5, sm: 10, md: 15 }}>
-          <SkillsSection />
-        </Box>
-      </PageSection>
-
+      <SkillsSection />
       <Jobs />
 
       <PageSection withBg>
