@@ -1,20 +1,19 @@
-import { Box, Toolbar, Tabs } from '@material-ui/core'
+import { Box, Toolbar, Grid } from '@material-ui/core'
 import Item from './MobileMenuItem'
 import content from 'content/home.json'
-import { MenuItem } from 'js/types'
 
-const MobileMenu = () => (
-  <Box display={{ xs: 'block', md: 'none' }}>
-    <Toolbar disableGutters>
-      <Box flexGrow={1}>
-        <Tabs value={0} variant="fullWidth">
-          {content.menu.map((i: MenuItem) => (
-            <Item label={i.label} href={i.href} key={i.href} />
-          ))}
-        </Tabs>
-      </Box>
-    </Toolbar>
-  </Box>
-)
+const MobileMenu = () => {
+  const items = content.menu
+    .filter((i: any) => i.mobile)
+    .map((i: any) => <Item label={i.label} href={i.href} key={i.href} />)
+
+  return (
+    <Box display={{ xs: 'block', md: 'none' }}>
+      <Toolbar disableGutters>
+        <Grid container>{items}</Grid>
+      </Toolbar>
+    </Box>
+  )
+}
 
 export default MobileMenu

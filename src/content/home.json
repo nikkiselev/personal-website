@@ -146,15 +146,18 @@
   "menu": [
     {
       "label": "Skills",
-      "href": "#skills"
+      "href": "#skills",
+      "mobile": false
     },
     {
       "label": "Experience",
-      "href": "#experience"
+      "href": "#experience",
+      "mobile": true
     },
     {
       "label": "Work with me",
-      "href": "#work-with-me"
+      "href": "#work-with-me",
+      "mobile": true
     }
   ],
   "skills": [

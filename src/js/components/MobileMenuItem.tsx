@@ -1,10 +1,8 @@
-import { Grid, makeStyles, createStyles, Tab, Box } from '@material-ui/core'
+import { Grid, makeStyles, createStyles, Box, Link } from '@material-ui/core'
 
 const useStyles = makeStyles(() =>
   createStyles({
-    tab: {
-      textTransform: 'initial',
-    },
+    tab: {},
   })
 )
 
@@ -18,8 +16,10 @@ const MobileMenuItem = (props: MobileMenuItemProps) => {
 
   return (
     <Box textAlign="center" clone>
-      <Grid item xs={4}>
-        <Tab label={props.label} className={classes.tab} href={props.href} />
+      <Grid item xs={6}>
+        <Link className={classes.tab} href={props.href} color="textSecondary">
+          {props.label}
+        </Link>
       </Grid>
     </Box>
   )

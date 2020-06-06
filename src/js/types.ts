@@ -1,6 +1,7 @@
 export type MenuItem = {
   label: string
   href: string
+  mobile: boolean
 }
 
 export type Job = {
