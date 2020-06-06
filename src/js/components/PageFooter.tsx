@@ -3,9 +3,7 @@ import FooterMail from './FooterMail'
 import PageSubTitle from './PageSubTitle'
 import PageSection from './PageSection'
 import content from 'content/home.json'
-import GitHub from '@material-ui/icons/GitHub'
-import LinkedIn from '@material-ui/icons/LinkedIn'
-import StackOverflow from './StackOverflow'
+import SocialMedia from './SocialMedia'
 
 const itemSpacing = 1
 
@@ -40,29 +38,7 @@ const PageFooter = () => {
                     I'm also on:
                   </Typography>
                 </Box>
-                <a href="https://www.linkedin.com/in/nikkiselev">
-                  <LinkedIn
-                    htmlColor="#fff"
-                    fontSize="large"
-                    titleAccess="LinkedIn"
-                  />
-                </a>
-                &nbsp;
-                <a href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile">
-                  <StackOverflow
-                    htmlColor="#fff"
-                    fontSize="large"
-                    titleAccess="Stack Overflow"
-                  />
-                </a>
-                &nbsp;
-                <a href="https://github.com/nikkiselev">
-                  <GitHub
-                    htmlColor="#fff"
-                    fontSize="large"
-                    titleAccess="GitHub"
-                  />
-                </a>
+                <SocialMedia />
               </Grid>
             </Box>
           </Grid>
