@@ -17,16 +17,10 @@ import SocialMedia from './SocialMedia'
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      [theme.breakpoints.up('xs')]: {
-        marginTop: theme.spacing(5),
-      },
-      [theme.breakpoints.up('md')]: {
-        marginTop: theme.spacing(12),
-      },
-      marginBottom: theme.spacing(25),
+      [theme.breakpoints.up('xs')]: {},
+      [theme.breakpoints.up('md')]: {},
       display: 'flex',
       alignItems: 'center',
-      // textTransform: 'uppercase',
       textAlign: 'center',
     },
   })
@@ -60,7 +54,7 @@ const SubHeader = () => {
   }, [])
 
   return (
-    <PageSection ptXs={1}>
+    <PageSection>
       <Container className={classes.root} maxWidth="md">
         <Grid container justify="flex-start" alignItems="flex-start">
           <Box clone textAlign="left">

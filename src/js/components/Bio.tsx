@@ -1,5 +1,6 @@
 import { Container, Grid, Box, Typography } from '@material-ui/core'
 import Location from './Location'
+import PageSection from './PageSection'
 
 const text1 = `I still remember writing small scripts and apps using Pascal when
               I was 12 years old just for fun. I built my first website in 2004 about history of Earth. Fast forward to today, I cannot
@@ -10,26 +11,28 @@ const text2 = `As a full-stack developer, I can build seamless & scalable web
               codebase, I’m ready to jump in.`
 
 export default () => (
-  <Container maxWidth="md">
-    <Grid container justify="center">
-      <Box
-        textAlign={{ xs: 'center' }}
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        clone
-      >
-        <Grid item xs={12} md={9}>
-          <Typography variant="body1" component="p">
-            {text1}
-          </Typography>
-          <br />
-          <Typography variant="body1" component="p">
-            {text2}
-          </Typography>
-          <Location />
-        </Grid>
-      </Box>
-    </Grid>
-  </Container>
+  <PageSection withBg>
+    <Container maxWidth="md">
+      <Grid container justify="center">
+        <Box
+          textAlign={{ xs: 'center' }}
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          clone
+        >
+          <Grid item xs={12} md={9}>
+            <Typography variant="body1" component="p">
+              {text1}
+            </Typography>
+            <br />
+            <Typography variant="body1" component="p">
+              {text2}
+            </Typography>
+            <Location />
+          </Grid>
+        </Box>
+      </Grid>
+    </Container>
+  </PageSection>
 )

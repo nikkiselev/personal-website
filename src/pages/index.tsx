@@ -28,9 +28,7 @@ const Home = () => {
     <>
       <SubHeader />
 
-      <PageSection withBg>
-        <Bio />
-      </PageSection>
+      <Bio />
 
       <PageSection>
         <Box mt={{ xs: 5, sm: 10, md: 15 }}>

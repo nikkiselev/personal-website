@@ -10,19 +10,17 @@ type Props = {
 const padding = {
   xs: theme.spacing(6),
   sm: theme.spacing(12),
-  md: theme.spacing(18),
+  md: theme.spacing(12),
 }
 
 //@ts-ignore
 const color = '#fff'
-// const background = `linear-gradient( to bottom right, transparent 50%, ${color} 50% )`
 
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
       [theme.breakpoints.up('xs')]: {
-        paddingTop: (props: Props) =>
-          props.ptXs ? theme.spacing(props.ptXs) : padding['xs'],
+        paddingTop: padding['xs'],
         paddingBottom: (props: Props) => (props.noPb ? 0 : padding['xs']),
       },
       [theme.breakpoints.up('sm')]: {
@@ -42,12 +40,7 @@ const useStyles = makeStyles(() =>
 const PageSection = (props: any) => {
   const classes = useStyles(props)
 
-  return (
-    <Box className={classes.root}>
-      {/* {props.withBg && <Particles/> } */}
-      {props.children}
-    </Box>
-  )
+  return <Box className={classes.root}>{props.children}</Box>
 }
 
 export default PageSection
