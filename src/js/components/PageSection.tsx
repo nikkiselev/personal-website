@@ -9,7 +9,7 @@ type Props = {
 
 const padding = {
   xs: theme.spacing(6),
-  sm: theme.spacing(12),
+  sm: theme.spacing(9),
   md: theme.spacing(12),
 }
 
