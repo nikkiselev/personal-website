@@ -26,18 +26,6 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-type SubTitle = {
-  text: string
-}
-
-const SubTitle = (props: SubTitle) => (
-  <Typography variant="subtitle1" color="textSecondary">
-    <Box fontWeight="bold" letterSpacing={5}>
-      {props.text}
-    </Box>
-  </Typography>
-)
-
 const SubHeader = () => {
   const classes = useStyles()
 
