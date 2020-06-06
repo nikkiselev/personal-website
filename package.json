@@ -28,8 +28,7 @@
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-ga": "^2.7.0",
-    "react-particles-js": "^3.2.1"
+    "react-ga": "^2.7.0"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^9.4.4",
