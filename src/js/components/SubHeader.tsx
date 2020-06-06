@@ -43,14 +43,18 @@ const SubHeader = () => {
 
   const [showTitle, setShowTitle] = useState(false)
   const [showActions, setShowActions] = useState(false)
+  const [showAvatar, setShowAvatar] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
       setShowTitle(true)
-    }, 500)
+    }, 400)
     setTimeout(() => {
       setShowActions(true)
-    }, 1000)
+    }, 800)
+    setTimeout(() => {
+      setShowAvatar(true)
+    }, 1200)
   }, [])
 
   return (
@@ -90,9 +94,11 @@ const SubHeader = () => {
           </Box>
 
           <Grid xs={12} md={5}>
-            <Box display="flex" justifyContent="flex-end">
-              <Avatar />
-            </Box>
+            <Fade in={showAvatar} timeout={400}>
+              <Box display="flex" justifyContent="flex-end">
+                <Avatar />
+              </Box>
+            </Fade>
           </Grid>
         </Grid>
       </Container>
