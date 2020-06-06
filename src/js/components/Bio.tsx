@@ -29,9 +29,9 @@ export default () => {
                 display="flex"
                 flexDirection="column"
                 justifyContent="center"
-                height="100%"
+                height="100%!important"
               >
-                <Box width="60%" height="auto" clone>
+                <Box width="60%!important" height="auto!important" clone>
                   <ReactLogo />
                 </Box>
               </Box>
