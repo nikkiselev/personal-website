@@ -20,7 +20,10 @@
       "type": "Freelance",
       "from": 2019,
       "to": 2019,
-      "responsibilities": ["Upgraded Laravel to the latest version"],
+      "responsibilities": [
+        "Developed school management software",
+        "Refactored overridden third-party libraries, so it can be compiled using Webpack and updated from NPM registry"
+      ],
       "skills": ["Laravel", "MySQL", "REST", "PHP", "JavaScript", "Jira"]
     },
     {
@@ -31,7 +34,8 @@
       "from": 2018,
       "to": 2018,
       "responsibilities": [
-        "Developed an app that automates Facebook ad postings for real estate businesses"
+        "Developed an app that automates Facebook Ad postings for real estate businesses",
+        "Developed a vendor dashboard where users can see the success of Facebook Ad campaigns like views, shares and etc"
       ],
       "skills": [
         "Laravel",
@@ -207,7 +211,7 @@
       "name": "Data Storage",
       "skills": [
         { "name": "MongoDB", "years": 1 },
-        { "name": "MySQL", "years": 8 },
+        { "name": "MySQL", "years": 9 },
         { "name": "Redis", "years": 1 }
       ],
       "misc": ["AWS RDS", "MariaDB", "MongoDB Atlas"]
