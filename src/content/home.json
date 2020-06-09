@@ -21,7 +21,7 @@
       "from": 2019,
       "to": 2019,
       "responsibilities": [
-        "Developed school management software",
+        "Developed a school management software",
         "Refactored overridden third-party libraries, so it can be compiled using Webpack and updated from NPM registry"
       ],
       "skills": ["Laravel", "MySQL", "REST", "PHP", "JavaScript", "Jira"]
@@ -35,7 +35,7 @@
       "to": 2018,
       "responsibilities": [
         "Developed an app that automates Facebook Ad postings for real estate businesses",
-        "Developed a vendor dashboard where users can see the success of Facebook Ad campaigns like views, shares and etc"
+        "Developed a vendor dashboard where users can see the results of Facebook Ad campaigns like views, shares and etc"
       ],
       "skills": [
         "Laravel",
@@ -245,5 +245,11 @@
     "to": 2013,
     "responsibilities": [],
     "skills": []
-  }
+  },
+  "bio": [
+    "A lifetime hobby turned into a profession!",
+    "I still remember my first encounter with programming in elementary school at the age of 8. At 12, I was enrolled to a programming course. I wrote small scripts and apps using Pascal.",
+    "In 2004, I built my first website about the history of Earth. It wasn't great but it made me realize my passion for programming. That led me toward getting a Bachelor degree in Computer Science.",
+    "Fast forward to today, I build web applications as a freelance full-stack web developer."
+  ]
 }
