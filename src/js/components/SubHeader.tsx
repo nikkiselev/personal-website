@@ -82,7 +82,7 @@ const SubHeader = () => {
           </Box>
 
           <Box clone display={{ xs: 'none', md: 'block' }}>
-            <Grid xs={12} md={5}>
+            <Grid item xs={12} md={5}>
               <Fade in={showAvatar} timeout={config.timeoutContentFade}>
                 <Box display="flex" justifyContent="flex-end">
                   <Avatar />
