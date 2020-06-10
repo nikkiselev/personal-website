@@ -6,7 +6,7 @@ import theme from '../js/theme'
 export default class MyDocument extends Document {
   render() {
     return (
-      <html lang="en">
+      <html lang="en" prefix="og: http://ogp.me/ns#">
         <Head>
           <meta name="theme-color" content={theme.palette.primary.main} />
         </Head>
