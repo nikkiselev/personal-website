@@ -4,11 +4,17 @@ import StackOverflow from './StackOverflow'
 
 const SocialMedia = () => (
   <>
-    <a href="https://www.linkedin.com/in/nikkiselev">
+    <a
+      href="https://www.linkedin.com/in/nikkiselev"
+      aria-label="Nikolai Kiselev LinkedIn profile"
+    >
       <LinkedIn htmlColor="#fff" fontSize="large" titleAccess="LinkedIn" />
     </a>
     &nbsp;
-    <a href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile">
+    <a
+      href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile"
+      aria-label="Nikolai Kiselev Stack Overflow profile"
+    >
       <StackOverflow
         htmlColor="#fff"
         fontSize="large"
@@ -17,7 +23,12 @@ const SocialMedia = () => (
     </a>
     &nbsp;
     <a href="https://github.com/nikkiselev">
-      <GitHub htmlColor="#fff" fontSize="large" titleAccess="GitHub" />
+      <GitHub
+        htmlColor="#fff"
+        fontSize="large"
+        titleAccess="GitHub"
+        aria-label="Nikolai Kiselev GitHub profile"
+      />
     </a>
   </>
 )
