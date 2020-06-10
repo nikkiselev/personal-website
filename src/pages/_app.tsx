@@ -56,6 +56,13 @@ export default ({ Component, pageProps }: AppProps) => {
         <meta property="og:description" content={content.seo.desc} />
         <meta property="og:site_name" content={content.seo.title} />
         <meta property="og:locale" content="en_US" />
+
+        <meta
+          property="og:image"
+          content="https://kiselev.dev/images/avatar.jpeg"
+        />
+        <meta property="og:image:width" content="460" />
+        <meta property="og:image:height" content="460" />
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
