@@ -8,7 +8,7 @@ const MobileMenu = () => {
     .map((i: any) => <Item label={i.label} href={i.href} key={i.href} />)
 
   return (
-    <Box display={{ xs: 'block', md: 'none' }}>
+    <Box display={{ xs: 'block', sm: 'none' }}>
       <Toolbar disableGutters>
         <Grid container>{items}</Grid>
       </Toolbar>

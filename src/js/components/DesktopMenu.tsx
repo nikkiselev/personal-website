@@ -4,7 +4,7 @@ import { MenuItem } from 'js/types'
 import DesktopMenuItem from './DesktopMenuItem'
 
 const DesktopMenu = () => (
-  <Box display={{ xs: 'none', md: 'block' }}>
+  <Box display={{ xs: 'none', sm: 'block' }}>
     {content.menu.map((i: MenuItem) => (
       <DesktopMenuItem {...i} key={i.href} />
     ))}

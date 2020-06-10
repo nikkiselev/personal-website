@@ -44,7 +44,7 @@ const SubHeader = () => {
     <PageSection>
       <Container className={classes.root} maxWidth="md">
         <Grid container justify="flex-start" alignItems="flex-start">
-          <Box clone textAlign="left">
+          <Box clone textAlign={{ xs: 'center', md: 'left' }}>
             <Grid item xs={12} md={7} justify="flex-start">
               <Fade in={true} timeout={config.timeoutContentFade}>
                 <Typography variant="h3" color="textSecondary">
@@ -56,6 +56,13 @@ const SubHeader = () => {
 
               <Fade in={showTitle} timeout={config.timeoutContentFade}>
                 <div>
+                  <Box
+                    display={{ xs: 'flex', md: 'none' }}
+                    justifyContent="center"
+                    my={3}
+                  >
+                    <Avatar />
+                  </Box>
                   <Typography color="textSecondary">
                     <Box>
                       A full-stack web developer based in Kuala Lumpur,
@@ -76,13 +83,15 @@ const SubHeader = () => {
             </Grid>
           </Box>
 
-          <Grid xs={12} md={5}>
-            <Fade in={showAvatar} timeout={config.timeoutContentFade}>
-              <Box display="flex" justifyContent="flex-end">
-                <Avatar />
-              </Box>
-            </Fade>
-          </Grid>
+          <Box clone display={{ xs: 'none', md: 'block' }}>
+            <Grid xs={12} md={5}>
+              <Fade in={showAvatar} timeout={config.timeoutContentFade}>
+                <Box display="flex" justifyContent="flex-end">
+                  <Avatar />
+                </Box>
+              </Fade>
+            </Grid>
+          </Box>
         </Grid>
       </Container>
     </PageSection>

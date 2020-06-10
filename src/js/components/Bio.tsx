@@ -17,24 +17,29 @@ export default () => {
       <Fade in={showContent} timeout={config.timeoutContentFade}>
         <Container maxWidth="md">
           <Grid container>
-            <Grid item md={6}>
-              <Box
-                display="flex"
-                flexDirection="column"
-                justifyContent="center"
-                height="100%!important"
-              >
-                <Box width="60%!important" height="auto!important" clone>
-                  <ReactLogo />
+            <Box clone pb={{ xs: 3, md: 0 }}>
+              <Grid item xs={12} md={6}>
+                <Box
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="center"
+                  alignItems={{ xs: 'center', md: 'initial' }}
+                  height="100%!important"
+                >
+                  <Box width="60%!important" height="auto!important" clone>
+                    <ReactLogo />
+                  </Box>
                 </Box>
-              </Box>
-            </Grid>
+              </Grid>
+            </Box>
             <Grid item xs={12} md={6}>
-              {content.bio.map((text) => (
-                <Typography variant="body1" paragraph={true}>
-                  {text}
-                </Typography>
-              ))}
+              <Box textAlign={{ xs: 'center', md: 'left' }}>
+                {content.bio.map((text) => (
+                  <Typography variant="body1" paragraph={true}>
+                    {text}
+                  </Typography>
+                ))}
+              </Box>
             </Grid>
           </Grid>
         </Container>
