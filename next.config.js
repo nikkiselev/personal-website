@@ -11,7 +11,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
     },
     catchAllRouting: true,
   },
-
 })
 
 module.exports = withBundleAnalyzer({})
