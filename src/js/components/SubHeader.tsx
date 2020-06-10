@@ -64,10 +64,8 @@ const SubHeader = () => {
                     <Avatar />
                   </Box>
                   <Typography color="textSecondary">
-                    <Box>
-                      A full-stack web developer based in Kuala Lumpur,
-                      Malaysia. I build modern and secure web applications.
-                    </Box>
+                    A full-stack web developer based in Kuala Lumpur, Malaysia.
+                    I build modern and secure web applications.
                   </Typography>
                 </div>
               </Fade>
