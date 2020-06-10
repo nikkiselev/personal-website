@@ -47,6 +47,10 @@ export default ({ Component, pageProps }: AppProps) => {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
+        <meta
+          name="description"
+          content="Nikolai Kiselev is a full-stack web developer who builds modern and secure web applications."
+        />
       </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
