@@ -51,7 +51,7 @@ export default ({ Component, pageProps }: AppProps) => {
         <meta name="description" content={content.seo.desc} />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://kiselev.dev" />
+        <meta property="og:url" content="https://kiselev.dev/" />
         <meta property="og:title" content={content.seo.title} />
         <meta property="og:description" content={content.seo.desc} />
         <meta property="og:site_name" content={content.seo.title} />
