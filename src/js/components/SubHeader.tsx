@@ -45,7 +45,7 @@ const SubHeader = () => {
       <Container className={classes.root} maxWidth="md">
         <Grid container justify="flex-start" alignItems="flex-start">
           <Box clone textAlign={{ xs: 'center', md: 'left' }}>
-            <Grid item xs={12} md={7} justify="flex-start">
+            <Grid item xs={12} md={7}>
               <Fade in={true} timeout={config.timeoutContentFade}>
                 <Typography variant="h3" color="textSecondary">
                   <Box fontWeight="bold" mb={4}>
