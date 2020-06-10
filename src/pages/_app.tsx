@@ -42,7 +42,7 @@ export default ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>Nikolai Kiselev | Full-Stack web developer</title>
+        <title>Nikolai Kiselev | Full-Stack Web Developer</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
