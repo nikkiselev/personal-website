@@ -28,7 +28,8 @@
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-ga": "^2.7.0"
+    "react-ga": "^2.7.0",
+    "sitemap": "^6.1.5"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^9.4.4",
