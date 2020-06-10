@@ -1,0 +1,255 @@
+{
+  "jobs": [
+    {
+      "role": "Full-Stack Web Developer",
+      "company": "Africa Business",
+      "place": "Frankfurt, Germany",
+      "type": "Freelance",
+      "from": 2019,
+      "to": 2019,
+      "responsibilities": [
+        "Created an app that connects African exporters to international traders",
+        "Maintained server infrastructure on AWS"
+      ],
+      "skills": ["Laravel", "MySQL", "PHP", "JavaScript", "Trello"]
+    },
+    {
+      "role": "Full-Stack Web Developer",
+      "company": "BaseState",
+      "place": "Melbourne, Australia",
+      "type": "Freelance",
+      "from": 2019,
+      "to": 2019,
+      "responsibilities": [
+        "Developed a school management software",
+        "Refactored overridden third-party libraries, so it can be compiled using Webpack and updated from NPM registry"
+      ],
+      "skills": ["Laravel", "MySQL", "REST", "PHP", "JavaScript", "Jira"]
+    },
+    {
+      "role": "Full-Stack Web Developer",
+      "company": "Visual Cache",
+      "place": "Melbourne, Australia",
+      "type": "Freelance",
+      "from": 2018,
+      "to": 2018,
+      "responsibilities": [
+        "Developed an app that automates Facebook Ad postings for real estate businesses",
+        "Developed a vendor dashboard where users can see the results of Facebook Ad campaigns like views, shares and etc"
+      ],
+      "skills": [
+        "Laravel",
+        "MySQL",
+        "AWS",
+        "Vue.js",
+        "REST",
+        "PHP",
+        "JavaScript",
+        "Trello"
+      ]
+    },
+    {
+      "role": "Full-Stack Web Developer",
+      "company": "Threeworlds",
+      "type": "Freelance",
+      "place": "Gold Coast, Australia",
+      "from": 2017,
+      "to": "present",
+      "responsibilities": [
+        "Created an inventory management app to keep track of all products in stock.",
+        "Integrated it with Shopify to manage product stock on hand, customer orders, users and etc",
+        "Created a recommendation system that suggests purchase orders to suppliers, notifies staff when stock is low and calculates inventory data",
+        "Created a wholesale store website and integrated it with Shopify",
+        "Wrote more than 500 unit and integration tests",
+        "Configured job scheduling with Redis",
+        "Maintaining infrastructure on AWS"
+      ],
+      "skills": [
+        "Laravel",
+        "MySQL",
+        "AWS",
+        "Vue.js",
+        "REST",
+        "Redis",
+        "PHP",
+        "JavaScript",
+        "Trello"
+      ]
+    },
+    {
+      "role": "Full-Stack Web Developer",
+      "company": "Codeblue",
+      "type": "Freelance",
+      "place": "Norway",
+      "from": 2016,
+      "to": 2017,
+      "responsibilities": [
+        "Created a CRM app to manage products, customers, sales, stores and warehouses. Added features including registering product defects, shipping, warranty cases and etc",
+        "Created a waste tracking app to help recyclers and carriers organize waste deliveries",
+        "Developed a dashboard with charts and data"
+      ],
+      "skills": ["Laravel", "MySQL", "Bootstrap", "PHP", "JavaScript", "jQuery"]
+    },
+    {
+      "role": "Back-end Developer",
+      "company": "Jade IT",
+      "type": "Freelance",
+      "place": "South Africa",
+      "from": 2016,
+      "to": 2016,
+      "responsibilities": [
+        "Developed a mailing API microservice for email and text messaging(SMS) campaigns",
+        "Integrated with AWS SES for email sending"
+      ],
+      "skills": ["Laravel", "AWS", "PostgreSQL", "PHP", "Codeship"]
+    },
+    {
+      "role": "Full-Stack Web Developer",
+      "company": "Cathara Consulting",
+      "type": "Freelance",
+      "place": "Perth, Australia",
+      "from": 2016,
+      "to": 2016,
+      "responsibilities": [
+        "Created a Resume App that helps recruiters manage consultant profiles systematically",
+        "Integrated the app with an identity management service called Atlassian Crowd",
+        "Added a feature that allows export of applicant resumes to XML, Word and PDF formats"
+      ],
+      "skills": ["Laravel", "MySQL", "SASS", "PHP", "jQuery", "Basecamp"]
+    },
+    {
+      "role": "Full-Stack Web Developer",
+      "type": "Freelance",
+      "company": "IT Park",
+      "place": "Brno, Czech Republic",
+      "from": 2016,
+      "to": 2019,
+      "responsibilities": [
+        "Developed a project management app",
+        "Integrated the app with Google OAuth2 and Google Calendar",
+        "Solved hundreds of issues: bug fixes and new feature requests",
+        "Optimized slow SQL queries"
+      ],
+      "skills": ["JavaScript", "PHP", "MySQL", "jQuery", "CSS"]
+    },
+    {
+      "role": "Full-Stack Web Developer",
+      "type": "Full-time",
+      "company": "ITConstruct",
+      "place": "Novosibirsk, Russia",
+      "from": 2014,
+      "to": 2015,
+      "responsibilities": [
+        "Created and supported many e-commerce websites based on Bitrix CMS. It includes integrations with various systems like accounting software, social media websites and etc",
+        "Configured cloud Bitrix24 CRM apps",
+        "Provided customer tech support and consulting through phone and a ticket tracking system"
+      ],
+      "skills": ["JavaScript", "PHP", "MySQL", "jQuery", "CSS", "BEM", "CMS"]
+    }
+  ],
+  "menu": [
+    {
+      "label": "Skills",
+      "href": "#skills",
+      "mobile": false
+    },
+    {
+      "label": "Experience",
+      "href": "#experience",
+      "mobile": true
+    },
+    {
+      "label": "Work with me",
+      "href": "#work-with-me",
+      "mobile": true
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "skills": [
+        { "name": "TypeScript", "years": 5 },
+        { "name": "JavaScript", "years": 6 },
+        { "name": "PHP", "years": 6 },
+        { "name": "Swift", "years": 1 }
+      ]
+    },
+    {
+      "name": "Front End",
+      "skills": [
+        { "name": "React.js", "years": 1 },
+        { "name": "Next.js", "years": 1 },
+        { "name": "Vue.js", "years": 2 }
+      ],
+      "misc": [
+        "Build Tools",
+        "ESLint",
+        "CSS Preprocessors",
+        "CSS in JS",
+        "CSS Frameworks",
+        "Material-UI"
+      ]
+    },
+    {
+      "name": "Back End",
+      "skills": [
+        { "name": "Node.js", "years": 1 },
+        { "name": "Express.js", "years": 1 },
+        { "name": "Laravel", "years": 4 }
+      ],
+      "misc": ["REST", "SOAP", "OAuth", "JWT"]
+    },
+    {
+      "name": "Deployment",
+      "skills": [
+        { "name": "AWS", "years": 4 },
+        { "name": "Nginx / Apache2", "years": 5 }
+      ],
+      "misc": ["GitHub Pages", "Vercel (Zeit) Now", "Laravel Forge"]
+    },
+    {
+      "name": "Data Storage",
+      "skills": [
+        { "name": "MongoDB", "years": 1 },
+        { "name": "MySQL", "years": 9 },
+        { "name": "Redis", "years": 1 }
+      ],
+      "misc": ["AWS RDS", "MariaDB", "MongoDB Atlas"]
+    },
+    {
+      "name": "Other",
+      "skills": [
+        { "name": "Building REST APIs", "years": 3 },
+        { "name": "Git / Github / Bitbucket", "years": 5 }
+      ],
+      "misc": [
+        "AGILE",
+        "Jira",
+        "Trello",
+        "TDD",
+        "SOLID",
+        "DRY",
+        "YAGNI",
+        "KISS"
+      ]
+    }
+  ],
+  "location": "Kuala Lumpur, Malaysia (GMT+8)",
+  "footerText": "I'm a practical person so if you have a cool project to work on or share the feeling that I could be a good fit with your team, reach out and let's have a chat!",
+  "education": {
+    "role": "Bachelor of Applied Science (B.A.Sc.), Computer science",
+    "type": "",
+    "company": "Novosibirsk State Technical University",
+    "place": "Novosibirsk, Russia",
+    "from": 2009,
+    "to": 2013,
+    "responsibilities": [],
+    "skills": []
+  },
+  "bio": [
+    "A lifetime hobby turned into a profession!",
+    "I still remember my first encounter with programming in elementary school at the age of 8. At 12, I was enrolled to a programming course. I wrote small scripts and apps using Pascal.",
+    "In 2004, I built my first website about the history of Earth. It wasn't great but it made me realize my passion for programming. That led me toward getting a Bachelor degree in Computer Science.",
+    "Fast forward to today, I build web applications as a freelance full-stack web developer."
+  ]
+}
