@@ -35,7 +35,7 @@ export default () => {
             <Grid item xs={12} md={6}>
               <Box textAlign={{ xs: 'center', md: 'left' }}>
                 {content.bio.map((text) => (
-                  <Typography variant="body1" paragraph={true}>
+                  <Typography variant="body1" paragraph={true} key={text}>
                     {text}
                   </Typography>
                 ))}
