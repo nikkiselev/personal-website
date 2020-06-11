@@ -1,5 +1,9 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
+
+})
+
+module.exports = withBundleAnalyzer({
   poweredByHeader: false,
   experimental: {
     modern: true,
@@ -12,5 +16,3 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
     catchAllRouting: true,
   },
 })
-
-module.exports = withBundleAnalyzer({})
