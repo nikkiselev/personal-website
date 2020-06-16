@@ -4,4 +4,4 @@
 
 © Nikolai Kiselev 2020
 
-You have no permission to use, modify, or share the software.
+Using, modifying or sharing this software is not permitted.
