@@ -5,7 +5,8 @@ type Props = {
   color?: any
   id?: string
 }
-export default (props: Props) => (
+
+const PageSubTitle = (props: Props) => (
   <Typography
     variant="h3"
     color={props.color ? props.color : 'textPrimary'}
@@ -16,3 +17,5 @@ export default (props: Props) => (
     </Box>
   </Typography>
 )
+
+export default PageSubTitle

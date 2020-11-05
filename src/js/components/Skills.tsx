@@ -5,7 +5,7 @@ import { Category } from 'js/types'
 import SkillsCategory from './SkillsCategory'
 import content from 'content/home.json'
 
-export default () => {
+const Skills = () => {
   const items = content.skills.map((item: Category) => (
     <SkillsCategory category={item} key={item.name} />
   ))
@@ -18,3 +18,5 @@ export default () => {
     </Box>
   )
 }
+
+export default Skills

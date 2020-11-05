@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import config from 'js/config'
 import content from 'content/home.json'
 
-export default () => {
+const Bio = () => {
   const [showContent, setShowContent] = useState(false)
 
   useEffect(() => {
@@ -47,3 +47,5 @@ export default () => {
     </PageSection>
   )
 }
+
+export default Bio

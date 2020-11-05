@@ -1,6 +1,6 @@
 import { Grid, Box, Button } from '@material-ui/core'
 
-export default () => (
+const SubHeaderActions = () => (
   <Grid container spacing={2}>
     <Grid item xs={12} sm={6}>
       <Box clone width="100%">
@@ -19,3 +19,5 @@ export default () => (
     </Grid>
   </Grid>
 )
+
+export default SubHeaderActions
