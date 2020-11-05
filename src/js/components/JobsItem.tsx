@@ -23,8 +23,12 @@ const JobsItem = (props: Props) => {
       </Typography>
       <br />
       <Typography variant="caption">{duration}</Typography>
-      <br />
-      <Typography variant="caption">{props.job.place}</Typography>
+
+      {props.job.place && (
+        <div>
+          <Typography variant="caption">{props.job.place}</Typography>
+        </div>
+      )}
 
       <List dense>
         {props.job.responsibilities.map((item: string) => (
