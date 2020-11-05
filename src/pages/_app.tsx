@@ -7,7 +7,6 @@ import theme from 'js/theme'
 import Header from 'js/components/Header'
 import FooterBar from 'js/components/FooterBar'
 import PageFooter from 'js/components/PageFooter'
-import { initGA, logPageView } from 'js/analytics'
 import { Router } from 'next/dist/client/router'
 import content from 'content/home.json'
 
@@ -21,17 +20,6 @@ const GlobalCss = withStyles({
 })(() => null)
 
 export default ({ Component, pageProps }: AppProps) => {
-  useEffect(() => {
-    initGA()
-    logPageView()
-
-    Router.events.on('routeChangeComplete', logPageView)
-
-    return () => {
-      Router.events.off('routeChangeComplete', logPageView)
-    }
-  }, [])
-
   useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.getElementById('jss-server-side')
