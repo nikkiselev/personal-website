@@ -1,10 +1,17 @@
-import { Avatar as MUIAvatar, Box } from '@material-ui/core'
+import { Box } from '@material-ui/core'
+import Image from 'next/image'
 
 const size = '280px!important'
 
 const Avatar = () => (
-  <Box height={size} width={size} borderRadius="50%" clone>
-    <img src="/images/avatar.jpeg" alt="Nikolai Kiselev avatar" />
+  <Box borderRadius="50%" clone>
+    <Image
+      src="/images/avatar.jpeg"
+      height={size}
+      width={size}
+      loading="eager"
+      alt="Nikolai Kiselev avatar"
+    />
   </Box>
 )
 
