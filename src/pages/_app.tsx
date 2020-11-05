@@ -19,7 +19,7 @@ const GlobalCss = withStyles({
   },
 })(() => null)
 
-export default ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.getElementById('jss-server-side')
@@ -67,3 +67,5 @@ export default ({ Component, pageProps }: AppProps) => {
     </>
   )
 }
+
+export default App
