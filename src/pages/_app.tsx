@@ -55,7 +55,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <GlobalCss />
-        <Header />
+        {/* <Header /> */}
         <Component {...pageProps} />
         <PageFooter />
         <FooterBar />
