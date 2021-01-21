@@ -1,5 +1,4 @@
 import { AppBar, Toolbar, Container, Box } from '@material-ui/core'
-import MobileMenu from './MobileMenu'
 import DesktopMenu from './DesktopMenu'
 import Logo from './Logo'
 
@@ -12,7 +11,6 @@ const Header = () => {
             <Logo />
             <DesktopMenu />
           </Toolbar>
-          <MobileMenu />
         </Container>
       </AppBar>
     </Box>
