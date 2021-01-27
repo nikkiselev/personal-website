@@ -3,7 +3,7 @@ import LinkedIn from '@material-ui/icons/LinkedIn'
 import StackOverflow from './StackOverflow'
 
 const SocialMedia = () => {
-  const color = '#fff'
+  const color = '#000'
 
   return (
     <>
