@@ -16,7 +16,10 @@ const Bio = () => {
       <Fade in={showContent} timeout={config.timeoutContentFade}>
         <Container maxWidth="md">
           <Grid container>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12}>
+              <Typography variant="h3" paragraph={true}>
+                {content.bioTitle}
+              </Typography>
               <Box textAlign={{ xs: 'center', md: 'left' }}>
                 {content.bio.map((text) => (
                   <Typography variant="body1" paragraph={true} key={text}>
