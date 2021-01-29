@@ -13,6 +13,7 @@ export type Job = {
   responsibilities: string[]
   skills: string[]
   type: string
+  last?: boolean
 }
 
 export type Skill = {

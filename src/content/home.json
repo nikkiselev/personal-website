@@ -135,7 +135,8 @@
         "Configured cloud Bitrix24 CRM apps",
         "Provided customer tech support and consulting through phone and a ticket tracking system"
       ],
-      "skills": ["JavaScript", "PHP", "MySQL", "jQuery", "CSS", "BEM", "CMS"]
+      "skills": ["JavaScript", "PHP", "MySQL", "jQuery", "CSS", "BEM", "CMS"],
+      "last": true
     }
   ],
   "menu": [

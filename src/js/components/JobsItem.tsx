@@ -5,6 +5,7 @@ import {
   Typography,
   Chip,
   Box,
+  Divider,
 } from '@material-ui/core'
 import { Job as JobType } from 'js/types'
 
@@ -42,6 +43,8 @@ const JobsItem = (props: Props) => {
           <Chip size="small" label={label} color="primary" variant="outlined" />
         </Box>
       ))}
+
+      <Box mt={3}>{!props.job.last && <Divider />}</Box>
     </Box>
   )
 }
