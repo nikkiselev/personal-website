@@ -22,6 +22,5 @@ export type Skill = {
 
 export type Category = {
   name: string
-  skills: Skill[]
-  misc?: string[]
+  stack: string
 }

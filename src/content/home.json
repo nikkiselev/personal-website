@@ -158,71 +158,29 @@
   "skills": [
     {
       "name": "Languages",
-      "skills": [
-        { "name": "TypeScript", "years": 6 },
-        { "name": "JavaScript", "years": 7 },
-        { "name": "PHP", "years": 7 },
-        { "name": "Swift", "years": 1 }
-      ]
+      "stack": "TypeScript, JavaScript, PHP, Swift, SQL."
     },
     {
-      "name": "Front End",
-      "skills": [
-        { "name": "React.js", "years": 2 },
-        { "name": "Next.js", "years": 2 },
-        { "name": "Vue.js", "years": 2 }
-      ],
-      "misc": [
-        "Build Tools",
-        "ESLint",
-        "CSS Preprocessors",
-        "CSS in JS",
-        "CSS Frameworks",
-        "Material-UI"
-      ]
+      "name": "Frameworks",
+      "stack": "Laravel, Next.js, Express.js."
     },
     {
-      "name": "Back End",
-      "skills": [
-        { "name": "Node.js", "years": 2 },
-        { "name": "Express.js", "years": 1 },
-        { "name": "Laravel", "years": 5 }
-      ],
-      "misc": ["REST", "SOAP", "OAuth", "JWT"]
+      "name": "Libraries",
+      "stack": "React.js, Vue.js, Build Tools, CSS Preprocessors, CSS in JS, Material-UI."
     },
     {
       "name": "Deployment",
-      "skills": [
-        { "name": "AWS", "years": 5 },
-        { "name": "Nginx / Apache2", "years": 6 }
-      ],
-      "misc": ["GitHub Pages", "Vercel (Zeit) Now", "Laravel Forge"]
+      "stack": "AWS, Vercel, Nginx, Apache2, Laravel Forge."
     },
     {
-      "name": "Data Storage",
-      "skills": [
-        { "name": "MongoDB", "years": 1 },
-        { "name": "MySQL", "years": 10 },
-        { "name": "Redis", "years": 1 }
-      ],
-      "misc": ["AWS RDS", "MariaDB", "MongoDB Atlas"]
+      "name": "Storage",
+      "stack": "AWS, MySQL, MongoDB, Redis."
+
     },
     {
       "name": "Other",
-      "skills": [
-        { "name": "Building REST APIs", "years": 4 },
-        { "name": "Git / Github / Bitbucket", "years": 6 }
-      ],
-      "misc": [
-        "AGILE",
-        "Jira",
-        "Trello",
-        "TDD",
-        "SOLID",
-        "DRY",
-        "YAGNI",
-        "KISS"
-      ]
+      "stack": "Full-stack, Jira, Github, AGILE, SOLID, DRY, YAGNI, KISS."
+
     }
   ],
   "location": "Kuala Lumpur, Malaysia (GMT+8)",
