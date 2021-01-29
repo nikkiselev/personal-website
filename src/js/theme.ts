@@ -1,10 +1,9 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
-import { grey, pink } from '@material-ui/core/colors'
+import { grey } from '@material-ui/core/colors'
 
 const theme = createMuiTheme({
   palette: {
-    primary: pink,
-    secondary: grey,
+    primary: grey,
     background: {
       default: '#fff',
     },
