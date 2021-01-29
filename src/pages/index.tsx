@@ -17,6 +17,7 @@ const Home = () => {
       <Jobs />
       <Divider variant="middle" />
       <Education />
+      <Divider variant="middle" />
     </>
   )
 }
