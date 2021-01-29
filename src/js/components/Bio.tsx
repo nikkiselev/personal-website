@@ -20,7 +20,7 @@ const Bio = () => {
               <Typography variant="h3" paragraph={true}>
                 {content.bioTitle}
               </Typography>
-              <Box textAlign={{ xs: 'center', md: 'left' }}>
+              <Box textAlign="left">
                 {content.bio.map((text) => (
                   <Typography variant="body1" paragraph={true} key={text}>
                     {text}
