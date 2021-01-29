@@ -17,7 +17,7 @@ const Bio = () => {
         <Container maxWidth="md">
           <Grid container>
             <Grid item xs={12}>
-              <Typography variant="h3" paragraph={true}>
+              <Typography variant="h4" paragraph={true}>
                 {content.bioTitle}
               </Typography>
               <Box textAlign="left">

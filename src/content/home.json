@@ -175,12 +175,10 @@
     {
       "name": "Storage",
       "stack": "AWS, MySQL, MongoDB, Redis."
-
     },
     {
       "name": "Other",
       "stack": "Full-stack, Jira, Github, AGILE, SOLID, DRY, YAGNI, KISS."
-
     }
   ],
   "location": "Kuala Lumpur, Malaysia (GMT+8)",

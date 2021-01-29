@@ -59,9 +59,14 @@ const App = ({ Component, pageProps }: AppProps) => {
         <Component {...pageProps} />
         <PageFooter />
         <FooterBar />
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap"
+        /> */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400,500,700&display=swap"
+          rel="stylesheet"
         />
       </ThemeProvider>
     </>
