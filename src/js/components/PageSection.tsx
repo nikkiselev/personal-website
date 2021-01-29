@@ -8,9 +8,9 @@ type Props = {
 }
 
 const padding = {
-  xs: theme.spacing(6),
-  sm: theme.spacing(9),
-  md: theme.spacing(12),
+  xs: theme.spacing(3),
+  sm: theme.spacing(5),
+  md: theme.spacing(5),
 }
 
 //@ts-ignore
