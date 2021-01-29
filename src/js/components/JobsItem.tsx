@@ -34,7 +34,9 @@ const JobsItem = (props: Props) => {
       <List dense>
         {props.job.responsibilities.map((item: string) => (
           <ListItem key={item}>
-            <ListItemText>&bull; {item}.</ListItemText>
+            <ListItemText>
+              <Typography variant="body2">&bull; {item}.</Typography>
+            </ListItemText>
           </ListItem>
         ))}
       </List>
