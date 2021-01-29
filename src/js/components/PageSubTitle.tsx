@@ -8,13 +8,12 @@ type Props = {
 
 const PageSubTitle = (props: Props) => (
   <Typography
-    variant="h3"
+    variant="h4"
     color={props.color ? props.color : 'textPrimary'}
     id={props.id}
+    align="center"
   >
-    <Box fontWeight="bold" textAlign="center" mb={5}>
-      {props.text}
-    </Box>
+    <Box mb={5}>{props.text}</Box>
   </Typography>
 )
 
