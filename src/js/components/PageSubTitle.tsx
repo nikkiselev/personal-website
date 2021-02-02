@@ -9,7 +9,7 @@ type Props = {
 
 const PageSubTitle = (props: Props) => (
   <>
-    <ContentDivider />
+    <ContentDivider variant="middle" />
     <Typography
       variant="h4"
       color={props.color ? props.color : 'textPrimary'}
@@ -18,7 +18,7 @@ const PageSubTitle = (props: Props) => (
     >
       {props.text}
     </Typography>
-    <ContentDivider />
+    <ContentDivider variant="middle" />
   </>
 )
 
