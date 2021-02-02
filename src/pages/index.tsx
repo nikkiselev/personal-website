@@ -15,7 +15,7 @@ const Home = () => {
         <Grid container justify="center">
           <Grid item>
             <SubHeader />
-            <ContentDivider variant="middle" />
+            <ContentDivider />
             <Bio />
             <PageSubTitle text="Skill Set" id="skills" />
             <SkillsSection />
