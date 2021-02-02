@@ -5,9 +5,9 @@ import {
   Typography,
   Chip,
   Box,
-  Divider,
 } from '@material-ui/core'
 import { Job as JobType } from 'js/types'
+import ContentDivider from './ContentDivider'
 
 type Props = {
   job: JobType
@@ -46,7 +46,7 @@ const JobsItem = (props: Props) => {
         </Box>
       ))}
 
-      <Box mt={3}>{!props.job.last && <Divider />}</Box>
+      {!props.job.last && <ContentDivider />}
     </Box>
   )
 }

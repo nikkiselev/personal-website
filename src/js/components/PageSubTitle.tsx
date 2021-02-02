@@ -1,4 +1,5 @@
-import { Typography, Box } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
+import ContentDivider from './ContentDivider'
 
 type Props = {
   text: string
@@ -7,14 +8,18 @@ type Props = {
 }
 
 const PageSubTitle = (props: Props) => (
-  <Typography
-    variant="h4"
-    color={props.color ? props.color : 'textPrimary'}
-    id={props.id}
-    align="center"
-  >
-    <Box mb={5}>{props.text}</Box>
-  </Typography>
+  <>
+    <ContentDivider />
+    <Typography
+      variant="h4"
+      color={props.color ? props.color : 'textPrimary'}
+      id={props.id}
+      align="center"
+    >
+      {props.text}
+    </Typography>
+    <ContentDivider />
+  </>
 )
 
 export default PageSubTitle

@@ -12,7 +12,7 @@ const Bio = () => {
   })
 
   return (
-    <PageSection withBg>
+    <PageSection>
       <Fade in={showContent} timeout={config.timeoutContentFade}>
         <Container maxWidth="md">
           <Grid container>

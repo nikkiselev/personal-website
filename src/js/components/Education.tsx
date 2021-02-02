@@ -5,7 +5,7 @@ import PageSection from './PageSection'
 import content from 'content/home.json'
 
 const Education = () => (
-  <PageSection withBg>
+  <PageSection>
     <Container maxWidth="md">
       <PageSubTitle text="Education" />
       <JobsItem job={content.education} />

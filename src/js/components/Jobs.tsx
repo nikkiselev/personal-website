@@ -6,7 +6,7 @@ import JobsItem from './JobsItem'
 
 const Jobs = () => {
   return (
-    <PageSection noPb withBg>
+    <PageSection>
       <Container maxWidth="md">
         <Grid container>
           <Grid item xs={12}>
