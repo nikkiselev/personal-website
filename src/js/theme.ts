@@ -14,7 +14,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: '"Open Sans", "Arial", sans-serif',
-    fontSize: 16,
+    fontSize: 15,
   },
 })
 
