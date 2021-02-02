@@ -10,40 +10,46 @@ const itemSpacing = 1
 const PageFooter = () => {
   return (
     <PageSection>
-      <Box>
-        <Container maxWidth="md">
-          <Grid container>
-            <Box textAlign={{ xs: 'center' }}>
-              <Grid item xs={12}>
-                <PageSubTitle
-                  text="Work with me"
-                  id="work-with-me"
-                  color="textSecondary"
-                />
+      <Container maxWidth="lg">
+        <Grid container>
+          <Box textAlign={{ xs: 'center' }} clone>
+            <Grid item xs={12}>
+              <PageSubTitle
+                text="Work with me"
+                id="work-with-me"
+                color="textSecondary"
+              />
+            </Grid>
+          </Box>
+        </Grid>
+      </Container>
 
+      <Container maxWidth="md">
+        <Grid container>
+          <Box textAlign={{ xs: 'center' }}>
+            <Grid item xs={12}>
+              <Typography variant="body1" color="textSecondary">
+                {content.footerText}
+              </Typography>
+            </Grid>
+
+            <Grid item xs={12}>
+              <Box my={itemSpacing}>
+                <FooterMail />
+              </Box>
+            </Grid>
+
+            <Grid item xs={12}>
+              <Box my={itemSpacing}>
                 <Typography variant="body1" color="textSecondary">
-                  {content.footerText}
+                  I'm also on:
                 </Typography>
-              </Grid>
-
-              <Grid item xs={12}>
-                <Box my={itemSpacing}>
-                  <FooterMail />
-                </Box>
-              </Grid>
-
-              <Grid item xs={12}>
-                <Box my={itemSpacing}>
-                  <Typography variant="body1" color="textSecondary">
-                    I'm also on:
-                  </Typography>
-                </Box>
-                <SocialMedia />
-              </Grid>
-            </Box>
-          </Grid>
-        </Container>
-      </Box>
+              </Box>
+              <SocialMedia />
+            </Grid>
+          </Box>
+        </Grid>
+      </Container>
     </PageSection>
   )
 }
