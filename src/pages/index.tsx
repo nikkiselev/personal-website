@@ -17,11 +17,8 @@ const Home = () => {
             <ContentDivider variant="middle" />
             <Bio />
             <SkillsSection />
-            <ContentDivider variant="middle" />
             <Jobs />
-            <ContentDivider variant="middle" />
             <Education />
-            <ContentDivider variant="middle" />
           </Grid>
         </Grid>
       </Container>
