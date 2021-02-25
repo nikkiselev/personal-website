@@ -9,7 +9,7 @@
     "types:check": "tsc --noEmit",
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss}\"",
     "lint:fix": "eslint \"{src,test,examples}/**/*.{ts,tsx}\" --fix",
-      "pre-commit": "",
+    "pre-commit": "lint-staged",
     "analyze": "env ANALYZE=true npm run build"
   },
   "lint-staged": {
