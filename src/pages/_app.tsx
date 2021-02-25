@@ -8,6 +8,8 @@ import FooterBar from 'js/components/FooterBar'
 import PageFooter from 'js/components/PageFooter'
 import content from 'content/home.json'
 
+import 'tailwindcss/tailwind.css'
+
 const GlobalCss = withStyles({
   '@global': {
     'html, body, #__next': {
