@@ -12,11 +12,15 @@ const Home = () => {
       <SubHeader />
       <ContentDivider />
       <Bio />
-      <PageSubTitle text="Skill Set" id="skills" />
+      <p className="page-title" id="skills">
+        Skill Set
+      </p>
       <SkillsSection />
-      <PageSubTitle text="Experience" id="experience" />
+      <p className="page-title" id="experience">
+        Experience
+      </p>
       <Jobs />
-      <PageSubTitle text="Education" />
+      <p className="page-title">Education</p>
       <Education />
     </div>
   )

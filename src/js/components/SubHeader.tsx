@@ -5,7 +5,7 @@ import SocialMedia from './SocialMedia'
 const SubHeader = () => {
   return (
     <div className="flex flex-col">
-      <span className="font-bold flex justify-center text-3xl">
+      <span className="font-bold flex justify-center text-3xl mb-14">
         Nikolai Kiselev
       </span>
 

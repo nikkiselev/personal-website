@@ -3,7 +3,7 @@ import content from 'content/home.json'
 const Bio = () => {
   return (
     <div>
-      {content.bioTitle}
+      <p className="page-title">{content.bioTitle}</p>
 
       {content.bio.map((text) => (
         <span>{text}</span>

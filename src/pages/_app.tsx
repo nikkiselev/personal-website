@@ -5,7 +5,7 @@ import FooterBar from 'js/components/FooterBar'
 import PageFooter from 'js/components/PageFooter'
 import content from 'content/home.json'
 
-import 'tailwindcss/tailwind.css'
+import '../globals.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
