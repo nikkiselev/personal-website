@@ -1,6 +1,5 @@
 import Avatar from './Avatar'
 import SubHeaderActions from './SubHeaderActions'
-import SocialMedia from './SocialMedia'
 
 const SubHeader = () => {
   return (
@@ -19,8 +18,6 @@ const SubHeader = () => {
       </div>
 
       {/* <SubHeaderActions /> */}
-
-      {/* <SocialMedia /> */}
     </div>
   )
 }
