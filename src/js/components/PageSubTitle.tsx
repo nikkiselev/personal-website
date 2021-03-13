@@ -1,4 +1,3 @@
-import { Typography } from '@material-ui/core'
 import ContentDivider from './ContentDivider'
 
 type Props = {
@@ -9,16 +8,9 @@ type Props = {
 
 const PageSubTitle = (props: Props) => (
   <>
-    <ContentDivider variant="middle" />
-    <Typography
-      variant="h4"
-      color={props.color ? props.color : 'textPrimary'}
-      id={props.id}
-      align="center"
-    >
-      {props.text}
-    </Typography>
-    <ContentDivider variant="middle" />
+    <ContentDivider />
+    <span>{props.text}</span>
+    <ContentDivider />
   </>
 )
 

@@ -1,11 +1,3 @@
-import {
-  List,
-  ListItem,
-  ListItemText,
-  Typography,
-  Chip,
-  Box,
-} from '@material-ui/core'
 import { Job as JobType } from 'js/types'
 import ContentDivider from './ContentDivider'
 
@@ -17,37 +9,31 @@ const JobsItem = (props: Props) => {
   const duration = props.job.from + ' - ' + props.job.to
 
   return (
-    <Box mb={3}>
-      <Typography variant="h6">{props.job.role}</Typography>
-      <Typography variant="caption">
+    <div>
+      <span>{props.job.role}</span>
+      <span>
         {props.job.company}&nbsp;&nbsp;&middot;&nbsp;&nbsp;{props.job.type}
-      </Typography>
+      </span>
       <br />
-      <Typography variant="caption">{duration}</Typography>
+      <span>{duration}</span>
 
       {props.job.place && (
         <div>
-          <Typography variant="caption">{props.job.place}</Typography>
+          <span>{props.job.place}</span>
         </div>
       )}
 
-      <List dense>
+      <ul>
         {props.job.responsibilities.map((item: string) => (
-          <ListItem key={item}>
-            <ListItemText>
-              <Typography variant="body2">&bull; {item}.</Typography>
-            </ListItemText>
-          </ListItem>
+          <span key={item}>&bull; {item}.</span>
         ))}
-      </List>
+      </ul>
       {props.job.skills.map((label: string) => (
-        <Box m={0.5} key={label} clone>
-          <Chip size="small" label={label} color="primary" variant="outlined" />
-        </Box>
+        <span key={label}>{label}</span>
       ))}
 
       {!props.job.last && <ContentDivider />}
-    </Box>
+    </div>
   )
 }
 

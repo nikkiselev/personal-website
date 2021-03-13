@@ -1,33 +1,13 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Head from 'next/head'
 import { AppProps } from 'next/app'
-import { ThemeProvider, withStyles } from '@material-ui/core/styles'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import theme from 'js/theme'
 import FooterBar from 'js/components/FooterBar'
 import PageFooter from 'js/components/PageFooter'
 import content from 'content/home.json'
 
 import 'tailwindcss/tailwind.css'
 
-const GlobalCss = withStyles({
-  '@global': {
-    'html, body, #__next': {
-      height: '100%',
-      scrollBehavior: 'smooth!important',
-    },
-  },
-})(() => null)
-
 const App = ({ Component, pageProps }: AppProps) => {
-  useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.getElementById('jss-server-side')
-    if (jssStyles) {
-      ;(jssStyles.parentElement as HTMLElement).removeChild(jssStyles)
-    }
-  }, [])
-
   return (
     <>
       <Head>
@@ -52,22 +32,18 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta property="og:image:width" content="460" />
         <meta property="og:image:height" content="460" />
       </Head>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <GlobalCss />
-        <Component {...pageProps} />
-        <PageFooter />
-        <FooterBar />
-        {/* <link
+      <Component {...pageProps} />
+      <PageFooter />
+      <FooterBar />
+      {/* <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap"
         /> */}
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400,500,700&display=swap"
-          rel="stylesheet"
-        />
-      </ThemeProvider>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400,500,700&display=swap"
+        rel="stylesheet"
+      />
     </>
   )
 }
