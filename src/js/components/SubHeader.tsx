@@ -19,8 +19,6 @@ const SubHeader = () => {
       <SubHeaderActions />
 
       <SocialMedia />
-
-      <Avatar />
     </div>
   )
 }
