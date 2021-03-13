@@ -4,21 +4,23 @@ import SocialMedia from './SocialMedia'
 
 const SubHeader = () => {
   return (
-    <div>
-      <span>Nikolai Kiselev</span>
+    <div className="flex flex-col">
+      <span className="font-bold flex justify-center text-3xl">
+        Nikolai Kiselev
+      </span>
 
-      <div>
+      <div className="flex">
         <Avatar />
 
-        <span>
+        <p>
           A full-stack web developer based in Kuala Lumpur, Malaysia. I build
           modern and secure web applications.
-        </span>
+        </p>
       </div>
 
-      <SubHeaderActions />
+      {/* <SubHeaderActions /> */}
 
-      <SocialMedia />
+      {/* <SocialMedia /> */}
     </div>
   )
 }

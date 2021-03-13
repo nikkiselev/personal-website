@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en" prefix="og: http://ogp.me/ns#">
         <Head></Head>
-        <body>
+        <body className="py-10">
           <Main />
           <NextScript />
         </body>
