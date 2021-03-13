@@ -1,5 +1,4 @@
 import { Job as JobType } from 'js/types'
-import ContentDivider from './ContentDivider'
 
 type Props = {
   job: JobType
@@ -10,12 +9,11 @@ const JobsItem = (props: Props) => {
 
   return (
     <div>
-      <span>{props.job.role}</span>
-      <span>
+      <p className="font-bold text-lg">{props.job.role}</p>
+      <p>
         {props.job.company}&nbsp;&nbsp;&middot;&nbsp;&nbsp;{props.job.type}
-      </span>
-      <br />
-      <span>{duration}</span>
+      </p>
+      <p>{duration}</p>
 
       {props.job.place && (
         <div>
@@ -23,16 +21,18 @@ const JobsItem = (props: Props) => {
         </div>
       )}
 
-      <ul>
+      <ul className="py-1">
         {props.job.responsibilities.map((item: string) => (
-          <span key={item}>&bull; {item}.</span>
+          <li className="my-2" key={item}>
+            &bull; {item}.
+          </li>
         ))}
       </ul>
-      {props.job.skills.map((label: string) => (
+      {/* {props.job.skills.map((label: string) => (
         <span key={label}>{label}</span>
-      ))}
+      ))} */}
 
-      {!props.job.last && <ContentDivider />}
+      {!props.job.last && <hr className="divider" />}
     </div>
   )
 }

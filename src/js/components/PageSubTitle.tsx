@@ -1,5 +1,3 @@
-import ContentDivider from './ContentDivider'
-
 type Props = {
   text: string
   color?: any
@@ -8,9 +6,9 @@ type Props = {
 
 const PageSubTitle = (props: Props) => (
   <>
-    <ContentDivider />
+    <hr className="divider" />
     <span>{props.text}</span>
-    <ContentDivider />
+    <hr className="divider" />
   </>
 )
 

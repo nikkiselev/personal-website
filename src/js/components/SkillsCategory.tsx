@@ -6,8 +6,8 @@ type Props = {
 
 const SkillsCategory = (props: Props) => {
   return (
-    <div>
-      <span>{props.category.name}</span>
+    <div className="mb-2">
+      <span className="font-bold">{props.category.name}:&nbsp;</span>
       <span>{props.category.stack}</span>
     </div>
   )

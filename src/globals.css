@@ -6,5 +6,12 @@
   .page-title {
     @apply font-bold text-3xl mt-14 mb-2;
   }
-}
 
+  .divider {
+    @apply mb-7;
+  }
+
+  .paragraph {
+    @apply mb-7;
+  }
+}

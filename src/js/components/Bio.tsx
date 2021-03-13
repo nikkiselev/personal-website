@@ -6,7 +6,7 @@ const Bio = () => {
       <p className="page-title">{content.bioTitle}</p>
 
       {content.bio.map((text) => (
-        <span>{text}</span>
+        <p className="paragraph">{text}</p>
       ))}
     </div>
   )
