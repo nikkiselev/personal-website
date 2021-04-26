@@ -1,5 +1,4 @@
 module.exports = {
-  purge: [],
   //@todo test purge
   purge: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
@@ -16,5 +15,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
