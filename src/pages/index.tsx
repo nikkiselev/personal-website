@@ -6,19 +6,15 @@ import Education from 'js/components/Education'
 
 const Home = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto prose">
       <SubHeader />
       <hr className="divider" />
       <Bio />
-      <p className="page-title" id="skills">
-        Skill Set
-      </p>
+      <h2 id="skills">Skill Set</h2>
       <SkillsSection />
-      <p className="page-title" id="experience">
-        Experience
-      </p>
+      <h2 id="experience">Experience</h2>
       <Jobs />
-      <p className="page-title">Education</p>
+      <h2>Education</h2>
       <Education />
     </div>
   )
