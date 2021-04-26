@@ -3,7 +3,7 @@ import content from 'content/home.json'
 
 const PageFooter = () => {
   return (
-    <div className="container flex flex-col justify-center">
+    <div className="container mx-auto flex flex-col justify-center">
       <PageSubTitle
         text="Work with me"
         id="work-with-me"
