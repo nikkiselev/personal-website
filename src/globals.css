@@ -20,4 +20,11 @@
   .paragraph {
     @apply mb-7;
   }
+  
+  .jobs > li::before {
+    content: none!important;
+  }
+  .jobs > li {
+    padding-left: 0!important;
+  }
 }

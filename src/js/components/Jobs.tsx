@@ -3,11 +3,11 @@ import JobsItem from './JobsItem'
 
 const Jobs = () => {
   return (
-    <div>
+    <ul className="bg-gray-50 rounded-3xl p-2 sm:p-5 xl:p-6 jobs">
       {content.jobs.map((job: any) => (
         <JobsItem job={job} key={job.company} />
       ))}
-    </div>
+    </ul>
   )
 }
 
