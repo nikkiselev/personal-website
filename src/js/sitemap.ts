@@ -1,6 +1,6 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
 
-const pages = ['/', '/#', '/#work-with-me', '/#skills', '/#experience']
+const pages = ['/']
 
 export default async (host: string | undefined) => {
   const smStream = new SitemapStream({
