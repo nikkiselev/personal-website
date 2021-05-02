@@ -4,8 +4,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   poweredByHeader: false,
-  experimental: {
-    modern: true,
     async rewrites() {
       return [
         { source: '/sitemap.xml', destination: '/api/sitemap' },
@@ -13,5 +11,4 @@ module.exports = withBundleAnalyzer({
       ]
     },
     catchAllRouting: true,
-  },
 })
