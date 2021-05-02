@@ -6,8 +6,8 @@ import Education from 'js/components/Education'
 
 const Home = () => {
   return (
-    <div className="container mx-auto">
-      <div className="prose max-w-none">
+    <div className="">
+      <div className="">
         <SubHeader />
         <hr className="divider" />
         <Bio />

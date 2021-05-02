@@ -4,10 +4,7 @@ const Bio = () => {
   return (
     <div>
       <h2>{content.bioTitle}</h2>
-
-      {content.bio.map((text) => (
-        <p>{text}</p>
-      ))}
+      <p>{content.bio}</p>
     </div>
   )
 }
