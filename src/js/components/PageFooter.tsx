@@ -19,11 +19,12 @@ const PageFooter = () => {
         nik@kiselev.dev
       </a>
 
-      <p>I'm also on:</p>
       <div className="text-center">
         <a
           href="https://www.linkedin.com/in/nikkiselev"
           aria-label="Nikolai Kiselev LinkedIn profile"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           LinkedIn
         </a>
@@ -31,11 +32,20 @@ const PageFooter = () => {
         <a
           href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile"
           aria-label="Nikolai Kiselev Stack Overflow profile"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Stack Overflow
         </a>
         &nbsp;
-        <a href="https://github.com/nikkiselev">GitHub</a>
+        <a
+          href="https://github.com/nikkiselev"
+          aria-label="Nikolai Kiselev GitHub profile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </div>
     </div>
   )
