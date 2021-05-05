@@ -24,7 +24,7 @@
   .jobs > li::before {
     content: none !important;
   }
-  .jobs > li {
-    padding-left: 0 !important;
+  .prose .jobs > li {
+    @apply m-0 pl-0;
   }
 }

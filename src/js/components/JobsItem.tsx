@@ -29,7 +29,7 @@ const JobsItem = (props: Props) => {
                 className="text-gray-200"
               ></path>
               <path
-                d="M 6 18 V 500"
+                d="M 6 18 V 1000"
                 fill="none"
                 stroke-width="2"
                 stroke="currentColor"
