@@ -21,7 +21,7 @@ const PageFooter = () => {
         >
           LinkedIn
         </a>
-        &nbsp;
+        &nbsp;•&nbsp;
         <a
           href="https://stackoverflow.com/users/5964023/nikolai-kiselev?tab=profile"
           aria-label="Nikolai Kiselev Stack Overflow profile"
@@ -30,7 +30,7 @@ const PageFooter = () => {
         >
           Stack Overflow
         </a>
-        &nbsp;
+        &nbsp;•&nbsp;
         <a
           href="https://github.com/nikkiselev"
           aria-label="Nikolai Kiselev GitHub profile"
