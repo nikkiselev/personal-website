@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const size = 84
+const size = 56
 
 type Props = {
   className?: string

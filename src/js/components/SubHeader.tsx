@@ -12,10 +12,10 @@ const SubHeader = () => {
       </div>
       <div className="flex">
         <Avatar />
-        <p>
+        <span>
           A full-stack web developer based in Kuala Lumpur, Malaysia. I build
           modern and secure web applications.
-        </p>
+        </span>
       </div>
 
       {/* <SubHeaderActions /> */}
