@@ -24,14 +24,14 @@ const JobsItem = (props: Props) => {
               <path
                 d="M 6 -6 V -30"
                 fill="none"
-                stroke-width="2"
+                strokeWidth="2"
                 stroke="currentColor"
                 className="text-gray-200"
               ></path>
               <path
                 d="M 6 18 V 1000"
                 fill="none"
-                stroke-width="2"
+                strokeWidth="2"
                 stroke="currentColor"
                 className="text-gray-200"
               ></path>

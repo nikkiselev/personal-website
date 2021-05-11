@@ -1,16 +1,17 @@
 import Avatar from './Avatar'
+//@todo remove
 import SubHeaderActions from './SubHeaderActions'
+import ThemeToggle from './ThemeToggle'
 
 const SubHeader = () => {
   return (
     <div className="flex flex-col">
-      <span className="font-bold flex justify-center text-3xl mb-14">
+      <div className="flex justify-between items-center font-bold text-2xl mb-14">
         Nikolai Kiselev
-      </span>
-
+        <ThemeToggle />
+      </div>
       <div className="flex">
         <Avatar />
-
         <p>
           A full-stack web developer based in Kuala Lumpur, Malaysia. I build
           modern and secure web applications.
