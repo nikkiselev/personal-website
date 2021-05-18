@@ -1,12 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Switch } from '@headlessui/react'
+import theme from 'js/services/theme'
 
 //@todo refactor
-const applyDarkTheme = (): void =>
-  document.documentElement.classList.add('dark')
-const applyLightTheme = (): void =>
-  document.documentElement.classList.remove('dark')
-const saveTheme = (theme: string): string => (localStorage.theme = theme)
 
 export default function ThemeToggle() {
   const [enabled, setEnabled] = useState(false)
@@ -15,20 +11,17 @@ export default function ThemeToggle() {
     setEnabled(v)
 
     if (v) {
-      saveTheme('dark')
-      applyDarkTheme()
+      theme.save('dark')
+      theme.applyDark()
     } else {
-      saveTheme('light')
-      applyLightTheme()
+      theme.save('light')
+      theme.applyLight()
     }
   }
 
   useEffect(() => {
     if (!('theme' in localStorage)) {
-      const prefersDark = window.matchMedia(
-        '(prefers-color-scheme: dark)'
-      ).matches
-      saveTheme(prefersDark ? 'dark' : 'light')
+      theme.save(theme.userPrefersDark() ? 'dark' : 'light')
     }
 
     setDarkTheme(localStorage.theme === 'dark')
