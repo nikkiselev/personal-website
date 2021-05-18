@@ -1,33 +1,38 @@
-const userPrefersDark = () => {
-  return window.matchMedia('(prefers-color-scheme: dark)').matches
-}
+const _OSDefault = (): string =>
+  window.matchMedia('(prefers-color-scheme: dark)').matches ? _dark : _light
 
-const applyDark = (): void => document.documentElement.classList.add('dark')
-const applyLight = (): void => document.documentElement.classList.remove('dark')
-const save = (theme: string): string => (localStorage.theme = theme)
-const setDefault = () => save(userPrefersDark() ? 'dark' : 'light')
-const isSaved = () => 'theme' in localStorage
-const get = () => localStorage.theme
-const setDark = () => {
-  save('dark')
+const applyDark = (): void => _rootClasses.add(_dark)
+const applyLight = (): void => _rootClasses.remove(_dark)
+
+const isSaved = (): boolean => 'theme' in localStorage
+
+const setOSDefault = (): void => _set(_OSDefault())
+
+const setDark = (): void => {
+  _set(_dark)
   applyDark()
 }
-const setLight = () => {
-  save('light')
+const setLight = (): void => {
+  _set(_light)
   applyLight()
 }
 
-const isDark = () => get() === 'dark'
+const isDark = () => _get() === _dark
+
+const _dark = 'dark'
+const _light = 'light'
+
+const _get = (): string => localStorage.theme
+const _set = (theme: string): void => {
+  localStorage.theme = theme
+}
+
+const _rootClasses = document.documentElement.classList
 
 export default {
-  userPrefersDark,
-  applyDark,
-  applyLight,
-  save,
-  setDefault,
-  isSaved,
-  get,
   setDark,
   setLight,
   isDark,
+  setOSDefault,
+  isSaved,
 }

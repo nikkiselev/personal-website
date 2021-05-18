@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react'
 import { Switch } from '@headlessui/react'
 import theme from 'js/services/theme'
 
-//@todo refactor
-
 export default function ThemeToggle() {
   const [enabled, setEnabled] = useState(false)
 
@@ -14,7 +12,7 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     if (!theme.isSaved()) {
-      theme.setDefault()
+      theme.setOSDefault()
     }
     setDarkTheme(theme.isDark())
   }, [])
