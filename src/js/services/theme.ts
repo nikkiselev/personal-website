@@ -1,8 +1,8 @@
 const _OSDefault = (): string =>
   window.matchMedia('(prefers-color-scheme: dark)').matches ? _dark : _light
 
-const applyDark = (): void => _rootClasses.add(_dark)
-const applyLight = (): void => _rootClasses.remove(_dark)
+const applyDark = (): void => document.documentElement.classList.add(_dark)
+const applyLight = (): void => document.documentElement.classList.remove(_dark)
 
 const isSaved = (): boolean => 'theme' in localStorage
 
@@ -26,8 +26,6 @@ const _get = (): string => localStorage.theme
 const _set = (theme: string): void => {
   localStorage.theme = theme
 }
-
-const _rootClasses = document.documentElement.classList
 
 export default {
   setDark,
