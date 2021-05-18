@@ -6,6 +6,11 @@ export default function ThemeToggle() {
 
   const toggle = (v: boolean) => {
     setEnabled(v)
+    if (v) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
   }
 
   return (
