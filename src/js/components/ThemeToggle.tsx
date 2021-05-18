@@ -20,7 +20,7 @@ export default function ThemeToggle() {
   }
 
   useEffect(() => {
-    if (!('theme' in localStorage)) {
+    if (!theme.isSaved()) {
       theme.setDefault()
     }
 
