@@ -9,22 +9,14 @@ export default function ThemeToggle() {
 
   const setDarkTheme = (v: boolean) => {
     setEnabled(v)
-
-    if (v) {
-      theme.save('dark')
-      theme.applyDark()
-    } else {
-      theme.save('light')
-      theme.applyLight()
-    }
+    v ? theme.setDark() : theme.setLight()
   }
 
   useEffect(() => {
     if (!theme.isSaved()) {
       theme.setDefault()
     }
-
-    setDarkTheme(localStorage.theme === 'dark')
+    setDarkTheme(theme.get() === 'dark')
   }, [])
 
   return (

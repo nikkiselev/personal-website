@@ -7,6 +7,15 @@ const applyLight = (): void => document.documentElement.classList.remove('dark')
 const save = (theme: string): string => (localStorage.theme = theme)
 const setDefault = () => save(userPrefersDark() ? 'dark' : 'light')
 const isSaved = () => 'theme' in localStorage
+const get = () => localStorage.theme
+const setDark = () => {
+  save('dark')
+  applyDark()
+}
+const setLight = () => {
+  save('light')
+  applyLight()
+}
 
 export default {
   userPrefersDark,
@@ -15,4 +24,7 @@ export default {
   save,
   setDefault,
   isSaved,
+  get,
+  setDark,
+  setLight,
 }
