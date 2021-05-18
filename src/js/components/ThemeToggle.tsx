@@ -7,11 +7,21 @@ export default function ThemeToggle() {
   const toggle = (v: boolean) => {
     setEnabled(v)
     if (v) {
+      localStorage.theme = 'dark'
       document.documentElement.classList.add('dark')
     } else {
+      localStorage.theme = 'light'
       document.documentElement.classList.remove('dark')
     }
   }
+
+  useEffect(() => {
+    if (!('theme' in localStorage)) {
+      return
+    }
+
+    toggle(localStorage.theme === 'dark')
+  }, [])
 
   return (
     <Switch
