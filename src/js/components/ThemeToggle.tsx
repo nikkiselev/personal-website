@@ -21,7 +21,7 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     if (!('theme' in localStorage)) {
-      theme.save(theme.userPrefersDark() ? 'dark' : 'light')
+      theme.setDefault()
     }
 
     setDarkTheme(localStorage.theme === 'dark')
