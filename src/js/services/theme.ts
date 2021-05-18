@@ -17,6 +17,8 @@ const setLight = () => {
   applyLight()
 }
 
+const isDark = () => get() === 'dark'
+
 export default {
   userPrefersDark,
   applyDark,
@@ -27,4 +29,5 @@ export default {
   get,
   setDark,
   setLight,
+  isDark,
 }

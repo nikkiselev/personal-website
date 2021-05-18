@@ -16,7 +16,7 @@ export default function ThemeToggle() {
     if (!theme.isSaved()) {
       theme.setDefault()
     }
-    setDarkTheme(theme.get() === 'dark')
+    setDarkTheme(theme.isDark())
   }, [])
 
   return (
