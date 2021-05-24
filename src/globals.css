@@ -38,4 +38,13 @@
   .prose .jobs > li {
     @apply m-0 pl-0;
   }
+
+  .dark .prose {
+    /* @apply text-white; */
+    color: hsla(0, 0%, 100%, 0.88);
+  }
+
+  .dark .prose h2 {
+    @apply text-white;
+  }
 }

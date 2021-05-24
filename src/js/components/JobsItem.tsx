@@ -10,8 +10,10 @@ const JobsItem = (props: Props) => {
   return (
     <li>
       <article>
-        <div className="grid items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
-          <h3 className="text-gray-900  mb-1 ml-9 ">{props.job.role}</h3>
+        <div className="grid items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden">
+          <h3 className="text-gray-900 dark:text-white  mb-1 ml-9 ">
+            {props.job.role}
+          </h3>
           <time
             dateTime="2021-03-15T16:30:00.000Z"
             className="row-start-1 flex items-center font-medium mb-1 "
