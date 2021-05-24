@@ -10,6 +10,10 @@ module.exports = {
       container: {
         padding: '1.5rem',
       },
+
+      colors: {
+        'light-gray': '#282c35',
+      }
     },
   },
   variants: {

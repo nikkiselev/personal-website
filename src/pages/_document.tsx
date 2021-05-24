@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en" prefix="og: http://ogp.me/ns#">
         <Head></Head>
-        <body className="py-10 mx-auto prose container dark:bg-gray-800">
+        <body className="py-10 mx-auto prose container dark:bg-light-gray">
           <Main />
           <NextScript />
         </body>
