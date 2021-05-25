@@ -2,8 +2,8 @@ import content from 'content/home.json'
 
 const PageFooter = () => {
   return (
-    <div className="container mx-auto flex flex-col justify-center">
-      <p className="paragraph">{content.footerText}</p>
+    <div className="container mx-auto justify-center">
+      <p className="">{content.footerText}</p>
 
       <a
         className="text-center justify-self-center"

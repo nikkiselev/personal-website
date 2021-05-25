@@ -32,10 +32,6 @@
     @apply mb-7;
   }
 
-  .paragraph {
-    @apply mb-7;
-  }
-
   .jobs > li::before {
     content: none !important;
   }

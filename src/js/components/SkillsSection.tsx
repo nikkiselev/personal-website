@@ -3,10 +3,10 @@ import Skills from './Skills'
 const year = 2014
 const years = new Date().getFullYear() - year
 
-const SkilsSection = () => {
+const SkillsSection = () => {
   return (
     <div>
-      <p className="paragraph">
+      <p>
         These are the skills I've picked up over my {years} years as a
         professional developer.
       </p>
@@ -15,4 +15,4 @@ const SkilsSection = () => {
   )
 }
 
-export default SkilsSection
+export default SkillsSection
