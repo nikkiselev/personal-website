@@ -4,12 +4,7 @@ const PageFooter = () => {
   return (
     <div>
       <p>{content.footerText}</p>
-      <a
-        className="text-center1 justify-self-center"
-        href="mailto:nik@kiselev.dev"
-      >
-        nik@kiselev.dev
-      </a>
+      <a href="mailto:nik@kiselev.dev">nik@kiselev.dev</a>
 
       <p>
         <a
