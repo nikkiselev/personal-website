@@ -11,7 +11,7 @@ const JobsItem = (props: Props) => {
     <li>
       <article>
         <div className="grid items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden">
-          <h3 className="text-gray-900 dark:text-white  mb-1 ml-9 ">
+          <h3 className="text-black dark:text-white  mb-1 ml-9">
             {props.job.role}
           </h3>
           <time
@@ -24,7 +24,7 @@ const JobsItem = (props: Props) => {
             >
               <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
               <path
-                d="M 6 -6 V -30"
+                d="M 6 -6 V -40"
                 fill="none"
                 strokeWidth="2"
                 stroke="currentColor"

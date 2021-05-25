@@ -17,7 +17,6 @@ const Home = () => {
         <hr />
         <h2>Experience</h2>
         <Jobs />
-        <hr />
         <h2>Education</h2>
         <Education />
         <hr />

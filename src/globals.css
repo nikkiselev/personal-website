@@ -14,37 +14,37 @@
     @apply underline text-black;
   }
 
-  .dark .prose a {
-    @apply text-pink-300;
-  }
-
   body {
     font-family: var(--ff-sans);
   }
-}
 
-@layer components {
-  .page-title {
-    @apply font-bold text-3xl mt-14 mb-2;
+  html .prose h2 {
+    @apply text-green-700;
   }
 
-  .divider {
-    @apply mb-7;
+  html .prose a {
+    @apply text-green-700;
   }
 
-  .jobs > li::before {
-    content: none !important;
+  .dark .prose h2 {
+    @apply text-green-400;
   }
-  .prose .jobs > li {
-    @apply m-0 pl-0;
+
+  .dark .prose a {
+    @apply text-green-400;
   }
 
   .dark .prose {
     /* @apply text-white; */
     color: hsla(0, 0%, 100%, 0.88);
   }
+}
 
-  .dark .prose h2 {
-    @apply text-white;
+@layer components {
+  .jobs > li::before {
+    content: none !important;
+  }
+  .prose .jobs > li {
+    @apply m-0 pl-0;
   }
 }
