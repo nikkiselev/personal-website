@@ -185,15 +185,11 @@
   "location": "Kuala Lumpur, Malaysia (GMT+8)",
   "footerText": "I'm a practical person so if you have a cool project to work on or share the feeling that I could be a good fit with your team, reach out and let's have a chat!",
   "education": {
-    "role": "Bachelor of Applied Science (B.A.Sc.), Computer science",
-    "type": "",
-    "company": "Novosibirsk State Technical University",
+    "title": "Bachelor of Applied Science (B.A.Sc.), Computer science",
+    "uni": "Novosibirsk State Technical University",
     "place": "Novosibirsk, Russia",
     "from": 2009,
-    "to": 2013,
-    "responsibilities": [],
-    "skills": [],
-    "last": true
+    "to": 2013
   },
   "bioTitle": "A lifetime hobby turned into a profession!",
   "bio": "I still remember my first encounter with programming in elementary school at the age of 8. At 12, I was enrolled to a programming course. I wrote small scripts and apps using Pascal. In 2004, I built my first website about the history of Earth. It wasn't great but it made me realize my passion for programming. That led me toward getting a Bachelor degree in Computer Science. Fast forward to today, I build web applications as a freelance full-stack web developer.",

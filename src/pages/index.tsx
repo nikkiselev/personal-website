@@ -9,14 +9,18 @@ const Home = () => {
     <div className="">
       <div className="">
         <SubHeader />
-        <hr className="divider" />
+        <hr />
         <Bio />
-        <h2 id="skills">Skill Set</h2>
+        <hr />
+        <h2>Skill Set</h2>
         <SkillsSection />
-        <h2 id="experience">Experience</h2>
+        <hr />
+        <h2>Experience</h2>
         <Jobs />
+        <hr />
         <h2>Education</h2>
         <Education />
+        <hr />
       </div>
     </div>
   )
