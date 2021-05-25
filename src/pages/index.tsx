@@ -9,17 +9,14 @@ const Home = () => {
     <div className="">
       <div className="">
         <SubHeader />
-        <hr />
         <Bio />
-        <hr />
         <h2>Skill Set</h2>
         <SkillsSection />
-        <hr />
         <h2>Experience</h2>
         <Jobs />
         <h2>Education</h2>
         <Education />
-        <hr />
+        <h2>Work with me</h2>
       </div>
     </div>
   )
