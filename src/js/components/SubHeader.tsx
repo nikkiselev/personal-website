@@ -11,8 +11,9 @@ const SubHeader = () => {
       <div className="flex">
         <Avatar />
         <span>
-          A full-stack web developer based in Kuala Lumpur, Malaysia. I build
-          modern and secure web applications.
+          A full-stack web developer based in Kuala Lumpur, Malaysia.{' '}
+          <br className="hidden md:inline" /> I build modern and secure web
+          applications.
         </span>
       </div>
     </div>
