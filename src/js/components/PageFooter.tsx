@@ -2,17 +2,16 @@ import content from 'content/home.json'
 
 const PageFooter = () => {
   return (
-    <div className="container mx-auto justify-center">
-      <p className="">{content.footerText}</p>
-
+    <div>
+      <p>{content.footerText}</p>
       <a
-        className="text-center justify-self-center"
+        className="text-center1 justify-self-center"
         href="mailto:nik@kiselev.dev"
       >
         nik@kiselev.dev
       </a>
 
-      <div className="text-center">
+      <p>
         <a
           href="https://www.linkedin.com/in/nikkiselev"
           aria-label="Nikolai Kiselev LinkedIn profile"
@@ -39,7 +38,7 @@ const PageFooter = () => {
         >
           GitHub
         </a>
-      </div>
+      </p>
     </div>
   )
 }
