@@ -7,6 +7,9 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      scale: {
+        '65': '.65'
+      },
       container: {
         padding: '1.5rem',
       },
