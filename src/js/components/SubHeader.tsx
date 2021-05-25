@@ -1,6 +1,4 @@
 import Avatar from './Avatar'
-//@todo remove
-import SubHeaderActions from './SubHeaderActions'
 import ThemeToggle from './ThemeToggle'
 
 const SubHeader = () => {
@@ -17,8 +15,6 @@ const SubHeader = () => {
           modern and secure web applications.
         </span>
       </div>
-
-      {/* <SubHeaderActions /> */}
     </div>
   )
 }
