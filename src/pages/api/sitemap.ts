@@ -1,7 +1,7 @@
 import sitemap from '../../js/sitemap'
 import { NextApiResponse, NextApiRequest } from 'next'
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const Sitemap = async (req: NextApiRequest, res: NextApiResponse) => {
   res.setHeader('Content-Type', 'text/xml')
 
   try {
@@ -13,3 +13,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     res.end()
   }
 }
+
+export default Sitemap

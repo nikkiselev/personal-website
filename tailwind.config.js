@@ -1,16 +1,15 @@
 module.exports = {
   //@todo test purge
-  purge: { 
+  purge: {
     enabled: true,
-    content:     [
+    content: [
       './src/pages/**/*.{js,ts,jsx,tsx}',
       './src/js/components/**/*.{js,ts,jsx,tsx}',
     ],
     options: {
-      safelist: ["dark"],
+      safelist: ['dark'],
     },
-
-},
+  },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
